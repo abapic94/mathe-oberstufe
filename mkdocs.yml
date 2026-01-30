@@ -1,0 +1,26 @@
+﻿nav:
+  - Start: index.md
+  - Prüfung Sachsen-Anhalt:
+      - Format & Aufbau: pruefung/format.md
+      - Operatoren (Signalworte): pruefung/operatoren.md
+  - Analysis:
+      - Überblick: analysis/index.md
+      - Ableitung: analysis/ableitung.md
+      - Integral: analysis/integral.md
+      - Kurvendiskussion: analysis/kurvendiskussion.md
+  - Analytische Geometrie:
+      - Überblick: ag/index.md
+      - Geraden: ag/geraden.md
+      - Ebenen: ag/ebenen.md
+      - Lagebeziehungen: ag/lagebeziehungen.md
+      - Abstände & Winkel: ag/abstaende-winkel.md
+  - Stochastik:
+      - Überblick: stochastik/index.md
+      - Binomialverteilung: stochastik/binomial.md
+      - Erwartungswert & Varianz: stochastik/ew-varianz.md
+      - (Optional) Tests: stochastik/tests.md
+  - Abiturtraining:
+      - Überblick: abitur/index.md
+      - Teil 1 (mit Wahl): abitur/teil1.md
+      - Teil 2 (ohne Wahl): abitur/teil2.md
+      - Fehlerliste: abitur/fehlerliste.md
