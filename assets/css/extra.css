@@ -3,3 +3,17 @@
   height: 48px;   /* Standard ~24px → hier größer */
   width: auto;
 }
+
+.box-blue {
+  border-left: 6px solid #1976d2;
+  background: #e3f2fd;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+.box-green {
+  border-left: 6px solid #2e7d32;
+  background: #e8f5e9;
+  padding: 1em;
+}
+
