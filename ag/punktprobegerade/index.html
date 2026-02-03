@@ -425,23 +425,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Punktprobe bei einer Geraden">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#vorgehensweise" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Vorgehensweise
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -549,84 +532,80 @@
 <h2 id="punktprobe-bei-einer-geraden">Punktprobe bei einer Geraden<a class="headerlink" href="#punktprobe-bei-einer-geraden" title="Permanent link">&para;</a></h2>
 <p>Mit der <strong>Punktprobe</strong> überprüft man, ob ein gegebener Punkt auf einer Geraden liegt.</p>
 <hr />
-<h3 id="vorgehensweise">Vorgehensweise<a class="headerlink" href="#vorgehensweise" title="Permanent link">&para;</a></h3>
-<p>Gegeben sei eine Gerade in Parameterform
-[
-g:\ \vec{x} = \vec{a} + \lambda \cdot \vec{v}, \quad \lambda \in \mathbb{R}.
-]</p>
-<p>Ein Punkt <span class="arithmatex">\(P(x_P|y_P|z_P)\)</span> liegt genau dann auf der Geraden <span class="arithmatex">\(g\)</span>,<br />
-wenn es einen Parameter <span class="arithmatex">\(\lambda \in \mathbb{R}\)</span> gibt, sodass gilt:
-[
-\vec{OP} = \vec{a} + \lambda \cdot \vec{v}.
-]</p>
-<p>Man setzt dazu die Koordinaten des Punktes in die Geradengleichung ein<br />
-und prüft, ob <strong>ein gemeinsamer Parameterwert</strong> existiert.</p>
+<p><strong>Vorgehensweise</strong></p>
+<p>Gegeben sei eine Gerade in Parameterform</p>
+<div class="arithmatex">\[
+g:\ \vec{x} = \vec{s} + \lambda \cdot \vec{v}, \quad \lambda \in \mathbb{R}.
+\]</div>
+<p>Ein Punkt <span class="arithmatex">\(P\)</span> liegt genau dann auf der Geraden <span class="arithmatex">\(g\)</span>,<br />
+wenn es einen Parameter <span class="arithmatex">\(\lambda \in \mathbb{R}\)</span> gibt, sodass gilt:</p>
+<div class="arithmatex">\[
+\vec{OM} = \vec{s} + \lambda \cdot \vec{v}.
+\]</div>
+<p>Man setzt dazu die Koordinaten des Punktes in die Geradengleichung ein und prüft, ob <strong>ein gemeinsamer Parameterwert</strong> existiert.</p>
 <hr />
 <h2 id="beispiel-1-punkt-liegt-auf-der-geraden">Beispiel 1: Punkt liegt auf der Geraden<a class="headerlink" href="#beispiel-1-punkt-liegt-auf-der-geraden" title="Permanent link">&para;</a></h2>
-<p>Gegeben ist die Gerade
-[
+<p>Gegeben ist die Gerade</p>
+<div class="arithmatex">\[
 g:\ \vec{x}
 =
 \begin{pmatrix}
-3\
-4\
+3\\
+4\\
 5
 \end{pmatrix}
 +
 \lambda \cdot
 \begin{pmatrix}
--1\
--3\
+-1\\
+-3\\
 -5
 \end{pmatrix}.
-]</p>
+\]</div>
 <p>Prüfen Sie, ob der Punkt <span class="arithmatex">\(P(2|-2|0)\)</span> auf der Geraden liegt.</p>
 <hr />
 <h3 id="rechnung">Rechnung<a class="headerlink" href="#rechnung" title="Permanent link">&para;</a></h3>
-<p>Einsetzen von <span class="arithmatex">\(P\)</span> in die Geradengleichung:
-[
+<p>Einsetzen von <span class="arithmatex">\(P\)</span> in die Geradengleichung:</p>
+<div class="arithmatex">\[
 \begin{pmatrix}
-2\
--2\
+2\\
+-2\\
 0
 \end{pmatrix}
 =
 \begin{pmatrix}
-3\
-4\
+3\\
+4\\
 5
 \end{pmatrix}
 +
 \lambda \cdot
 \begin{pmatrix}
--1\
--3\
+-1\\
+-3\\
 -5
 \end{pmatrix}
-]</p>
-<p>Koordinatenvergleich:
-[
+\]</div>
+<p>Koordinatenvergleich:</p>
+<div class="arithmatex">\[
 \begin{aligned}
-3 - \lambda &amp;= 2 \
-4 - 3\lambda &amp;= -2 \
+3 - \lambda &amp;= 2 \\
+4 - 3\lambda &amp;= -2 \\
 5 - 5\lambda &amp;= 0
 \end{aligned}
-]</p>
-<p>Lösen der ersten Gleichung:
-[
+\]</div>
+<p>Lösen der Gleichungen:</p>
+<div class="arithmatex">\[
+\lambda = 1\\
+\lambda = 2\\
 \lambda = 1
-]</p>
-<p>Einsetzen in die anderen Gleichungen:
-[
-4 - 3 \cdot 1 = 1 \neq -2
-]</p>
+\]</div>
 <hr />
 <h3 id="ergebnis">Ergebnis<a class="headerlink" href="#ergebnis" title="Permanent link">&para;</a></h3>
-<p>Da <strong>kein gemeinsamer Parameterwert</strong> <span class="arithmatex">\(\lambda\)</span> existiert,<br />
-liegt der Punkt <span class="arithmatex">\(P\)</span> <strong>nicht</strong> auf der Geraden <span class="arithmatex">\(g\)</span>.</p>
+<p>Da <strong>kein gemeinsamer Parameterwert</strong> <span class="arithmatex">\(\lambda\)</span> existiert,  liegt der Punkt <span class="arithmatex">\(P\)</span> <strong>nicht</strong> auf der Geraden <span class="arithmatex">\(g\)</span>.</p>
 <hr />
 <h2 id="beispiel-2-punkt-liegt-auf-der-geraden">Beispiel 2: Punkt liegt auf der Geraden<a class="headerlink" href="#beispiel-2-punkt-liegt-auf-der-geraden" title="Permanent link">&para;</a></h2>
-<p>Prüfen Sie, ob der Punkt <span class="arithmatex">\(Q(5|7|10)\)</span> auf der Geraden liegt.</p>
+<p>Prüfen Sie, ob der Punkt <span class="arithmatex">\(Q(5|7|10)\)</span> auf der Geraden <span class="arithmatex">\(g\)</span> aus Beispiel 1 liegt.</p>
 <hr />
 <h3 id="rechnung_1">Rechnung<a class="headerlink" href="#rechnung_1" title="Permanent link">&para;</a></h3>
 <div class="arithmatex">\[
@@ -649,32 +628,21 @@ liegt der Punkt <span class="arithmatex">\(P\)</span> <strong>nicht</strong> auf
 5
 \end{pmatrix}
 \]</div>
-<p>Koordinatenvergleich:
-[
+<p>Koordinatenvergleich:</p>
+<div class="arithmatex">\[
 \begin{aligned}
-3 + 2\lambda &amp;= 5 \
-4 + 3\lambda &amp;= 7 \
+3 + 2\lambda &amp;= 5 \\
+4 + 3\lambda &amp;= 7 \\
 5 + 5\lambda &amp;= 10
 \end{aligned}
-]</p>
-<p>Aus der ersten Gleichung folgt:
+\]</div>
+<p>Lösen der Gleichungen:
 [
+\lambda = 1\
+\lambda = 1\
 \lambda = 1
 ]</p>
-<p>Einsetzen zeigt:
-[
-\begin{aligned}
-4 + 3 \cdot 1 &amp;= 7 \
-5 + 5 \cdot 1 &amp;= 10
-\end{aligned}
-]</p>
-<hr />
-<div class="box-green">
-<strong>Ergebnis:</strong><br>
-Der Punkt \(Q\) liegt auf der Geraden \(g\),  
-da alle drei Gleichungen denselben Parameterwert \(\lambda = 1\) liefern.
-</div>
-
+<p>Der Punkt <span class="arithmatex">\(Q\)</span> liegt auf der Geraden <span class="arithmatex">\(g\)</span>, da alle drei Gleichungen denselben Parameterwert <span class="arithmatex">\(\lambda = 1\)</span> liefern.</p>
 <hr />
 <div class="box-blue">
 <strong>Merksatz (Punktprobe):</strong><br>
