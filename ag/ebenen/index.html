@@ -848,7 +848,7 @@ so kann der Normalenvektor auf zwei Arten bestimmt werden:</p>
 <li><strong>Kreuzprodukt</strong></li>
 </ul>
 <div class="arithmatex">\[
-  \overrightarrow{n}=\overrightarrow{u}\times\overrightarrow{v}.
+  \overrightarrow{n}=\overrightarrow{u}\times\cdot \overrightarrow{v}.
 \]</div>
 <hr />
 <h2 id="koordinatenform-einer-ebene">Koordinatenform einer Ebene<a class="headerlink" href="#koordinatenform-einer-ebene" title="Permanent link">&para;</a></h2>
@@ -867,7 +867,7 @@ E:\ a x + b y + c z = d.
 <h3 id="parameterform-normalenform">Parameterform → Normalenform<a class="headerlink" href="#parameterform-normalenform" title="Permanent link">&para;</a></h3>
 <p>Gegeben:</p>
 <div class="arithmatex">\[
-E:\ \overrightarrow{x} = \overrightarrow{a} + t\overrightarrow{u} + s\overrightarrow{v}
+E:\ \overrightarrow{x} = \overrightarrow{a} + t\cdot \overrightarrow{u} + s\cdot\overrightarrow{v}
 \]</div>
 <p>Vorgehen:</p>
 <ul>
@@ -875,7 +875,7 @@ E:\ \overrightarrow{x} = \overrightarrow{a} + t\overrightarrow{u} + s\overrighta
 <li>Normalenvektor:</li>
 </ul>
 <div class="arithmatex">\[
-  \overrightarrow{n}=\overrightarrow{u}\times\overrightarrow{v}
+  \overrightarrow{n}=\overrightarrow{u}\times\cdot \overrightarrow{v}
   \quad\text{oder durch}\quad
   \overrightarrow{n}\circ\overrightarrow{u}=0,\ \overrightarrow{n}\circ\overrightarrow{v}=0
 \]</div>
@@ -887,7 +887,7 @@ E:\ (\overrightarrow{x}-\overrightarrow{p})\circ\overrightarrow{n}=0.
 <h3 id="parameterform-koordinatenform">Parameterform → Koordinatenform<a class="headerlink" href="#parameterform-koordinatenform" title="Permanent link">&para;</a></h3>
 <p>Gegeben:</p>
 <div class="arithmatex">\[
-E:\ \overrightarrow{x} = \overrightarrow{a} + t\overrightarrow{u} + s\overrightarrow{v}
+E:\ \overrightarrow{x} = \overrightarrow{a} + t\cdot \overrightarrow{u} + s\cdot \overrightarrow{v}
 \]</div>
 <p>Vorgehen:</p>
 <ul>
@@ -966,7 +966,7 @@ E:\ (\overrightarrow{x}-\overrightarrow{p})\circ\overrightarrow{n}=0.
 <h3 id="beispiel-1-parameterform-normalenform">Beispiel 1: Parameterform → Normalenform<a class="headerlink" href="#beispiel-1-parameterform-normalenform" title="Permanent link">&para;</a></h3>
 <p><strong>Gegeben</strong> ist die Ebene in Parameterform:</p>
 <div class="arithmatex">\[
-E:\ \vec{x}
+E:\ \overrightarrow{x}
 =
 \begin{pmatrix}
 1\\
@@ -986,9 +986,9 @@ E:\ \vec{x}
 1
 \end{pmatrix}.
 \]</div>
-<p>Ein Normalenvektor ergibt sich über das Kreuzprodukt <span class="arithmatex">\(\vec{n}=\vec{u}\times\vec{v}\)</span>:</p>
+<p>Ein Normalenvektor ergibt sich über das Kreuzprodukt <span class="arithmatex">\(\overrightarrow{n}=\overrightarrow{u}\times\cdot \overrightarrow{v}\)</span>:</p>
 <div class="arithmatex">\[
-\vec{n}
+\overrightarrow{n}
 =
 \begin{pmatrix}
 1\\
@@ -1012,14 +1012,14 @@ E:\ \vec{x}
 <div class="arithmatex">\[
 E:\ \begin{pmatrix}2\\-1\\2\end{pmatrix}\circ
 \left(
-\vec{x}-\begin{pmatrix}1\\2\\3\end{pmatrix}
+\overrightarrow{x}-\begin{pmatrix}1\\2\\3\end{pmatrix}
 \right)=0.
 \]</div>
 <hr />
 <h3 id="beispiel-2-parameterform-koordinatenform">Beispiel 2: Parameterform → Koordinatenform<a class="headerlink" href="#beispiel-2-parameterform-koordinatenform" title="Permanent link">&para;</a></h3>
 <p>Aus Beispiel 1 ist ein Normalenvektor:</p>
 <div class="arithmatex">\[
-\vec{n}=\begin{pmatrix}2\\-1\\2\end{pmatrix}.
+\overrightarrow{n}=\begin{pmatrix}2\\-1\\2\end{pmatrix}.
 \]</div>
 <p>Damit hat die Koordinatenform die Gestalt:</p>
 <div class="arithmatex">\[
@@ -1039,10 +1039,10 @@ E:\ 2x-y+2z=6.
 <div class="arithmatex">\[
 E:\ \begin{pmatrix}3\\-1\\2\end{pmatrix}\circ
 \left(
-\vec{x}-\begin{pmatrix}1\\0\\2\end{pmatrix}
+\overrightarrow{x}-\begin{pmatrix}1\\0\\2\end{pmatrix}
 \right)=0.
 \]</div>
-<p>Ausmultiplizieren (mit <span class="arithmatex">\(\vec{x}=\begin{pmatrix}x\\y\\z\end{pmatrix}\)</span>):</p>
+<p>Ausmultiplizieren (mit <span class="arithmatex">\(\overrightarrow{x}=\begin{pmatrix}x\\y\\z\end{pmatrix}\)</span>):</p>
 <div class="arithmatex">\[
 \begin{pmatrix}3\\-1\\2\end{pmatrix}\circ
 \left(
@@ -1081,7 +1081,7 @@ E:\ 4x-2y+z=8.
 \]</div>
 <p>Ein Normalenvektor ist:</p>
 <div class="arithmatex">\[
-\vec{n}=\begin{pmatrix}4\\-2\\1\end{pmatrix}.
+\overrightarrow{n}=\begin{pmatrix}4\\-2\\1\end{pmatrix}.
 \]</div>
 <p>Ein Punkt der Ebene ergibt sich z. B. durch <span class="arithmatex">\(y=0\)</span> und <span class="arithmatex">\(z=0\)</span>:</p>
 <div class="arithmatex">\[
@@ -1089,13 +1089,13 @@ E:\ 4x-2y+z=8.
 \]</div>
 <p>Also:</p>
 <div class="arithmatex">\[
-\vec{p}=\begin{pmatrix}2\\0\\0\end{pmatrix}.
+\overrightarrow{p}=\begin{pmatrix}2\\0\\0\end{pmatrix}.
 \]</div>
 <p>Damit lautet die <strong>Normalenform</strong>:</p>
 <div class="arithmatex">\[
 E:\ \begin{pmatrix}4\\-2\\1\end{pmatrix}\circ
 \left(
-\vec{x}-\begin{pmatrix}2\\0\\0\end{pmatrix}
+\overrightarrow{x}-\begin{pmatrix}2\\0\\0\end{pmatrix}
 \right)=0.
 \]</div>
 <hr />
@@ -1104,18 +1104,18 @@ E:\ \begin{pmatrix}4\\-2\\1\end{pmatrix}\circ
 <div class="arithmatex">\[
 E:\ \begin{pmatrix}1\\2\\3\end{pmatrix}\circ
 \left(
-\vec{x}-\begin{pmatrix}1\\1\\1\end{pmatrix}
+\overrightarrow{x}-\begin{pmatrix}1\\1\\1\end{pmatrix}
 \right)=0.
 \]</div>
-<p>Gesucht sind zwei Spannvektoren <span class="arithmatex">\(\vec{u}\)</span> und <span class="arithmatex">\(\vec{v}\)</span> mit</p>
+<p>Gesucht sind zwei Spannvektoren <span class="arithmatex">\(\overrightarrow{u}\)</span> und <span class="arithmatex">\(\overrightarrow{v}\)</span> mit</p>
 <div class="arithmatex">\[
-\begin{pmatrix}1\\2\\3\end{pmatrix}\circ\vec{u}=0
+\begin{pmatrix}1\\2\\3\end{pmatrix}\circ\overrightarrow{u}=0
 \quad\text{und}\quad
-\begin{pmatrix}1\\2\\3\end{pmatrix}\circ\vec{v}=0.
+\begin{pmatrix}1\\2\\3\end{pmatrix}\circ\overrightarrow{v}=0.
 \]</div>
 <p>Eine mögliche Wahl ist:</p>
 <div class="arithmatex">\[
-\vec{u}=\begin{pmatrix}2\\-1\\0\end{pmatrix}
+\overrightarrow{u}=\begin{pmatrix}2\\-1\\0\end{pmatrix}
 \quad\text{denn}\quad
 \begin{pmatrix}1\\2\\3\end{pmatrix}\circ
 \begin{pmatrix}2\\-1\\0\end{pmatrix}
@@ -1123,7 +1123,7 @@ E:\ \begin{pmatrix}1\\2\\3\end{pmatrix}\circ
 2-2+0=0,
 \]</div>
 <div class="arithmatex">\[
-\vec{v}=\begin{pmatrix}3\\0\\-1\end{pmatrix}
+\overrightarrow{v}=\begin{pmatrix}3\\0\\-1\end{pmatrix}
 \quad\text{denn}\quad
 \begin{pmatrix}1\\2\\3\end{pmatrix}\circ
 \begin{pmatrix}3\\0\\-1\end{pmatrix}
@@ -1132,7 +1132,7 @@ E:\ \begin{pmatrix}1\\2\\3\end{pmatrix}\circ
 \]</div>
 <p>Damit lautet die <strong>Parameterform</strong>:</p>
 <div class="arithmatex">\[
-E:\ \vec{x}
+E:\ \overrightarrow{x}
 =
 \begin{pmatrix}
 1\\
@@ -1158,25 +1158,25 @@ E:\ \vec{x}
 <div class="arithmatex">\[
 E:\ 2x+y-z=3.
 \]</div>
-<p>Ein Punkt der Ebene ist z. B. (setze <span class="arithmatex">\(x=0,\ z=0\)</span>):</p>
+<p>Ein Ortspunkt der Ebene ist z. B. (setze <span class="arithmatex">\(x=0,\ z=0\)</span>):</p>
 <div class="arithmatex">\[
-y=3 \Rightarrow \vec{a}=\begin{pmatrix}0\\3\\0\end{pmatrix}.
+y=3 \Rightarrow \overrightarrow{OA}=\begin{pmatrix}0\\3\\0\end{pmatrix}.
 \]</div>
 <p>Wähle zwei weitere Punkte der Ebene:</p>
 <p>Für <span class="arithmatex">\(x=1,\ z=0\)</span> gilt</p>
 <div class="arithmatex">\[
 2\cdot1+y-0=3 \Rightarrow y=1
-\Rightarrow \begin{pmatrix}1\\1\\0\end{pmatrix}.
+\Rightarrow \overrightarrow{OB}=\begin{pmatrix}1\\1\\0\end{pmatrix}.
 \]</div>
 <p>Für <span class="arithmatex">\(x=0,\ z=1\)</span> gilt</p>
 <div class="arithmatex">\[
 0+y-1=3 \Rightarrow y=4
-\Rightarrow \begin{pmatrix}0\\4\\1\end{pmatrix}.
+\Rightarrow \overrightarrow{OC}=\begin{pmatrix}0\\4\\1\end{pmatrix}.
 \]</div>
 <p>Daraus ergeben sich Spannvektoren:</p>
 <div class="arithmatex">\[
-\vec{u}
-=
+\overrightarrow{u}
+=\overrightarrow{AB}=
 \begin{pmatrix}1\\1\\0\end{pmatrix}
 -
 \begin{pmatrix}0\\3\\0\end{pmatrix}
@@ -1184,8 +1184,8 @@ y=3 \Rightarrow \vec{a}=\begin{pmatrix}0\\3\\0\end{pmatrix}.
 \begin{pmatrix}1\\-2\\0\end{pmatrix},
 \]</div>
 <div class="arithmatex">\[
-\vec{v}
-=
+\overrightarrow{v}
+=\overrightarrow{AC}=
 \begin{pmatrix}0\\4\\1\end{pmatrix}
 -
 \begin{pmatrix}0\\3\\0\end{pmatrix}
@@ -1194,7 +1194,7 @@ y=3 \Rightarrow \vec{a}=\begin{pmatrix}0\\3\\0\end{pmatrix}.
 \]</div>
 <p>Damit lautet die <strong>Parameterform</strong>:</p>
 <div class="arithmatex">\[
-E:\ \vec{x}
+E:\ \overrightarrow{x}
 =
 \begin{pmatrix}
 0\\
