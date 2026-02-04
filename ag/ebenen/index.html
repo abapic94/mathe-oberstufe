@@ -771,6 +771,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#beispiel-6-koordinatenform-parameterform-mit-skalarprodukt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel 6: Koordinatenform → Parameterform (mit Skalarprodukt)
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1060,7 +1071,7 @@ E:\
 <div class="arithmatex">\[
 2x-y+2z=d.
 \]</div>
-<p>Zur Bestimmung von <span class="arithmatex">\(d\)</span> wird der Punkt
+<p>Zur Bestimmung von <span class="arithmatex">\(d\)</span> wird der Ortsvektor
 <span class="arithmatex">\(\begin{pmatrix}1\\2\\3\end{pmatrix}\)</span> eingesetzt:</p>
 <div class="arithmatex">\[
 2\cdot1-2+2\cdot3=6.
@@ -1246,11 +1257,21 @@ E:\ \overrightarrow{x}
 \]</div>
 <hr />
 <h3 id="beispiel-6-koordinatenform-parameterform">Beispiel 6: Koordinatenform → Parameterform<a class="headerlink" href="#beispiel-6-koordinatenform-parameterform" title="Permanent link">&para;</a></h3>
-<p>Gegeben ist die Koordinatenform:</p>
+<h3 id="beispiel-6-koordinatenform-parameterform-mit-skalarprodukt">Beispiel 6: Koordinatenform → Parameterform (mit Skalarprodukt)<a class="headerlink" href="#beispiel-6-koordinatenform-parameterform-mit-skalarprodukt" title="Permanent link">&para;</a></h3>
+<p>Gegeben ist die Koordinatenform der Ebene:</p>
 <div class="arithmatex">\[
 E:\ 2x+y-z=3.
 \]</div>
-<p>Ein Punkt der Ebene ergibt sich beispielsweise durch
+<p>Aus der Koordinatenform lässt sich unmittelbar ein Normalenvektor ablesen:</p>
+<div class="arithmatex">\[
+\overrightarrow{n}=
+\begin{pmatrix}
+2\\
+1\\
+-1
+\end{pmatrix}.
+\]</div>
+<p>Ein Punkt der Ebene ergibt sich beispielsweise durch die Wahl
 <span class="arithmatex">\(x=0\)</span> und <span class="arithmatex">\(z=0\)</span>:</p>
 <div class="arithmatex">\[
 y=3 \Rightarrow 
@@ -1261,23 +1282,15 @@ y=3 \Rightarrow
 0
 \end{pmatrix}.
 \]</div>
-<p>Weitere Punkte der Ebene sind:</p>
+<p>Zur Bestimmung zweier Spannvektoren werden Vektoren
+<span class="arithmatex">\(\overrightarrow{u}\)</span> und <span class="arithmatex">\(\overrightarrow{v}\)</span> gesucht, die orthogonal
+zum Normalenvektor sind. Es muss also gelten:</p>
 <div class="arithmatex">\[
-\overrightarrow{b}=
-\begin{pmatrix}
-1\\
-1\\
-0
-\end{pmatrix},
-\qquad
-\overrightarrow{c}=
-\begin{pmatrix}
-0\\
-4\\
-1
-\end{pmatrix}.
+\overrightarrow{n}\circ\overrightarrow{u}=0
+\quad\text{und}\quad
+\overrightarrow{n}\circ\overrightarrow{v}=0.
 \]</div>
-<p>Daraus folgen die Spannvektoren:</p>
+<p>Eine mögliche Wahl ist:</p>
 <div class="arithmatex">\[
 \overrightarrow{u}=
 \begin{pmatrix}
@@ -1293,7 +1306,39 @@ y=3 \Rightarrow
 1
 \end{pmatrix}.
 \]</div>
-<p>Damit lautet die Parameterform der Ebene:</p>
+<p>Überprüfung mittels Skalarprodukt:</p>
+<div class="arithmatex">\[
+\begin{pmatrix}
+2\\
+1\\
+-1
+\end{pmatrix}
+\circ
+\begin{pmatrix}
+1\\
+-2\\
+0
+\end{pmatrix}
+=
+2-2+0=0,
+\]</div>
+<div class="arithmatex">\[
+\begin{pmatrix}
+2\\
+1\\
+-1
+\end{pmatrix}
+\circ
+\begin{pmatrix}
+0\\
+1\\
+1
+\end{pmatrix}
+=
+0+1-1=0.
+\]</div>
+<p>Beide Vektoren sind somit orthogonal zum Normalenvektor und liegen in der Ebene.</p>
+<p>Damit ergibt sich die <strong>Parameterform</strong> der Ebene:</p>
 <div class="arithmatex">\[
 E:\ \overrightarrow{x}
 =
