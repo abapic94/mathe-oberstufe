@@ -527,17 +527,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#beispiel" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Beispiel
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#losung" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -611,17 +600,34 @@ projiziert wird.</p>
   <img src="../assets/images/schatten.png" width="600">
 </figure>
 
-<h2 id="beispiel">Beispiel<a class="headerlink" href="#beispiel" title="Permanent link">&para;</a></h2>
-<p>Bestimmen Sie den <strong>Schattenpunkt</strong> der Spitze eines Sendemastes, wenn sich diese im Punkt <span class="arithmatex">\(S(10|5|40)\)</span> befindet und die Sonnenstrahlen aus der Richtung des Vektors</p>
-<div class="arithmatex">\[
+<div style="display:flex; gap:20px; align-items:flex-start; flex-wrap:wrap;">
+
+<div style="flex:1; min-width:280px;">
+
+## Beispiel:
+Bestimmen Sie den **Schattenpunkt** der Spitze eines Sendemastes, wenn sich diese im Punkt
+\(S(10|5|40)\) befindet und die Sonnenstrahlen aus der Richtung des Vektors
+
+\[
 \vec{v}=
 \begin{pmatrix}
 4\\
 2\\
 -5
 \end{pmatrix}
-\]</div>
-<p>kommen. Gehen Sie davon aus, dass der Schatten auf der <strong><span class="arithmatex">\(xy\)</span>-Ebene</strong> (Boden) liegt.</p>
+\]
+
+kommen. Gehen Sie davon aus, dass der Schatten auf der **\(xy\)-Ebene** (Boden) liegt.
+
+</div>
+
+<div style="flex:1; min-width:220px; text-align:center;">
+  <img src="../assets/images/sendemast.png" alt="Sendemast" style="max-width:100%; height:auto; border:1px solid #ddd; border-radius:8px;">
+  <div style="font-size:0.9em; opacity:0.8; margin-top:6px;">Sendemast (Skizze)</div>
+</div>
+
+</div>
+
 <h2 id="losung">Lösung<a class="headerlink" href="#losung" title="Permanent link">&para;</a></h2>
 <p>Der Schattenpunkt liegt auf der Geraden durch <span class="arithmatex">\(S\)</span> in Richtung des Richtungsvektors <span class="arithmatex">\(\vec{v}\)</span>:</p>
 <div class="arithmatex">\[
@@ -643,7 +649,11 @@ k
 \]</div>
 <p>Komponentenweise:</p>
 <div class="arithmatex">\[
-\vec{x}(k)=
+\vec{x}=\begin{pmatrix}
+x\\
+y\\
+z
+\end{pmatrix}
 \begin{pmatrix}
 10+4k\\
 5+2k\\
