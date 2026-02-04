@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../spurpunkteg/">
       
-      
-        <link rel="next" href="../zweipunktgleichung/">
       
       
         
@@ -23,7 +21,7 @@
     
     
       
-        <title>Geraden im Raum - Booleaners Matheportal</title>
+        <title>Schattenprojektion - Booleaners Matheportal</title>
       
     
     
@@ -66,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#geraden-im-raum-parameterform" class="md-skip">
+        <a href="#projektion-eines-punktes-auf-eine-der-koordinatenebenen-schattenprojektion" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -101,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Geraden im Raum
+              Schattenprojektion
             
           </span>
         </div>
@@ -304,19 +302,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../geraden/" class="md-nav__link">
         
   
   
@@ -332,7 +321,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -454,10 +442,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../schatten/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schattenprojektion
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -473,6 +488,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#grundidee-der-schattenprojektion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grundidee der Schattenprojektion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vorgehensweise-bei-schattenprojektionen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vorgehensweise bei Schattenprojektionen
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -502,40 +559,44 @@
 
 
 
-<h1 id="geraden-im-raum-parameterform">Geraden im Raum – Parameterform<a class="headerlink" href="#geraden-im-raum-parameterform" title="Permanent link">&para;</a></h1>
-<p>Die Lage einer Geraden im Raum ist vollständig bestimmt, wenn ein zu ihr gehöriger Punkt <span class="arithmatex">\( P \)</span> und ein zu dieser Geraden paralleler Vektor <span class="arithmatex">\( \overrightarrow v \)</span> gegeben sind. Der Vektor <span class="arithmatex">\( \overrightarrow v \)</span> heißt <strong>Richtungsvektor der Geraden</strong>.</p>
+<h1 id="projektion-eines-punktes-auf-eine-der-koordinatenebenen-schattenprojektion">Projektion eines Punktes auf eine der Koordinatenebenen (Schattenprojektion)<a class="headerlink" href="#projektion-eines-punktes-auf-eine-der-koordinatenebenen-schattenprojektion" title="Permanent link">&para;</a></h1>
+<h2 id="grundidee-der-schattenprojektion">Grundidee der Schattenprojektion<a class="headerlink" href="#grundidee-der-schattenprojektion" title="Permanent link">&para;</a></h2>
+<p>Die <strong>Schattenprojektion</strong> beschreibt, wie ein Punkt oder ein Objekt unter dem Einfluss
+<strong>paralleler Lichtstrahlen</strong> (z. B. Sonnenstrahlen) auf eine Ebene (z. B. den Boden)
+projiziert wird.</p>
+<p>Die Richtung der Lichtstrahlen wird dabei durch einen <strong>Richtungsvektor</strong> angegeben.</p>
 <hr />
-<p><strong>Begründung</strong></p>
-<p>Sei <span class="arithmatex">\( \overrightarrow p = \overrightarrow{OP} \)</span> der Ortsvektor des Punktes <span class="arithmatex">\( P \)</span> und <span class="arithmatex">\( M(x \mid y \mid z) \)</span> ein beliebiger Punkt der Geraden. </p>
+<h2 id="vorgehensweise-bei-schattenprojektionen">Vorgehensweise bei Schattenprojektionen<a class="headerlink" href="#vorgehensweise-bei-schattenprojektionen" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Gegeben ist ein Punkt<br />
+   [
+   S(s_1|s_2|s_3)
+   ]
+   sowie ein Richtungsvektor <span class="arithmatex">\(\vec{v}\)</span>, der die Richtung der Lichtstrahlen beschreibt.</p>
+</li>
+<li>
+<p>Gesucht ist der <strong>Schattenpunkt</strong> <span class="arithmatex">\(S'\)</span>, der auf einer vorgegebenen Ebene liegt.</p>
+</li>
+<li>
+<p>Man stellt eine Gerade durch den Punkt <span class="arithmatex">\(S\)</span> in Richtung des Richtungsvektors <span class="arithmatex">\(\vec{v}\)</span> auf:
+   [
+   g:\ \vec{x} = \overrightarrow{OS} + k \cdot \vec{v}, \quad k \in \mathbb{R}.
+   ]</p>
+</li>
+<li>
+<p>Für den gesuchten Schattenpunkt wird die <strong>Ebenenbedingung</strong> eingesetzt<br />
+   (z. B. <span class="arithmatex">\(z = 0\)</span> für die <span class="arithmatex">\(xy\)</span>-Ebene).</p>
+</li>
+<li>
+<p>Dadurch erhält man eine Gleichung zur Bestimmung des Parameters <span class="arithmatex">\(k\)</span>.
+   Durch Einsetzen dieses Wertes in die Geradengleichung wird der Schattenpunkt
+   <span class="arithmatex">\(S'\)</span> berechnet.</p>
+</li>
+</ol>
 <figure style="text-align: center;">
-  <img src="../assets/images/gerade.png" width="600">
+  <img src="../assets/images/schatten.png" width="600">
 </figure>
-
-<p>Aus der Vektorrechnung gilt:</p>
-<div class="arithmatex">\[
-\overrightarrow{OM} = \overrightarrow{OP} + \overrightarrow{PM}.
-\]</div>
-<p>Da <span class="arithmatex">\( \overrightarrow{PM} \)</span> parallel zum Richtungsvektor <span class="arithmatex">\(\overrightarrow v \)</span> ist, existiert ein <span class="arithmatex">\( \lambda \in \mathbb{R} \)</span> mit</p>
-<div class="arithmatex">\[
-  \overrightarrow{PM} = \lambda \overrightarrow v.
-\]</div>
-<p>Damit folgt:</p>
-<div class="arithmatex">\[
-  \overrightarrow{OM} = \overrightarrow p + \lambda \overrightarrow v.
-\]</div>
-<p>Da der Punkt <span class="arithmatex">\( M \)</span> beliebig gewählt war, beschreibt diese Gleichung <strong>alle Punkte der Geraden</strong>.</p>
-<hr />
-<div class="box-blue">
-<strong>Parameterform einer Geraden:</strong><br>
-
-\[
-g:\quad \overrightarrow x = \overrightarrow p + \lambda \cdot \overrightarrow v, \quad \lambda \in \mathbb{R},
-\]
-wobei \( \overrightarrow p \) der <strong>Stützvektor</strong> und \( \overrightarrow v \) der <strong>Richtungsvektor</strong> der Geraden \(g\) sind.
-
-</div>
-
-<hr />
 
 
 
