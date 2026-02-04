@@ -567,10 +567,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#aufgabe-1-kollisionskurs" class="md-nav__link">
+  <a href="#aufgabe-1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Aufgabe 1: Kollisionskurs
+        Aufgabe 1
       
     </span>
   </a>
@@ -593,6 +593,56 @@
     <span class="md-ellipsis">
       
         Aufgabe 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#losungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lösungen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lösungen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#losung-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lösung 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#losung-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lösung 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#losung-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lösung 3
       
     </span>
   </a>
@@ -688,7 +738,7 @@ Stützpunkt  <span class="arithmatex">\(S(2|4|3)\)</span>
 besitzen.</p>
 <hr />
 <h2 id="aufgaben">Aufgaben<a class="headerlink" href="#aufgaben" title="Permanent link">&para;</a></h2>
-<h3 id="aufgabe-1-kollisionskurs">Aufgabe 1: Kollisionskurs<a class="headerlink" href="#aufgabe-1-kollisionskurs" title="Permanent link">&para;</a></h3>
+<h3 id="aufgabe-1">Aufgabe 1<a class="headerlink" href="#aufgabe-1" title="Permanent link">&para;</a></h3>
 <p>Die Flugbahnen einer Formation von Sportflugzeugen werden durch die
 Geradenschar</p>
 <div class="arithmatex">\[
@@ -788,6 +838,253 @@ a
 <p>a) Zeigen Sie, dass der Punkt <span class="arithmatex">\(C\)</span> auf <strong>keiner</strong> der Geraden <span class="arithmatex">\(g_a\)</span> liegt.</p>
 <p>b) Die Gerade <span class="arithmatex">\(h\)</span> verläuft durch die Punkte <span class="arithmatex">\(A\)</span> und <span class="arithmatex">\(C\)</span>. Für welchen Wert von <span class="arithmatex">\(a\)</span> schneidet <span class="arithmatex">\(g_a\)</span> die Gerade <span class="arithmatex">\(h\)</span> in genau einem Punkt? Bestimmen Sie den <strong>Schnittpunkt</strong> <span class="arithmatex">\(S\)</span>.</p>
 <p>c) Begründen Sie, dass die Geraden <span class="arithmatex">\(g_2\)</span> und <span class="arithmatex">\(h\)</span> <strong>windschief</strong> sind.</p>
+<h2 id="losungen">Lösungen<a class="headerlink" href="#losungen" title="Permanent link">&para;</a></h2>
+<h3 id="losung-1">Lösung 1<a class="headerlink" href="#losung-1" title="Permanent link">&para;</a></h3>
+<p><strong>Gegeben</strong> ist die Geradenschar
+[
+g_a:\ \vec{x}
+=
+\begin{pmatrix}
+9\
+2+a\
+6
+\end{pmatrix}
++ r
+\begin{pmatrix}
+-1\
+1\
+1
+\end{pmatrix},
+\quad a = 1,2,\dots,8
+]
+sowie die Gerade
+[
+h:\ \vec{x}
+=
+\begin{pmatrix}
+3\
+11\
+14
+\end{pmatrix}
++ s
+\begin{pmatrix}
+2\
+1\
+-1
+\end{pmatrix}.
+]</p>
+<p>Zur Überprüfung einer möglichen Kollision werden die beiden Geraden gleichgesetzt:
+[
+\begin{pmatrix}
+9\
+2+a\
+6
+\end{pmatrix}
++ r
+\begin{pmatrix}
+-1\
+1\
+1
+\end{pmatrix}
+=
+\begin{pmatrix}
+3\
+11\
+14
+\end{pmatrix}
++ s
+\begin{pmatrix}
+2\
+1\
+-1
+\end{pmatrix}.
+]</p>
+<p>Durch Koordinatenvergleich erhält man:
+[
+\begin{aligned}
+9 - r &amp;= 3 + 2s \
+2 + a + r &amp;= 11 + s \
+6 + r &amp;= 14 - s
+\end{aligned}
+]</p>
+<p>Aus der dritten Gleichung folgt
+[
+r = 8 - s.
+]</p>
+<p>Einsetzen in die erste Gleichung ergibt
+[
+9 - (8 - s) = 3 + 2s \Rightarrow s = 3.
+]</p>
+<p>Einsetzen von <span class="arithmatex">\(s=3\)</span> in die zweite Gleichung liefert
+[
+2 + a + (8 - 3) = 11 + 3 \Rightarrow a = 2.
+]</p>
+<p>Mit <span class="arithmatex">\(s=3\)</span> erhält man aus der Geradengleichung von <span class="arithmatex">\(h\)</span> den Schnittpunkt:
+[
+\vec{OS}
+=
+\begin{pmatrix}
+3\
+11\
+14
+\end{pmatrix}
++ 3
+\begin{pmatrix}
+2\
+1\
+-1
+\end{pmatrix}
+=
+\begin{pmatrix}
+7\
+6\
+8
+\end{pmatrix}.
+]</p>
+<div class="box-green">
+<strong>Ergebnis:</strong><br>
+Die Gerade \(g_2\) schneidet die Gerade \(h\) im Punkt  
+\[
+S(7|6|8).
+\]
+Es besteht Kollisionsgefahr.
+</div>
+
+<hr />
+<h3 id="losung-2">Lösung 2<a class="headerlink" href="#losung-2" title="Permanent link">&para;</a></h3>
+<p><strong>Gegeben</strong> sind die Geraden
+[
+g_a:\ \vec{x}
+=
+\begin{pmatrix}
+1\
+3\
+2
+\end{pmatrix}
++ r
+\begin{pmatrix}
+-a\
+a\
+2
+\end{pmatrix}
+\quad\text{und}\quad
+h:\ \vec{x}
+=
+\begin{pmatrix}
+0\
+10\
+6
+\end{pmatrix}
++ s
+\begin{pmatrix}
+1\
+2\
+-1
+\end{pmatrix}.
+]</p>
+<p><strong>Punktprobe für <span class="arithmatex">\(P(-1|5|4)\)</span>:</strong><br />
+Das Einsetzen von <span class="arithmatex">\(P\)</span> in <span class="arithmatex">\(g_a\)</span> ergibt
+[
+r=1 \quad\text{und}\quad a=2.
+]
+Der Punkt <span class="arithmatex">\(P\)</span> liegt somit auf der Geraden <span class="arithmatex">\(g_2\)</span>.</p>
+<p><strong>Punktprobe für <span class="arithmatex">\(Q(11|-6|4)\)</span>:</strong><br />
+Das Einsetzen von <span class="arithmatex">\(Q\)</span> führt auf widersprüchliche Gleichungen für den Parameter <span class="arithmatex">\(a\)</span>.
+Der Punkt <span class="arithmatex">\(Q\)</span> liegt daher auf keiner Geraden der Geradenschar.</p>
+<p>Zur Bestimmung eines Schnittpunktes von <span class="arithmatex">\(g_a\)</span> und <span class="arithmatex">\(h\)</span> werden die Geraden gleichgesetzt.
+Man erhält
+[
+s=-2,\quad r=5,\quad a=\frac{3}{5}.
+]</p>
+<p>Mit <span class="arithmatex">\(s=-2\)</span> ergibt sich aus der Geraden <span class="arithmatex">\(h\)</span> der Schnittpunkt:
+[
+S(-2|6|8).
+]</p>
+<p>Für eine Parallelität von <span class="arithmatex">\(g_a\)</span> zur z-Achse muss der Richtungsvektor
+<span class="arithmatex">\(\begin{pmatrix}-a\\a\\2\end{pmatrix}\)</span>
+ein Vielfaches von
+<span class="arithmatex">\(\begin{pmatrix}0\\0\\1\end{pmatrix}\)</span>
+sein.<br />
+Dies ist genau für
+[
+a=0
+]
+der Fall.</p>
+<p>Die x-Achse ist durch <span class="arithmatex">\(y=0\)</span> und <span class="arithmatex">\(z=0\)</span> charakterisiert.
+Durch Einsetzen in die Geradengleichung von <span class="arithmatex">\(g_a\)</span> erhält man
+[
+a=3
+]
+und den Schnittpunkt
+[
+S_x(4|0|0).
+]</p>
+<div class="box-green">
+<strong>Ergebnis:</strong><br>
+\(P\in g_2\), \(Q\notin g_a\);<br>
+\(g_{\frac35}\) schneidet \(h\) in \(S(-2|6|8)\);<br>
+\(g_0\) ist parallel zur z-Achse;  
+\(g_3\) schneidet die x-Achse in \(S_x(4|0|0)\).
+</div>
+
+<hr />
+<h3 id="losung-3">Lösung 3<a class="headerlink" href="#losung-3" title="Permanent link">&para;</a></h3>
+<p><strong>Gegeben</strong> sind die Punkte
+[
+A(-2|-1|-1),\quad B(2|-1|3),\quad C(0|3|1)
+]
+sowie die Geradenschar
+[
+g_a:\ \vec{x}
+=
+\begin{pmatrix}
+3\
+4\
+a
+\end{pmatrix}
++ r
+\begin{pmatrix}
+2\
+-1\
+2
+\end{pmatrix}.
+]</p>
+<p>Das Einsetzen des Punktes <span class="arithmatex">\(C\)</span> in die Gleichung von <span class="arithmatex">\(g_a\)</span> führt auf widersprüchliche
+Parameterwerte.<br />
+Der Punkt <span class="arithmatex">\(C\)</span> liegt daher auf keiner Geraden der Geradenschar.</p>
+<p>Die Gerade durch die Punkte <span class="arithmatex">\(A\)</span> und <span class="arithmatex">\(C\)</span> besitzt die Gleichung
+[
+h:\ \vec{x}
+=
+\begin{pmatrix}
+0\
+3\
+1
+\end{pmatrix}
++ k
+\begin{pmatrix}
+2\
+4\
+2
+\end{pmatrix}.
+]</p>
+<p>Durch Gleichsetzen von <span class="arithmatex">\(g_a\)</span> und <span class="arithmatex">\(h\)</span> erhält man
+[
+k=0{,}5 \quad\text{und}\quad a=4.
+]
+Der Schnittpunkt ist
+[
+S(1|5|2).
+]</p>
+<p>Für <span class="arithmatex">\(a=2\)</span> sind die Richtungsvektoren von <span class="arithmatex">\(g_2\)</span> und <span class="arithmatex">\(h\)</span> nicht linear abhängig,
+und das Gleichsetzen der Geraden liefert keinen gemeinsamen Punkt.
+Die Geraden sind somit windschief.</p>
+<div class="box-green">
+<strong>Ergebnis:</strong><br>
+Der Punkt \(C\) liegt auf keiner Geraden \(g_a\);<br>
+\(g_4\) schneidet \(h\) im Punkt \(S(1|5|2)\);<br>
+\(g_2\) und \(h\) sind windschief.
+</div>
 
 
 
