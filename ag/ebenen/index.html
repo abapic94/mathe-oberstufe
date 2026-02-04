@@ -693,6 +693,89 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#beispiele-zu-ebenen-umwandlungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiele zu Ebenen – Umwandlungen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Beispiele zu Ebenen – Umwandlungen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-1-parameterform-normalenform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel 1: Parameterform → Normalenform
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-2-parameterform-koordinatenform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel 2: Parameterform → Koordinatenform
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-3-normalenform-koordinatenform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel 3: Normalenform → Koordinatenform
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-4-koordinatenform-normalenform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel 4: Koordinatenform → Normalenform
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-5-normalenform-parameterform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel 5: Normalenform → Parameterform
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-6-koordinatenform-parameterform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel 6: Koordinatenform → Parameterform
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -751,14 +834,13 @@ E:\ (\overrightarrow{x}-\overrightarrow{p}) \circ \overrightarrow{n} = 0.
 <h3 id="bestimmung-eines-normalenvektors">Bestimmung eines Normalenvektors<a class="headerlink" href="#bestimmung-eines-normalenvektors" title="Permanent link">&para;</a></h3>
 <p>Sind statt eines Normalenvektors zwei Spannvektoren <span class="arithmatex">\(\overrightarrow{u}\)</span> und <span class="arithmatex">\(\overrightarrow{v}\)</span> gegeben, so kann ein Normalenvektor auf zwei Arten bestimmt werden:</p>
 <ul>
-<li><strong>Skalarprodukt</strong>: Der Normalenvektor <span class="arithmatex">\(\overrightarrow{n}\)</span> wird durch Lösen der Gleichungen</li>
+<li><strong>Skalarprodukt</strong>: Der Normalenvektor <span class="arithmatex">\(\overrightarrow{n}\)</span> wird durch Lösen der unteren Gleichungen bestimmt.</li>
 </ul>
 <div class="arithmatex">\[
   \overrightarrow{n}\circ\overrightarrow{u}=0
   \quad\text{und}\quad
   \overrightarrow{n}\circ\overrightarrow{v}=0
 \]</div>
-<p>bestimmt.</p>
 <ul>
 <li><strong>Kreuzprodukt</strong></li>
 </ul>
@@ -877,6 +959,361 @@ E:\ a x + b y + c z = d.
 <p>Damit ergibt sich die Normalenform:</p>
 <div class="arithmatex">\[
 E:\ (\overrightarrow{x}-\overrightarrow{p})\circ\overrightarrow{n}=0.
+\]</div>
+<h2 id="beispiele-zu-ebenen-umwandlungen">Beispiele zu Ebenen – Umwandlungen<a class="headerlink" href="#beispiele-zu-ebenen-umwandlungen" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="beispiel-1-parameterform-normalenform">Beispiel 1: Parameterform → Normalenform<a class="headerlink" href="#beispiel-1-parameterform-normalenform" title="Permanent link">&para;</a></h3>
+<p>Gegeben ist die Ebene in Parameterform:</p>
+<div class="arithmatex">\[
+E:\ \overrightarrow{x}
+=
+\begin{pmatrix}
+1\\
+2\\
+3
+\end{pmatrix}
++ t
+\begin{pmatrix}
+1\\
+0\\
+-1
+\end{pmatrix}
++ s
+\begin{pmatrix}
+0\\
+2\\
+1
+\end{pmatrix}.
+\]</div>
+<p>Die Spannvektoren lauten:</p>
+<div class="arithmatex">\[
+\overrightarrow{u}=
+\begin{pmatrix}
+1\\
+0\\
+-1
+\end{pmatrix},
+\qquad
+\overrightarrow{v}=
+\begin{pmatrix}
+0\\
+2\\
+1
+\end{pmatrix}.
+\]</div>
+<p>Ein Normalenvektor ergibt sich über das Kreuzprodukt:</p>
+<div class="arithmatex">\[
+\overrightarrow{n}
+=
+\overrightarrow{u}\times\overrightarrow{v}
+=
+\begin{pmatrix}
+1\\
+0\\
+-1
+\end{pmatrix}
+\times
+\begin{pmatrix}
+0\\
+2\\
+1
+\end{pmatrix}
+=
+\begin{pmatrix}
+2\\
+-1\\
+2
+\end{pmatrix}.
+\]</div>
+<p>Damit lautet die Normalenform der Ebene:</p>
+<div class="arithmatex">\[
+E:\ 
+\begin{pmatrix}
+2\\
+-1\\
+2
+\end{pmatrix}
+\circ
+\left(
+\overrightarrow{x}
+-
+\begin{pmatrix}
+1\\
+2\\
+3
+\end{pmatrix}
+\right)
+=0.
+\]</div>
+<hr />
+<h3 id="beispiel-2-parameterform-koordinatenform">Beispiel 2: Parameterform → Koordinatenform<a class="headerlink" href="#beispiel-2-parameterform-koordinatenform" title="Permanent link">&para;</a></h3>
+<p>Aus Beispiel 1 ist ein Normalenvektor bekannt:</p>
+<div class="arithmatex">\[
+\overrightarrow{n}=
+\begin{pmatrix}
+2\\
+-1\\
+2
+\end{pmatrix}.
+\]</div>
+<p>Die Koordinatenform besitzt somit die Gestalt:</p>
+<div class="arithmatex">\[
+2x-y+2z=d.
+\]</div>
+<p>Zur Bestimmung von <span class="arithmatex">\(d\)</span> wird der Punkt
+<span class="arithmatex">\(\begin{pmatrix}1\\2\\3\end{pmatrix}\)</span> eingesetzt:</p>
+<div class="arithmatex">\[
+2\cdot1-2+2\cdot3=6.
+\]</div>
+<p>Damit ergibt sich die Koordinatenform der Ebene:</p>
+<div class="arithmatex">\[
+E:\ 2x-y+2z=6.
+\]</div>
+<hr />
+<h3 id="beispiel-3-normalenform-koordinatenform">Beispiel 3: Normalenform → Koordinatenform<a class="headerlink" href="#beispiel-3-normalenform-koordinatenform" title="Permanent link">&para;</a></h3>
+<p>Gegeben ist die Normalenform:</p>
+<div class="arithmatex">\[
+E:\ 
+\begin{pmatrix}
+3\\
+-1\\
+2
+\end{pmatrix}
+\circ
+\left(
+\overrightarrow{x}
+-
+\begin{pmatrix}
+1\\
+0\\
+2
+\end{pmatrix}
+\right)
+=0.
+\]</div>
+<p>Mit <span class="arithmatex">\(\overrightarrow{x}=\begin{pmatrix}x\\y\\z\end{pmatrix}\)</span> folgt:</p>
+<div class="arithmatex">\[
+\begin{pmatrix}
+3\\
+-1\\
+2
+\end{pmatrix}
+\circ
+\begin{pmatrix}
+x-1\\
+y\\
+z-2
+\end{pmatrix}
+=0.
+\]</div>
+<p>Ausmultiplizieren liefert:</p>
+<div class="arithmatex">\[
+3(x-1)-y+2(z-2)=0.
+\]</div>
+<p>Nach dem Zusammenfassen ergibt sich:</p>
+<div class="arithmatex">\[
+3x-y+2z-7=0
+\quad\Rightarrow\quad
+3x-y+2z=7.
+\]</div>
+<hr />
+<h3 id="beispiel-4-koordinatenform-normalenform">Beispiel 4: Koordinatenform → Normalenform<a class="headerlink" href="#beispiel-4-koordinatenform-normalenform" title="Permanent link">&para;</a></h3>
+<p>Gegeben ist die Koordinatenform:</p>
+<div class="arithmatex">\[
+E:\ 4x-2y+z=8.
+\]</div>
+<p>Ein Normalenvektor kann direkt abgelesen werden:</p>
+<div class="arithmatex">\[
+\overrightarrow{n}=
+\begin{pmatrix}
+4\\
+-2\\
+1
+\end{pmatrix}.
+\]</div>
+<p>Ein Punkt der Ebene ergibt sich beispielsweise durch
+<span class="arithmatex">\(y=0\)</span> und <span class="arithmatex">\(z=0\)</span>:</p>
+<div class="arithmatex">\[
+4x=8 \Rightarrow x=2.
+\]</div>
+<p>Damit ist ein Stützpunkt:</p>
+<div class="arithmatex">\[
+\overrightarrow{p}=
+\begin{pmatrix}
+2\\
+0\\
+0
+\end{pmatrix}.
+\]</div>
+<p>Die Normalenform lautet somit:</p>
+<div class="arithmatex">\[
+E:\ 
+\begin{pmatrix}
+4\\
+-2\\
+1
+\end{pmatrix}
+\circ
+\left(
+\overrightarrow{x}
+-
+\begin{pmatrix}
+2\\
+0\\
+0
+\end{pmatrix}
+\right)
+=0.
+\]</div>
+<hr />
+<h3 id="beispiel-5-normalenform-parameterform">Beispiel 5: Normalenform → Parameterform<a class="headerlink" href="#beispiel-5-normalenform-parameterform" title="Permanent link">&para;</a></h3>
+<p>Gegeben ist die Normalenform:</p>
+<div class="arithmatex">\[
+E:\ 
+\begin{pmatrix}
+1\\
+2\\
+3
+\end{pmatrix}
+\circ
+\left(
+\overrightarrow{x}
+-
+\begin{pmatrix}
+1\\
+1\\
+1
+\end{pmatrix}
+\right)
+=0.
+\]</div>
+<p>Gesucht sind zwei Spannvektoren <span class="arithmatex">\(\overrightarrow{u}\)</span> und
+<span class="arithmatex">\(\overrightarrow{v}\)</span>, die orthogonal zum Normalenvektor sind:</p>
+<div class="arithmatex">\[
+\begin{pmatrix}
+1\\
+2\\
+3
+\end{pmatrix}
+\circ
+\overrightarrow{u}=0,
+\qquad
+\begin{pmatrix}
+1\\
+2\\
+3
+\end{pmatrix}
+\circ
+\overrightarrow{v}=0.
+\]</div>
+<p>Eine mögliche Wahl ist:</p>
+<div class="arithmatex">\[
+\overrightarrow{u}=
+\begin{pmatrix}
+2\\
+-1\\
+0
+\end{pmatrix},
+\qquad
+\overrightarrow{v}=
+\begin{pmatrix}
+3\\
+0\\
+-1
+\end{pmatrix}.
+\]</div>
+<p>Damit ergibt sich die Parameterform:</p>
+<div class="arithmatex">\[
+E:\ \overrightarrow{x}
+=
+\begin{pmatrix}
+1\\
+1\\
+1
+\end{pmatrix}
++ t
+\begin{pmatrix}
+2\\
+-1\\
+0
+\end{pmatrix}
++ s
+\begin{pmatrix}
+3\\
+0\\
+-1
+\end{pmatrix}.
+\]</div>
+<hr />
+<h3 id="beispiel-6-koordinatenform-parameterform">Beispiel 6: Koordinatenform → Parameterform<a class="headerlink" href="#beispiel-6-koordinatenform-parameterform" title="Permanent link">&para;</a></h3>
+<p>Gegeben ist die Koordinatenform:</p>
+<div class="arithmatex">\[
+E:\ 2x+y-z=3.
+\]</div>
+<p>Ein Punkt der Ebene ergibt sich beispielsweise durch
+<span class="arithmatex">\(x=0\)</span> und <span class="arithmatex">\(z=0\)</span>:</p>
+<div class="arithmatex">\[
+y=3 \Rightarrow 
+\overrightarrow{a}=
+\begin{pmatrix}
+0\\
+3\\
+0
+\end{pmatrix}.
+\]</div>
+<p>Weitere Punkte der Ebene sind:</p>
+<div class="arithmatex">\[
+\overrightarrow{b}=
+\begin{pmatrix}
+1\\
+1\\
+0
+\end{pmatrix},
+\qquad
+\overrightarrow{c}=
+\begin{pmatrix}
+0\\
+4\\
+1
+\end{pmatrix}.
+\]</div>
+<p>Daraus folgen die Spannvektoren:</p>
+<div class="arithmatex">\[
+\overrightarrow{u}=
+\begin{pmatrix}
+1\\
+-2\\
+0
+\end{pmatrix},
+\qquad
+\overrightarrow{v}=
+\begin{pmatrix}
+0\\
+1\\
+1
+\end{pmatrix}.
+\]</div>
+<p>Damit lautet die Parameterform der Ebene:</p>
+<div class="arithmatex">\[
+E:\ \overrightarrow{x}
+=
+\begin{pmatrix}
+0\\
+3\\
+0
+\end{pmatrix}
++ t
+\begin{pmatrix}
+1\\
+-2\\
+0
+\end{pmatrix}
++ s
+\begin{pmatrix}
+0\\
+1\\
+1
+\end{pmatrix}.
 \]</div>
 
 
