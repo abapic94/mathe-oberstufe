@@ -727,21 +727,23 @@
 
 
 <h1 id="ebenen-im-dreidimensionalen-raum">Ebenen im dreidimensionalen Raum<a class="headerlink" href="#ebenen-im-dreidimensionalen-raum" title="Permanent link">&para;</a></h1>
-<p>Eine Ebene <span class="arithmatex">\(E\)</span> im dreidimensionalen Raum ist eindeutig bestimmt durch einen Punkt
-<span class="arithmatex">\(A\)</span> (<strong>Aufpunkt</strong>) sowie zwei Vektoren
-<span class="arithmatex">\(\vec{u} \neq \vec{0}\)</span> und <span class="arithmatex">\(\vec{v} \neq \vec{0}\)</span> (<strong>Spannvektoren</strong>) mit
-<span class="arithmatex">\(\vec{u} \nparallel \vec{v}\)</span>.</p>
 <hr />
 <h2 id="parameterform-einer-ebene">Parameterform einer Ebene<a class="headerlink" href="#parameterform-einer-ebene" title="Permanent link">&para;</a></h2>
+<p>Eine Ebene <span class="arithmatex">\(E\)</span> im dreidimensionalen Raum ist eindeutig bestimmt durch einen Punkt
+<span class="arithmatex">\(A\)</span> (<strong>Aufpunkt</strong>) sowie zwei Vektoren
+<span class="arithmatex">\(\overrightarrow{u} \neq \overrightarrow{0}\)</span> und <span class="arithmatex">\(\overrightarrow{v} \neq \overrightarrow{0}\)</span> (<strong>Spannvektoren</strong>) mit
+<span class="arithmatex">\(\overrightarrow{u} \nparallel \overrightarrow{v}\)</span>. </p>
 <p>Die <strong>Parameterform</strong> einer Ebene lautet:</p>
 <div class="arithmatex">\[
-E:\ \vec{x} = \vec{a} + t \cdot \vec{u} + s \cdot \vec{v},
+E:\ \overrightarrow{x} = \overrightarrow{a} + t \cdot \overrightarrow{u} + s \cdot \overrightarrow{v},
 \quad s,t \in \mathbb{R}.
 \]</div>
-<p>Dabei gilt:
-- <span class="arithmatex">\(\vec{a}=\overrightarrow{OA}\)</span> ist der <strong>Stützvektor</strong> der Ebene,
-- <span class="arithmatex">\(\vec{u}\)</span> und <span class="arithmatex">\(\vec{v}\)</span> sind <strong>Spannvektoren</strong> der Ebene,
-- <span class="arithmatex">\(\vec{x}=\overrightarrow{OX}\)</span> ist der Ortsvektor eines beliebigen Punktes der Ebene.</p>
+<p>Dabei gilt:</p>
+<ul>
+<li><span class="arithmatex">\(\overrightarrow{a}=\overrightarrow{OA}\)</span> ist der <strong>Stützvektor</strong> der Ebene,</li>
+<li><span class="arithmatex">\(\overrightarrow{u}\)</span> und <span class="arithmatex">\(\overrightarrow{v}\)</span> sind <strong>Spannvektoren</strong> der Ebene,</li>
+<li><span class="arithmatex">\(\overrightarrow{x}=\overrightarrow{OX}\)</span> ist der Ortsvektor eines beliebigen Punktes der Ebene.</li>
+</ul>
 <hr />
 <h2 id="normalenform-einer-ebene">Normalenform einer Ebene<a class="headerlink" href="#normalenform-einer-ebene" title="Permanent link">&para;</a></h2>
 <p>Eine Ebene kann auch durch einen Punkt und einen <strong>Normalenvektor</strong>
@@ -750,28 +752,28 @@ E:\ \vec{x} = \vec{a} + t \cdot \vec{u} + s \cdot \vec{v},
 <div class="arithmatex">\[
 P(p_1|p_2|p_3)
 \]</div>
-<p>und ein Normalenvektor <span class="arithmatex">\(\vec{n}\)</span> gegeben, so lautet die <strong>Normalenform</strong>:</p>
+<p>und ein Normalenvektor <span class="arithmatex">\(\overrightarrow{n}\)</span> gegeben, so lautet die <strong>Normalenform</strong>:</p>
 <div class="arithmatex">\[
-E:\ (\vec{x}-\vec{p}) \cdot \vec{n} = 0.
+E:\ (\overrightarrow{x}-\overrightarrow{p}) \cdot \overrightarrow{n} = 0.
 \]</div>
 <hr />
 <h3 id="bestimmung-eines-normalenvektors">Bestimmung eines Normalenvektors<a class="headerlink" href="#bestimmung-eines-normalenvektors" title="Permanent link">&para;</a></h3>
-<p>Sind statt eines Normalenvektors zwei Spannvektoren <span class="arithmatex">\(\vec{u}\)</span> und <span class="arithmatex">\(\vec{v}\)</span> gegeben,
+<p>Sind statt eines Normalenvektors zwei Spannvektoren <span class="arithmatex">\(\overrightarrow{u}\)</span> und <span class="arithmatex">\(\overrightarrow{v}\)</span> gegeben,
 so kann der Normalenvektor auf zwei Arten bestimmt werden:</p>
 <ul>
 <li><strong>Skalarprodukt</strong>  </li>
 </ul>
-<p>Bestimme <span class="arithmatex">\(\vec{n}\)</span> durch Lösen der Gleichungen</p>
+<p>Bestimme <span class="arithmatex">\(\overrightarrow{n}\)</span> durch Lösen der Gleichungen</p>
 <p>[
-  \vec{n}\cdot\vec{u}=0
+  \overrightarrow{n}\cdot\overrightarrow{u}=0
   \quad\text{und}\quad
-  \vec{n}\cdot\vec{v}=0.
+  \overrightarrow{n}\cdot\overrightarrow{v}=0.
   ]</p>
 <ul>
 <li><strong>Kreuzprodukt</strong></li>
 </ul>
 <p>[
-  \vec{n}=\vec{u}\times\vec{v}.
+  \overrightarrow{n}=\overrightarrow{u}\times\overrightarrow{v}.
   ]</p>
 <hr />
 <h2 id="koordinatenform-einer-ebene">Koordinatenform einer Ebene<a class="headerlink" href="#koordinatenform-einer-ebene" title="Permanent link">&para;</a></h2>
@@ -780,38 +782,44 @@ Die <strong>Koordinatenform</strong> lautet:</p>
 <div class="arithmatex">\[
 E:\ a x + b y + c z = d.
 \]</div>
-<p>Dabei gilt:
-- <span class="arithmatex">\((a,b,c)\)</span> sind die Koordinaten eines <strong>Normalenvektors</strong> <span class="arithmatex">\(\vec{n}\)</span>,
-- <span class="arithmatex">\(d\)</span> ist eine reelle Zahl, die durch Einsetzen eines Punktes der Ebene bestimmt wird.</p>
+<p>Dabei gilt:</p>
+<ul>
+<li><span class="arithmatex">\((a,b,c)\)</span> sind die Koordinaten eines <strong>Normalenvektors</strong> <span class="arithmatex">\(\overrightarrow{n}\)</span>,</li>
+<li><span class="arithmatex">\(d\)</span> ist eine reelle Zahl, die durch Einsetzen eines Punktes der Ebene bestimmt wird.</li>
+</ul>
 <hr />
 <h2 id="umwandlung-der-darstellungsformen">Umwandlung der Darstellungsformen<a class="headerlink" href="#umwandlung-der-darstellungsformen" title="Permanent link">&para;</a></h2>
 <h3 id="parameterform-normalenform">Parameterform → Normalenform<a class="headerlink" href="#parameterform-normalenform" title="Permanent link">&para;</a></h3>
 <p>Gegeben:</p>
 <div class="arithmatex">\[
-E:\ \vec{x} = \vec{a} + t\vec{u} + s\vec{v}
+E:\ \overrightarrow{x} = \overrightarrow{a} + t\overrightarrow{u} + s\overrightarrow{v}
 \]</div>
-<p>Vorgehen:
-- Stützvektor: <span class="arithmatex">\(\vec{p}=\vec{a}\)</span>
-- Normalenvektor:</p>
+<p>Vorgehen:</p>
+<ul>
+<li>Stützvektor: <span class="arithmatex">\(\overrightarrow{p}=\overrightarrow{a}\)</span></li>
+<li>Normalenvektor:</li>
+</ul>
 <p>[
-  \vec{n}=\vec{u}\times\vec{v}
+  \overrightarrow{n}=\overrightarrow{u}\times\overrightarrow{v}
   \quad\text{oder durch}\quad
-  \vec{n}\cdot\vec{u}=0,\ \vec{n}\cdot\vec{v}=0
+  \overrightarrow{n}\cdot\overrightarrow{u}=0,\ \overrightarrow{n}\cdot\overrightarrow{v}=0
   ]</p>
 <p>Ergebnis:</p>
 <div class="arithmatex">\[
-E:\ (\vec{x}-\vec{p})\cdot\vec{n}=0.
+E:\ (\overrightarrow{x}-\overrightarrow{p})\cdot\overrightarrow{n}=0.
 \]</div>
 <hr />
 <h3 id="parameterform-koordinatenform">Parameterform → Koordinatenform<a class="headerlink" href="#parameterform-koordinatenform" title="Permanent link">&para;</a></h3>
 <p>Gegeben:</p>
 <div class="arithmatex">\[
-E:\ \vec{x} = \vec{a} + t\vec{u} + s\vec{v}
+E:\ \overrightarrow{x} = \overrightarrow{a} + t\overrightarrow{u} + s\overrightarrow{v}
 \]</div>
-<p>Vorgehen:
-- Bestimme einen Normalenvektor <span class="arithmatex">\(\vec{n}\)</span>,
-- setze einen Punkt der Ebene (z. B. <span class="arithmatex">\(\vec{a}\)</span>) ein,
-- löse nach <span class="arithmatex">\(d\)</span> auf.</p>
+<p>Vorgehen:</p>
+<ul>
+<li>Bestimme einen Normalenvektor <span class="arithmatex">\(\overrightarrow{n}\)</span>,</li>
+<li>setze einen Punkt der Ebene (z. B. <span class="arithmatex">\(\overrightarrow{a}\)</span>) ein,</li>
+<li>löse nach <span class="arithmatex">\(d\)</span> auf.</li>
+</ul>
 <p>Ergebnis:</p>
 <div class="arithmatex">\[
 E:\ a x + b y + c z = d.
@@ -820,25 +828,29 @@ E:\ a x + b y + c z = d.
 <h3 id="normalenform-parameterform">Normalenform → Parameterform<a class="headerlink" href="#normalenform-parameterform" title="Permanent link">&para;</a></h3>
 <p>Gegeben:</p>
 <div class="arithmatex">\[
-E:\ (\vec{x}-\vec{p})\cdot\vec{n}=0
+E:\ (\overrightarrow{x}-\overrightarrow{p})\cdot\overrightarrow{n}=0
 \]</div>
-<p>Vorgehen:
-- Stützvektor: <span class="arithmatex">\(\vec{a}=\vec{p}\)</span>
-- Bestimme zwei Spannvektoren <span class="arithmatex">\(\vec{u},\vec{v}\)</span> mit</p>
+<p>Vorgehen:</p>
+<ul>
+<li>Stützvektor: <span class="arithmatex">\(\overrightarrow{a}=\overrightarrow{p}\)</span></li>
+<li>Bestimme zwei Spannvektoren <span class="arithmatex">\(\overrightarrow{u},\overrightarrow{v}\)</span> mit</li>
+</ul>
 <p>[
-  \vec{n}\cdot\vec{u}=0,\quad \vec{n}\cdot\vec{v}=0
+  \overrightarrow{n}\cdot\overrightarrow{u}=0,\quad \overrightarrow{n}\cdot\overrightarrow{v}=0
   ]</p>
 <p>oder wähle zwei weitere Punkte der Ebene und bilde Verbindungsvektoren.</p>
 <hr />
 <h3 id="normalenform-koordinatenform">Normalenform → Koordinatenform<a class="headerlink" href="#normalenform-koordinatenform" title="Permanent link">&para;</a></h3>
 <p>Gegeben:</p>
 <div class="arithmatex">\[
-E:\ (\vec{x}-\vec{p})\cdot\vec{n}=0
+E:\ (\overrightarrow{x}-\overrightarrow{p})\cdot\overrightarrow{n}=0
 \]</div>
-<p>Vorgehen:
-- Multipliziere aus,
-- fasse zusammen,
-- bringe die Gleichung auf die Form</p>
+<p>Vorgehen:</p>
+<ul>
+<li>Multipliziere aus,</li>
+<li>fasse zusammen,</li>
+<li>bringe die Gleichung auf die Form</li>
+</ul>
 <p>[
   a x + b y + c z = d.
   ]</p>
@@ -848,27 +860,31 @@ E:\ (\vec{x}-\vec{p})\cdot\vec{n}=0
 <div class="arithmatex">\[
 E:\ a x + b y + c z = d
 \]</div>
-<p>Vorgehen:
-- Bestimme einen Punkt der Ebene als Stützvektor <span class="arithmatex">\(\vec{a}\)</span>,
-- wähle zwei weitere Punkte der Ebene,
-- bilde aus den Verbindungsvektoren zwei Spannvektoren.</p>
+<p>Vorgehen:</p>
+<ul>
+<li>Bestimme einen Punkt der Ebene als Stützvektor <span class="arithmatex">\(\overrightarrow{a}\)</span>,</li>
+<li>wähle zwei weitere Punkte der Ebene,</li>
+<li>bilde aus den Verbindungsvektoren zwei Spannvektoren.</li>
+</ul>
 <hr />
 <h3 id="koordinatenform-normalenform">Koordinatenform → Normalenform<a class="headerlink" href="#koordinatenform-normalenform" title="Permanent link">&para;</a></h3>
 <p>Gegeben:</p>
 <div class="arithmatex">\[
 E:\ a x + b y + c z = d
 \]</div>
-<p>Vorgehen:
-- Normalenvektor:</p>
+<p>Vorgehen:</p>
+<ul>
+<li>Normalenvektor:</li>
+</ul>
 <p>[
-  \vec{n}=\begin{pmatrix}a\b\c\end{pmatrix}
+  \overrightarrow{n}=\begin{pmatrix}a\b\c\end{pmatrix}
   ]</p>
 <ul>
-<li>Bestimme einen Punkt <span class="arithmatex">\(\vec{p}\)</span> der Ebene.</li>
+<li>Bestimme einen Punkt <span class="arithmatex">\(\overrightarrow{p}\)</span> der Ebene.</li>
 </ul>
 <p>Ergebnis:</p>
 <div class="arithmatex">\[
-E:\ (\vec{x}-\vec{p})\cdot\vec{n}=0.
+E:\ (\overrightarrow{x}-\overrightarrow{p})\cdot\overrightarrow{n}=0.
 \]</div>
 
 
