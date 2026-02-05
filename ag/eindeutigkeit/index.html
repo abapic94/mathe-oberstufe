@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#eindeutige-bestimmung-einer-ebene" class="md-skip">
+        <a href="#fall-1-drei-punkte-die-nicht-auf-einer-geraden-liegen" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -585,18 +585,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#eindeutige-bestimmung-einer-ebene" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Eindeutige Bestimmung einer Ebene
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Eindeutige Bestimmung einer Ebene">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#fall-1-drei-punkte-die-nicht-auf-einer-geraden-liegen" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -606,8 +594,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#fall-2-zwei-sich-schneidende-geraden" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -617,8 +605,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#fall-3-zwei-zueinander-echt-parallele-geraden" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -628,8 +616,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#fall-4-eine-gerade-und-ein-punkt-auerhalb-der-geraden" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -637,11 +625,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -680,7 +663,6 @@
 
   <h1>Eindeutige Bestimmung einer Ebene</h1>
 
-<h2 id="eindeutige-bestimmung-einer-ebene">Eindeutige Bestimmung einer Ebene<a class="headerlink" href="#eindeutige-bestimmung-einer-ebene" title="Permanent link">&para;</a></h2>
 <p>Eine Ebene im dreidimensionalen Raum ist eindeutig bestimmt, wenn eine der folgenden vier
 Minimalbedingungen erfüllt ist.</p>
 <hr />
@@ -700,17 +682,25 @@ Minimalbedingungen erfüllt ist.</p>
 Da die Punkte nicht auf einer Geraden liegen, gilt
 <span class="arithmatex">\(\overrightarrow{u}\nparallel \overrightarrow{v}\)</span>.</p>
 <p>Die Ebene ist damit eindeutig festgelegt.</p>
+<figure style="text-align: center;">
+  <img src="../assets/images/eind1.png" width="400">
+</figure>
+
 <hr />
 <h3 id="fall-2-zwei-sich-schneidende-geraden">Fall 2: Zwei sich schneidende Geraden<a class="headerlink" href="#fall-2-zwei-sich-schneidende-geraden" title="Permanent link">&para;</a></h3>
-<p>Gegeben seien zwei Geraden <span class="arithmatex">\(g\)</span> und <span class="arithmatex">\(h\)</span>, die sich in einem Punkt <span class="arithmatex">\(P\)</span> schneiden.</p>
+<p>Gegeben seien zwei Geraden <span class="arithmatex">\(g\)</span> und <span class="arithmatex">\(h\)</span>, die sich in einem Punkt <span class="arithmatex">\(S\)</span> schneiden.</p>
 <p>Ein Stützvektor ist</p>
 <div class="arithmatex">\[
-\overrightarrow{a}=\overrightarrow{OP}.
+\overrightarrow{a}=\overrightarrow{OS}.
 \]</div>
 <p>Als Spannvektoren dienen die Richtungsvektoren
 <span class="arithmatex">\(\overrightarrow{u}\)</span> von <span class="arithmatex">\(g\)</span> und <span class="arithmatex">\(\overrightarrow{v}\)</span> von <span class="arithmatex">\(h\)</span>.
 Da sich die Geraden schneiden, sind die Richtungsvektoren nicht parallel.</p>
 <p>Die Ebene wird eindeutig durch den Schnittpunkt und die beiden Richtungsvektoren bestimmt.</p>
+<figure style="text-align: center;">
+  <img src="../assets/images/eind2.png" width="400">
+</figure>
+
 <hr />
 <h3 id="fall-3-zwei-zueinander-echt-parallele-geraden">Fall 3: Zwei zueinander echt parallele Geraden<a class="headerlink" href="#fall-3-zwei-zueinander-echt-parallele-geraden" title="Permanent link">&para;</a></h3>
 <p>Gegeben seien zwei Geraden <span class="arithmatex">\(g\)</span> und <span class="arithmatex">\(h\)</span>, die parallel zueinander verlaufen und nicht identisch sind.</p>
@@ -726,9 +716,13 @@ zwischen einem Punkt <span class="arithmatex">\(A\)</span> auf <span class="arit
 \]</div>
 <p>Da die Geraden nicht identisch sind, sind die Spannvektoren nicht parallel.
 Die Ebene ist damit eindeutig bestimmt.</p>
+<figure style="text-align: center;">
+  <img src="../assets/images/eind3.png" width="400">
+</figure>
+
 <hr />
 <h3 id="fall-4-eine-gerade-und-ein-punkt-auerhalb-der-geraden">Fall 4: Eine Gerade und ein Punkt außerhalb der Geraden<a class="headerlink" href="#fall-4-eine-gerade-und-ein-punkt-auerhalb-der-geraden" title="Permanent link">&para;</a></h3>
-<p>Gegeben seien eine Gerade <span class="arithmatex">\(g\)</span> und ein Punkt <span class="arithmatex">\(P\)</span>, der nicht auf dieser Geraden liegt.</p>
+<p>Gegeben seien eine Gerade <span class="arithmatex">\(g\)</span> und ein Punkt <span class="arithmatex">\(B\)</span>, der nicht auf dieser Geraden liegt.</p>
 <p>Ein Stützvektor ist der Ortsvektor eines Punktes <span class="arithmatex">\(A\)</span> auf der Geraden:</p>
 <div class="arithmatex">\[
 \overrightarrow{a}=\overrightarrow{OA}.
@@ -736,10 +730,13 @@ Die Ebene ist damit eindeutig bestimmt.</p>
 <p>Ein Spannvektor ist der Richtungsvektor <span class="arithmatex">\(\overrightarrow{u}\)</span> der Geraden.
 Ein zweiter Spannvektor ergibt sich als Verbindungsvektor</p>
 <div class="arithmatex">\[
-\overrightarrow{v}=\overrightarrow{AP}.
+\overrightarrow{v}=\overrightarrow{AB}.
 \]</div>
 <p>Da der Punkt nicht auf der Geraden liegt, sind die Spannvektoren nicht parallel.
 Die Ebene ist somit eindeutig festgelegt.</p>
+<figure style="text-align: center;">
+  <img src="../assets/images/eind4.png" width="400">
+</figure>
 
 
 
