@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#beispiele-zur-lagebeziehung-gerade-ebene" class="md-skip">
+          Zum Inhalt
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -615,6 +620,24 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lagebeziehung Ebene-Gerade
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -631,6 +654,73 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#beispiele-zur-lagebeziehung-gerade-ebene" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiele zur Lagebeziehung Gerade – Ebene
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Beispiele zur Lagebeziehung Gerade – Ebene">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-seite-5-gerade-schneidet-die-ebene" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel (Seite 5): Gerade schneidet die Ebene
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-seite-6-gerade-liegt-in-der-ebene" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel (Seite 6): Gerade liegt in der Ebene
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-seite-7-gerade-ist-parallel-zur-ebene" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel (Seite 7): Gerade ist parallel zur Ebene
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -697,6 +787,273 @@ E:\ \vec{n}\circ(\vec{x}-\vec{p}) = 0
 <figure style="text-align: center;">
   <img src="../assets/images/lage2.png" width="800">
 </figure>
+
+<h2 id="beispiele-zur-lagebeziehung-gerade-ebene">Beispiele zur Lagebeziehung Gerade – Ebene<a class="headerlink" href="#beispiele-zur-lagebeziehung-gerade-ebene" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="beispiel-seite-5-gerade-schneidet-die-ebene">Beispiel (Seite 5): Gerade schneidet die Ebene<a class="headerlink" href="#beispiel-seite-5-gerade-schneidet-die-ebene" title="Permanent link">&para;</a></h3>
+<p>Gegeben seien die Gerade</p>
+<div class="arithmatex">\[
+g:\ \vec{x}
+=
+\begin{pmatrix}
+1\\
+2\\
+1
+\end{pmatrix}
++ k
+\begin{pmatrix}
+1\\
+-1\\
+2
+\end{pmatrix}
+\]</div>
+<p>und die Ebene</p>
+<div class="arithmatex">\[
+E:\ 
+\begin{pmatrix}
+2\\
+1\\
+-1
+\end{pmatrix}
+\circ
+\left(
+\vec{x}
+-
+\begin{pmatrix}
+0\\
+1\\
+2
+\end{pmatrix}
+\right)
+=0.
+\]</div>
+<p>Zunächst wird das Skalarprodukt zwischen Richtungs- und Normalenvektor berechnet:</p>
+<div class="arithmatex">\[
+\begin{pmatrix}
+2\\
+1\\
+-1
+\end{pmatrix}
+\circ
+\begin{pmatrix}
+1\\
+-1\\
+2
+\end{pmatrix}
+=
+2-1-2=-1\neq 0.
+\]</div>
+<p>Die Gerade ist somit <strong>nicht parallel</strong> zur Ebene und schneidet diese.</p>
+<p>Zur Bestimmung des Schnittpunktes wird die Geradengleichung in die Ebenengleichung eingesetzt:</p>
+<div class="arithmatex">\[
+\begin{pmatrix}
+2\\
+1\\
+-1
+\end{pmatrix}
+\circ
+\left(
+\begin{pmatrix}
+1\\
+2\\
+1
+\end{pmatrix}
++ k
+\begin{pmatrix}
+1\\
+-1\\
+2
+\end{pmatrix}
+-
+\begin{pmatrix}
+0\\
+1\\
+2
+\end{pmatrix}
+\right)=0.
+\]</div>
+<div class="arithmatex">\[
+\Rightarrow
+\begin{pmatrix}
+2\\
+1\\
+-1
+\end{pmatrix}
+\circ
+\begin{pmatrix}
+1+k\\
+1-k\\
+-1+2k
+\end{pmatrix}
+=0
+\]</div>
+<div class="arithmatex">\[
+2(1+k)+(1-k)-(-1+2k)=0
+\Rightarrow 4-k=0
+\Rightarrow k=4.
+\]</div>
+<p>Der Schnittpunkt ist damit:</p>
+<div class="arithmatex">\[
+S(5|-2|9).
+\]</div>
+<hr />
+<h3 id="beispiel-seite-6-gerade-liegt-in-der-ebene">Beispiel (Seite 6): Gerade liegt in der Ebene<a class="headerlink" href="#beispiel-seite-6-gerade-liegt-in-der-ebene" title="Permanent link">&para;</a></h3>
+<p>Gegeben seien die Gerade</p>
+<div class="arithmatex">\[
+g:\ \vec{x}
+=
+\begin{pmatrix}
+1\\
+0\\
+2
+\end{pmatrix}
++ k
+\begin{pmatrix}
+2\\
+-1\\
+1
+\end{pmatrix}
+\]</div>
+<p>und die Ebene</p>
+<div class="arithmatex">\[
+E:\ 
+\begin{pmatrix}
+1\\
+2\\
+-1
+\end{pmatrix}
+\circ
+\left(
+\vec{x}
+-
+\begin{pmatrix}
+1\\
+0\\
+2
+\end{pmatrix}
+\right)
+=0.
+\]</div>
+<p>Zunächst wird das Skalarprodukt berechnet:</p>
+<div class="arithmatex">\[
+\begin{pmatrix}
+1\\
+2\\
+-1
+\end{pmatrix}
+\circ
+\begin{pmatrix}
+2\\
+-1\\
+1
+\end{pmatrix}
+=
+2-2-1=-1=0.
+\]</div>
+<p>Die Gerade ist damit <strong>parallel zur Ebene oder liegt in ihr</strong>.</p>
+<p>Zur Entscheidung wird eine Punktprobe durchgeführt:</p>
+<div class="arithmatex">\[
+\begin{pmatrix}
+1\\
+2\\
+-1
+\end{pmatrix}
+\circ
+\left(
+\begin{pmatrix}
+1\\
+0\\
+2
+\end{pmatrix}
+-
+\begin{pmatrix}
+1\\
+0\\
+2
+\end{pmatrix}
+\right)
+=0.
+\]</div>
+<p>Der Stützpunkt der Geraden liegt in der Ebene.</p>
+<p><strong>Ergebnis:</strong></p>
+<div class="arithmatex">\[
+g\subset E
+\]</div>
+<hr />
+<h3 id="beispiel-seite-7-gerade-ist-parallel-zur-ebene">Beispiel (Seite 7): Gerade ist parallel zur Ebene<a class="headerlink" href="#beispiel-seite-7-gerade-ist-parallel-zur-ebene" title="Permanent link">&para;</a></h3>
+<p>Gegeben seien die Gerade</p>
+<div class="arithmatex">\[
+g:\ \vec{x}
+=
+\begin{pmatrix}
+0\\
+1\\
+0
+\end{pmatrix}
++ k
+\begin{pmatrix}
+1\\
+1\\
+1
+\end{pmatrix}
+\]</div>
+<p>und die Ebene</p>
+<div class="arithmatex">\[
+E:\ 
+\begin{pmatrix}
+1\\
+-1\\
+0
+\end{pmatrix}
+\circ
+\left(
+\vec{x}
+-
+\begin{pmatrix}
+0\\
+0\\
+0
+\end{pmatrix}
+\right)
+=0.
+\]</div>
+<p>Berechnung des Skalarprodukts:</p>
+<div class="arithmatex">\[
+\begin{pmatrix}
+1\\
+-1\\
+0
+\end{pmatrix}
+\circ
+\begin{pmatrix}
+1\\
+1\\
+1
+\end{pmatrix}
+=
+1-1+0=0.
+\]</div>
+<p>Die Gerade ist parallel zur Ebene oder liegt in ihr.</p>
+<p>Punktprobe mit dem Stützpunkt der Geraden:</p>
+<div class="arithmatex">\[
+\begin{pmatrix}
+1\\
+-1\\
+0
+\end{pmatrix}
+\circ
+\begin{pmatrix}
+0\\
+1\\
+0
+\end{pmatrix}
+=-1\neq 0.
+\]</div>
+<p>Der Punkt liegt nicht in der Ebene.</p>
+<p><strong>Ergebnis:</strong></p>
+<div class="arithmatex">\[
+g\parallel E
+\]</div>
 
 
 
