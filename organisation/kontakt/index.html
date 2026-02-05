@@ -231,8 +231,24 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kontakt
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -250,6 +266,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kontakt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kontakt
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -697,16 +741,45 @@
 
 
 
-<h1 id="kontakt">Kontakt<a class="headerlink" href="#kontakt" title="Permanent link">&para;</a></h1>
-<p>Bei Fragen, Hinweisen oder fachlichen Anmerkungen zu den Inhalten dieser Website
-kann eine Kontaktaufnahme per E-Mail erfolgen.</p>
-<hr />
-<p><strong>E-Mail:</strong>  </p>
-<hr />
-<p>Diese Website dient ausschließlich <strong>Bildungszwecken</strong>.
-Es erfolgt <strong>keine kommerzielle Nachhilfe</strong>, <strong>keine individuelle
-Prüfungsbetreuung</strong> und <strong>keine Beratung im Auftrag Dritter</strong>.</p>
-<p>Anfragen werden, sofern möglich, zeitnah beantwortet.</p>
+  <h1>Kontakt</h1>
+
+<h2 id="kontakt">Kontakt<a class="headerlink" href="#kontakt" title="Permanent link">&para;</a></h2>
+<p>Für Hinweise, fachliche Rückmeldungen oder Fragen zu den Inhalten dieser Website
+steht folgende Kontaktmöglichkeit zur Verfügung.</p>
+<div style="
+border: 2px solid #4CAF50;
+border-radius: 8px;
+padding: 1rem;
+max-width: 420px;
+background-color: #f6fff6;
+">
+
+<strong>Kontaktaufnahme per E-Mail</strong><br><br>
+
+<button onclick="showMail()" style="
+padding: 0.5rem 1rem;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+">
+E-Mail anzeigen
+</button>
+
+<p id="mail" style="margin-top:1rem; font-weight:bold;"></p>
+
+</div>
+
+<script>
+function showMail() {
+  const user = "booleanersmatheportal";
+  const domain = "gmail.com";
+  document.getElementById("mail").innerHTML =
+    '<a href="mailto:' + user + '@' + domain + '">' +
+    user + '@' + domain + '</a>';
+}
+</script>
 
 
 
