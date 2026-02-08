@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#losung-1-schnittwinkel-zweier-geraden" class="md-skip">
+        <a href="#winkel-im-raum" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -703,6 +703,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -745,6 +747,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -753,35 +757,86 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#losung-1-schnittwinkel-zweier-geraden" class="md-nav__link">
+  <a href="#schnittwinkel-zweier-geraden" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lösung 1: Schnittwinkel zweier Geraden
+        Schnittwinkel zweier Geraden
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schnittwinkel zweier Geraden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beispiel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#losung-2-schnittwinkel-zwischen-gerade-und-ebene" class="md-nav__link">
+  <a href="#schnittwinkel-zwischen-gerade-und-ebene" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lösung 2: Schnittwinkel zwischen Gerade und Ebene
+        Schnittwinkel zwischen Gerade und Ebene
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schnittwinkel zwischen Gerade und Ebene">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beispiel_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#losung-3-schnittwinkel-zweier-ebenen" class="md-nav__link">
+  <a href="#schnittwinkel-zweier-ebenen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lösung 3: Schnittwinkel zweier Ebenen
+        Schnittwinkel zweier Ebenen
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Schnittwinkel zweier Ebenen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beispiel_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -818,19 +873,80 @@
 
 
 
-  <h1>Schnittwinkel</h1>
+<h1 id="winkel-im-raum">Winkel im Raum<a class="headerlink" href="#winkel-im-raum" title="Permanent link">&para;</a></h1>
+<p>Im dreidimensionalen Raum können Winkel zwischen Geraden, zwischen einer
+Geraden und einer Ebene sowie zwischen zwei Ebenen bestimmt werden.
+Die Berechnung erfolgt jeweils mithilfe des Skalarprodukts.</p>
+<hr />
+<h2 id="schnittwinkel-zweier-geraden">Schnittwinkel zweier Geraden<a class="headerlink" href="#schnittwinkel-zweier-geraden" title="Permanent link">&para;</a></h2>
+<figure style="text-align: center;">
+  <img src="../assets/images/winkel1.png" width="600">
+</figure>
 
-<h2 id="losung-1-schnittwinkel-zweier-geraden">Lösung 1: Schnittwinkel zweier Geraden<a class="headerlink" href="#losung-1-schnittwinkel-zweier-geraden" title="Permanent link">&para;</a></h2>
-<p>Gegeben sind die Richtungsvektoren</p>
+<p>Unter dem Schnittwinkel zweier Geraden versteht man den <strong>spitzen Winkel</strong>
+<span class="arithmatex">\(\alpha\)</span>, den die Richtungsvektoren der beiden Geraden einschließen.</p>
+<p>Gegeben seien die Geraden</p>
 <div class="arithmatex">\[
-\vec{u}=
+g:\ \overrightarrow{x}=\overrightarrow{a}+\lambda\overrightarrow{u},
+\qquad
+h:\ \overrightarrow{x}=\overrightarrow{b}+\mu\overrightarrow{v},
+\quad \lambda,\mu\in\mathbb{R}.
+\]</div>
+<p>Der Schnittwinkel ergibt sich aus dem Skalarprodukt der Richtungsvektoren:</p>
+<div class="arithmatex">\[
+\cos \alpha
+=
+\frac{\left|\overrightarrow{u}\circ\overrightarrow{v}\right|}
+{\left|\overrightarrow{u}\right|\cdot\left|\overrightarrow{v}\right|},
+\qquad
+0^\circ \le \alpha \le 90^\circ.
+\]</div>
+<hr />
+<h3 id="beispiel">Beispiel<a class="headerlink" href="#beispiel" title="Permanent link">&para;</a></h3>
+<p>Gegeben seien die sich schneidenden Geraden</p>
+<div class="arithmatex">\[
+g:\ \overrightarrow{x}
+=
+\begin{pmatrix}
+-4\\
+-1\\
+4
+\end{pmatrix}
++
+\lambda
+\begin{pmatrix}
+1\\
+-2\\
+2
+\end{pmatrix}
+\]</div>
+<p>und</p>
+<div class="arithmatex">\[
+h:\ \overrightarrow{x}
+=
+\begin{pmatrix}
+-9\\
+9\\
+2
+\end{pmatrix}
++
+\mu
+\begin{pmatrix}
+-1\\
+2\\
+2
+\end{pmatrix}.
+\]</div>
+<p>Die Richtungsvektoren lauten</p>
+<div class="arithmatex">\[
+\overrightarrow{u}=
 \begin{pmatrix}
 1\\
 -2\\
 2
 \end{pmatrix},
 \qquad
-\vec{v}=
+\overrightarrow{v}=
 \begin{pmatrix}
 -1\\
 2\\
@@ -839,63 +955,91 @@
 \]</div>
 <p>Skalarprodukt:</p>
 <div class="arithmatex">\[
-\vec{u}\circ\vec{v}
+\overrightarrow{u}\circ\overrightarrow{v}
 =
-1\cdot(-1)+(-2)\cdot 2+2\cdot 2
+1\cdot(-1)+(-2)\cdot2+2\cdot2
 =-1-4+4=-1.
 \]</div>
-<p>Betrag:</p>
 <div class="arithmatex">\[
-\left|\vec{u}\circ\vec{v}\right|=1.
+\left|\overrightarrow{u}\circ\overrightarrow{v}\right|=1.
 \]</div>
 <p>Längen:</p>
 <div class="arithmatex">\[
-\left|\vec{u}\right|
-=
-\sqrt{1^2+(-2)^2+2^2}
-=\sqrt{1+4+4}=3,
+\left|\overrightarrow{u}\right|=\sqrt{1^2+(-2)^2+2^2}=3,
 \qquad
-\left|\vec{v}\right|
-=
-\sqrt{(-1)^2+2^2+2^2}
-=\sqrt{1+4+4}=3.
+\left|\overrightarrow{v}\right|=\sqrt{(-1)^2+2^2+2^2}=3.
 \]</div>
-<p>Damit</p>
+<p>Damit ergibt sich</p>
 <div class="arithmatex">\[
-\cos\alpha
-=
-\frac{\left|\vec{u}\circ\vec{v}\right|}
-{\left|\vec{u}\right|\cdot\left|\vec{v}\right|}
-=
-\frac{1}{3\cdot 3}
-=
-\frac{1}{9}.
+\cos\alpha=\frac{1}{9}.
 \]</div>
-<p>Somit</p>
 <div class="arithmatex">\[
-\alpha=\arccos\!\left(\frac{1}{9}\right)\approx 83{,}62^\circ.
+\alpha=\arccos\!\left(\frac{1}{9}\right)\approx83{,}62^\circ.
 \]</div>
 <hr />
-<h2 id="losung-2-schnittwinkel-zwischen-gerade-und-ebene">Lösung 2: Schnittwinkel zwischen Gerade und Ebene<a class="headerlink" href="#losung-2-schnittwinkel-zwischen-gerade-und-ebene" title="Permanent link">&para;</a></h2>
-<p>Gegeben ist die Gerade mit Richtungsvektor</p>
+<h2 id="schnittwinkel-zwischen-gerade-und-ebene">Schnittwinkel zwischen Gerade und Ebene<a class="headerlink" href="#schnittwinkel-zwischen-gerade-und-ebene" title="Permanent link">&para;</a></h2>
+<figure style="text-align: center;">
+  <img src="../assets/images/winkel2.png" width="600">
+</figure>
+
+<p>Unter dem Schnittwinkel zwischen einer Geraden und einer Ebene versteht man
+den Winkel zwischen der Geraden und ihrer Projektion in die Ebene.</p>
+<p>Der Schnittwinkel ergibt sich über den Winkel zwischen dem Richtungsvektor
+der Geraden und dem Normalenvektor der Ebene.</p>
+<p>Gegeben seien</p>
 <div class="arithmatex">\[
-\vec{u}=
+g:\ \overrightarrow{x}=\overrightarrow{a}+\lambda\overrightarrow{u}
+\]</div>
+<p>und</p>
+<div class="arithmatex">\[
+E:\ \overrightarrow{n}\circ(\overrightarrow{x}-\overrightarrow{p})=0.
+\]</div>
+<p>Es gilt</p>
+<div class="arithmatex">\[
+\sin\alpha
+=
+\frac{\left|\overrightarrow{u}\circ\overrightarrow{n}\right|}
+{\left|\overrightarrow{u}\right|\cdot\left|\overrightarrow{n}\right|},
+\qquad
+0^\circ \le \alpha \le 90^\circ.
+\]</div>
+<hr />
+<h3 id="beispiel_1">Beispiel<a class="headerlink" href="#beispiel_1" title="Permanent link">&para;</a></h3>
+<p>Gegeben seien</p>
+<div class="arithmatex">\[
+g:\ \overrightarrow{x}
+=
+\begin{pmatrix}
+-1\\
+2\\
+-1
+\end{pmatrix}
++
+\lambda
 \begin{pmatrix}
 5\\
 2\\
 6
 \end{pmatrix}
 \]</div>
-<p>und die Ebene in Parameterform mit Spannvektoren</p>
+<p>und</p>
 <div class="arithmatex">\[
-\vec{u}_E=
+E:\ \overrightarrow{x}
+=
+\begin{pmatrix}
+1\\
+2\\
+1
+\end{pmatrix}
++
+\mu
 \begin{pmatrix}
 1\\
 -2\\
 -2
-\end{pmatrix},
-\qquad
-\vec{v}_E=
+\end{pmatrix}
++
+\tau
 \begin{pmatrix}
 2\\
 4\\
@@ -904,9 +1048,19 @@
 \]</div>
 <p>Ein Normalenvektor der Ebene ergibt sich durch das Kreuzprodukt:</p>
 <div class="arithmatex">\[
-\vec{n}
+\overrightarrow{n}
 =
-\vec{u}_E\times\vec{v}_E
+\begin{pmatrix}
+1\\
+-2\\
+-2
+\end{pmatrix}
+\times
+\begin{pmatrix}
+2\\
+4\\
+3
+\end{pmatrix}
 =
 \begin{pmatrix}
 2\\
@@ -914,122 +1068,97 @@
 8
 \end{pmatrix}.
 \]</div>
-<p>Für den Schnittwinkel <span class="arithmatex">\(\alpha\)</span> zwischen Gerade und Ebene gilt</p>
-<div class="arithmatex">\[
-\sin\alpha
-=
-\frac{\left|\vec{u}\circ\vec{n}\right|}
-{\left|\vec{u}\right|\cdot\left|\vec{n}\right|}.
-\]</div>
 <p>Skalarprodukt:</p>
 <div class="arithmatex">\[
-\vec{u}\circ\vec{n}
+\overrightarrow{u}\circ\overrightarrow{n}
 =
-5\cdot 2+2\cdot(-7)+6\cdot 8
-=10-14+48=44.
+5\cdot2+2\cdot(-7)+6\cdot8
+=44.
 \]</div>
 <p>Längen:</p>
 <div class="arithmatex">\[
-\left|\vec{u}\right|
-=
-\sqrt{5^2+2^2+6^2}
-=
-\sqrt{25+4+36}
-=
-\sqrt{65},
+\left|\overrightarrow{u}\right|=\sqrt{65},
+\qquad
+\left|\overrightarrow{n}\right|=\sqrt{117}.
 \]</div>
-<div class="arithmatex">\[
-\left|\vec{n}\right|
-=
-\sqrt{2^2+(-7)^2+8^2}
-=
-\sqrt{4+49+64}
-=
-\sqrt{117}.
-\]</div>
-<p>Damit</p>
+<p>Damit folgt</p>
 <div class="arithmatex">\[
 \sin\alpha
 =
-\frac{44}{\sqrt{65}\cdot\sqrt{117}}
-=
-\frac{44}{\sqrt{7605}}
-\approx 0{,}50455.
+\frac{44}{\sqrt{65}\sqrt{117}}
+\approx0{,}50455.
 \]</div>
-<p>Somit</p>
 <div class="arithmatex">\[
-\alpha=\arcsin\!\left(\frac{44}{\sqrt{65}\sqrt{117}}\right)\approx 30{,}30^\circ.
+\alpha=\arcsin(0{,}50455)\approx30{,}30^\circ.
 \]</div>
 <hr />
-<h2 id="losung-3-schnittwinkel-zweier-ebenen">Lösung 3: Schnittwinkel zweier Ebenen<a class="headerlink" href="#losung-3-schnittwinkel-zweier-ebenen" title="Permanent link">&para;</a></h2>
-<p>Gegeben sind die Ebenen</p>
+<h2 id="schnittwinkel-zweier-ebenen">Schnittwinkel zweier Ebenen<a class="headerlink" href="#schnittwinkel-zweier-ebenen" title="Permanent link">&para;</a></h2>
+<figure style="text-align: center;">
+  <img src="../assets/images/winkel3.png" width="600">
+</figure>
+
+<p>Der Schnittwinkel zweier Ebenen ist gleich dem <strong>spitzen Winkel</strong>, den ihre
+Normalenvektoren einschließen.</p>
+<p>Gegeben seien</p>
 <div class="arithmatex">\[
-E:\ 2x+5y-3z=3,
+E:\ \overrightarrow{n}_E\circ(\overrightarrow{x}-\overrightarrow{a})=0,
 \qquad
+F:\ \overrightarrow{n}_F\circ(\overrightarrow{x}-\overrightarrow{b})=0.
+\]</div>
+<p>Es gilt</p>
+<div class="arithmatex">\[
+\cos\alpha
+=
+\frac{\left|\overrightarrow{n}_E\circ\overrightarrow{n}_F\right|}
+{\left|\overrightarrow{n}_E\right|\cdot\left|\overrightarrow{n}_F\right|}.
+\]</div>
+<hr />
+<h3 id="beispiel_2">Beispiel<a class="headerlink" href="#beispiel_2" title="Permanent link">&para;</a></h3>
+<p>Gegeben seien die Ebenen</p>
+<div class="arithmatex">\[
+E:\ 2x+5y-3z=3
+\]</div>
+<p>und</p>
+<div class="arithmatex">\[
 F:\ -2x+3y-z=-5.
 \]</div>
 <p>Normalenvektoren:</p>
 <div class="arithmatex">\[
-\vec{n}_E=
+\overrightarrow{n}_E=
 \begin{pmatrix}
 2\\
 5\\
 -3
 \end{pmatrix},
 \qquad
-\vec{n}_F=
+\overrightarrow{n}_F=
 \begin{pmatrix}
 -2\\
 3\\
 -1
 \end{pmatrix}.
 \]</div>
-<p>Für den Schnittwinkel <span class="arithmatex">\(\alpha\)</span> zweier Ebenen gilt (spitzer Winkel):</p>
-<div class="arithmatex">\[
-\cos\alpha
-=
-\frac{\left|\vec{n}_E\circ\vec{n}_F\right|}
-{\left|\vec{n}_E\right|\cdot\left|\vec{n}_F\right|}.
-\]</div>
 <p>Skalarprodukt:</p>
 <div class="arithmatex">\[
-\vec{n}_E\circ\vec{n}_F
+\overrightarrow{n}_E\circ\overrightarrow{n}_F
 =
-2\cdot(-2)+5\cdot 3+(-3)\cdot(-1)
-=-4+15+3=14.
+2\cdot(-2)+5\cdot3+(-3)\cdot(-1)
+=14.
 \]</div>
 <p>Längen:</p>
 <div class="arithmatex">\[
-\left|\vec{n}_E\right|
-=
-\sqrt{2^2+5^2+(-3)^2}
-=
-\sqrt{4+25+9}
-=
-\sqrt{38},
+\left|\overrightarrow{n}_E\right|=\sqrt{38},
+\qquad
+\left|\overrightarrow{n}_F\right|=\sqrt{14}.
+\]</div>
+<p>Damit ergibt sich</p>
+<div class="arithmatex">\[
+\cos\alpha=\frac{14}{\sqrt{38}\sqrt{14}}
+=\frac{7}{\sqrt{133}}.
 \]</div>
 <div class="arithmatex">\[
-\left|\vec{n}_F\right|
-=
-\sqrt{(-2)^2+3^2+(-1)^2}
-=
-\sqrt{4+9+1}
-=
-\sqrt{14}.
-\]</div>
-<p>Damit</p>
-<div class="arithmatex">\[
-\cos\alpha
-=
-\frac{14}{\sqrt{38}\cdot\sqrt{14}}
-=
-\frac{14}{\sqrt{532}}
-=
-\frac{7}{\sqrt{133}}.
-\]</div>
-<p>Somit</p>
-<div class="arithmatex">\[
-\alpha=\arccos\!\left(\frac{7}{\sqrt{133}}\right)\approx 52{,}63^\circ.
+\alpha=\arccos\!\left(\frac{7}{\sqrt{133}}\right)
+\approx52{,}63^\circ.
 \]</div>
 
 
