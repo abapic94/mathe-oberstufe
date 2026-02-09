@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#lagebeziehung-punkt-kreis" class="md-skip">
+          Zum Inhalt
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -839,6 +844,24 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lagebeziehung Punkt-Kreis
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -855,6 +878,73 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lagebeziehung-punkt-kreis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lagebeziehung Punkt – Kreis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lagebeziehung Punkt – Kreis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-abstand-berechnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Abstand berechnen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-falle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Fälle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beispiel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -887,7 +977,81 @@
 
   <h1>Lagebeziehung Punkt-Kreis</h1>
 
-
+<h2 id="lagebeziehung-punkt-kreis">Lagebeziehung Punkt – Kreis<a class="headerlink" href="#lagebeziehung-punkt-kreis" title="Permanent link">&para;</a></h2>
+<p>Ein Punkt <span class="arithmatex">\(P\)</span> und ein Kreis <span class="arithmatex">\(k\)</span> können in der Ebene drei verschiedene
+Lagebeziehungen haben.</p>
+<p>Sei der Kreis <span class="arithmatex">\(k\)</span> gegeben durch Mittelpunkt <span class="arithmatex">\(M(p|q)\)</span> und Radius <span class="arithmatex">\(r&gt;0\)</span>.</p>
+<div class="arithmatex">\[
+k:\ (x-p)^2+(y-q)^2=r^2
+\]</div>
+<p>und sei <span class="arithmatex">\(P(x_P|y_P)\)</span> ein Punkt.</p>
+<p>Zur Bestimmung der Lagebeziehung wird der Abstand <span class="arithmatex">\(d=|MP|\)</span> betrachtet.</p>
+<hr />
+<h3 id="1-abstand-berechnen">1. Abstand berechnen<a class="headerlink" href="#1-abstand-berechnen" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+d=|MP|
+=
+\sqrt{(x_P-p)^2+(y_P-q)^2}.
+\]</div>
+<p>Statt <span class="arithmatex">\(d\)</span> zu berechnen, kann auch <span class="arithmatex">\(d^2\)</span> mit <span class="arithmatex">\(r^2\)</span> verglichen werden:</p>
+<div class="arithmatex">\[
+d^2=(x_P-p)^2+(y_P-q)^2.
+\]</div>
+<hr />
+<h3 id="2-falle">2. Fälle<a class="headerlink" href="#2-falle" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Punkt liegt auf dem Kreis</strong> (Randpunkt)</li>
+</ul>
+<div class="arithmatex">\[
+d=r
+\quad\Longleftrightarrow\quad
+d^2=r^2
+\]</div>
+<ul>
+<li><strong>Punkt liegt im Inneren des Kreises</strong></li>
+</ul>
+<div class="arithmatex">\[
+d&lt;r
+\quad\Longleftrightarrow\quad
+d^2&lt;r^2
+\]</div>
+<ul>
+<li><strong>Punkt liegt außerhalb des Kreises</strong></li>
+</ul>
+<div class="arithmatex">\[
+d&gt;r
+\quad\Longleftrightarrow\quad
+d^2&gt;r^2
+\]</div>
+<hr />
+<h3 id="beispiel">Beispiel<a class="headerlink" href="#beispiel" title="Permanent link">&para;</a></h3>
+<p>Gegeben sei der Kreis</p>
+<div class="arithmatex">\[
+k:\ (x-2)^2+(y+1)^2=9
+\]</div>
+<p>mit</p>
+<div class="arithmatex">\[
+M(2|-1),\qquad r=3.
+\]</div>
+<p>Gegeben sei der Punkt</p>
+<div class="arithmatex">\[
+P(6|2).
+\]</div>
+<p>Berechnung von <span class="arithmatex">\(d^2\)</span>:</p>
+<div class="arithmatex">\[
+d^2=(6-2)^2+(2-(-1))^2
+=4^2+3^2
+=16+9
+=25.
+\]</div>
+<p>Vergleich mit <span class="arithmatex">\(r^2=9\)</span>:</p>
+<div class="arithmatex">\[
+25&gt;9.
+\]</div>
+<div class="box-green">
+<strong>Ergebnis:</strong><br>
+Der Punkt \(P(6|2)\) liegt außerhalb des Kreises.
+</div>
 
 
 
