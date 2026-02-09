@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lagebeziehung-punkt-kreis" class="md-skip">
+        <a href="#1-abstand-berechnen" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -893,18 +893,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#lagebeziehung-punkt-kreis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lagebeziehung Punkt – Kreis
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Lagebeziehung Punkt – Kreis">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#1-abstand-berechnen" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -914,8 +902,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#2-falle" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -925,8 +913,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#beispiel" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -934,11 +922,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -977,7 +960,6 @@
 
   <h1>Lagebeziehung Punkt-Kreis</h1>
 
-<h2 id="lagebeziehung-punkt-kreis">Lagebeziehung Punkt – Kreis<a class="headerlink" href="#lagebeziehung-punkt-kreis" title="Permanent link">&para;</a></h2>
 <p>Ein Punkt <span class="arithmatex">\(P\)</span> und ein Kreis <span class="arithmatex">\(k\)</span> können in der Ebene drei verschiedene
 Lagebeziehungen haben.</p>
 <p>Sei der Kreis <span class="arithmatex">\(k\)</span> gegeben durch Mittelpunkt <span class="arithmatex">\(M(p|q)\)</span> und Radius <span class="arithmatex">\(r&gt;0\)</span>.</p>
@@ -1000,7 +982,7 @@ d^2=(x_P-p)^2+(y_P-q)^2.
 <hr />
 <h3 id="2-falle">2. Fälle<a class="headerlink" href="#2-falle" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Punkt liegt auf dem Kreis</strong> (Randpunkt)</li>
+<li><strong>Punkt liegt auf dem Kreis</strong> <span class="arithmatex">\((P\in k)\)</span></li>
 </ul>
 <div class="arithmatex">\[
 d=r
@@ -1008,7 +990,7 @@ d=r
 d^2=r^2
 \]</div>
 <ul>
-<li><strong>Punkt liegt im Inneren des Kreises</strong></li>
+<li><strong>Punkt liegt im Inneren des Kreises</strong> <span class="arithmatex">\((P\in \text{int}(k))\)</span></li>
 </ul>
 <div class="arithmatex">\[
 d&lt;r
@@ -1016,7 +998,7 @@ d&lt;r
 d^2&lt;r^2
 \]</div>
 <ul>
-<li><strong>Punkt liegt außerhalb des Kreises</strong></li>
+<li><strong>Punkt liegt außerhalb des Kreises</strong> <span class="arithmatex">\((P\in \text{ext}(k))\)</span></li>
 </ul>
 <div class="arithmatex">\[
 d&gt;r
@@ -1029,14 +1011,7 @@ d^2&gt;r^2
 <div class="arithmatex">\[
 k:\ (x-2)^2+(y+1)^2=9
 \]</div>
-<p>mit</p>
-<div class="arithmatex">\[
-M(2|-1),\qquad r=3.
-\]</div>
-<p>Gegeben sei der Punkt</p>
-<div class="arithmatex">\[
-P(6|2).
-\]</div>
+<p>mit <span class="arithmatex">\(M(2|-1)\)</span> und <span class="arithmatex">\(r=3\)</span>. Gegeben sei der Punkt <span class="arithmatex">\(P(6|2)\)</span>.</p>
 <p>Berechnung von <span class="arithmatex">\(d^2\)</span>:</p>
 <div class="arithmatex">\[
 d^2=(6-2)^2+(2-(-1))^2
