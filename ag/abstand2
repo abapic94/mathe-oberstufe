@@ -1,0 +1,237 @@
+# Analytische Geometrie in der Ebene \( \mathbb{R}^2 \)
+
+In der Ebene werden Geraden häufig mithilfe von Normalenvektoren beschrieben.
+Insbesondere für Abstandsprobleme ist die **Hessesche Normalform**
+eine zentrale Darstellung.
+
+---
+
+## Hessesche Normalform einer Geraden
+
+Die Hessesche Normalform beschreibt eine Gerade durch
+
+- einen Punkt der Geraden und
+- einen **normierten Normalenvektor**.
+
+Eine Gerade \(g\) in der Ebene besitzt die Darstellung
+
+\[
+g:\ (\vec{x}-\vec{p})\circ\vec{n}_0=0,
+\]
+
+wobei
+
+- \(\vec{p}\) der Ortsvektor eines Punktes der Geraden ist,
+- \(\vec{n}_0\) ein **normierter Normalenvektor** ist,
+- \(|\vec{n}_0|=1\) gilt.
+
+---
+
+### Normierung eines Normalenvektors
+
+Ist \(\vec{n}\) ein beliebiger Normalenvektor der Geraden,
+so erhält man den normierten Normalenvektor durch
+
+\[
+\vec{n}_0=\frac{1}{|\vec{n}|}\vec{n}.
+\]
+
+---
+
+## Abstand zwischen einem Punkt und einer Geraden in \( \mathbb{R}^2 \)
+
+Mit Hilfe der Hesseschen Normalform lässt sich der Abstand eines Punktes
+von einer Geraden unmittelbar berechnen.
+
+Gegeben seien
+
+- ein Punkt \(Q(q_1|q_2)\),
+- eine Gerade \(g\) in Hessescher Normalform.
+
+Der Abstand ergibt sich zu
+
+\[
+d(Q;g)=\left|(\vec{q}-\vec{p})\circ\vec{n}_0\right|.
+\]
+
+Der Abstand entspricht damit der Länge der senkrechten Verbindung
+zwischen Punkt und Gerade.
+
+---
+
+### Beispiel
+
+Gegeben sei der Punkt
+
+\[
+Q(3|5)
+\]
+
+und die Gerade
+
+\[
+g:\ 0{,}5x+0{,}5y=4.
+\]
+
+Zunächst wird ein Normalenvektor bestimmt:
+
+\[
+\vec{n}=
+\begin{pmatrix}
+0{,}5\\
+0{,}5
+\end{pmatrix}.
+\]
+
+Seine Länge beträgt
+
+\[
+|\vec{n}|=\sqrt{0{,}5^2+0{,}5^2}
+=\sqrt{0{,}5}.
+\]
+
+Der normierte Normalenvektor lautet daher
+
+\[
+\vec{n}_0=
+\frac{1}{\sqrt{0{,}5}}
+\begin{pmatrix}
+0{,}5\\
+0{,}5
+\end{pmatrix}.
+\]
+
+Ein Punkt der Geraden ist beispielsweise \(P(4|0)\).
+
+Damit ergibt sich der Abstand zu
+
+\[
+d(Q;g)
+=
+\left|
+\begin{pmatrix}
+3\\
+5
+\end{pmatrix}
+-
+\begin{pmatrix}
+4\\
+0
+\end{pmatrix}
+\circ
+\vec{n}_0
+\right|.
+\]
+
+---
+
+## Lotgerade zu einer Geraden bzw. Ebene
+
+Eine Lotgerade ist eine Gerade, die senkrecht auf einer gegebenen
+Geraden bzw. Ebene steht.
+
+In \( \mathbb{R}^2 \) wird die Lotgerade durch
+
+- einen Punkt \(P\) und
+- einen Normalenvektor
+
+eindeutig bestimmt.
+
+Die Gleichung der Lotgeraden lautet
+
+\[
+l:\ \vec{x}=\vec{p}+\lambda\vec{n},
+\qquad \lambda\in\mathbb{R}.
+\]
+
+---
+
+## Abstand Punkt – Ebene (Idee des Lotfußpunktverfahrens)
+
+Das Verfahren entspricht geometrisch dem Fällen eines Lots.
+
+### Vorgehensweise
+
+1. Aufstellen der Lotgeraden durch den gegebenen Punkt
+
+\[
+l:\ \vec{x}=\vec{p}+\lambda\vec{n}.
+\]
+
+2. Bestimmung des Lotfußpunktes \(F\)
+
+Die Gleichung der Lotgeraden wird in die Ebenengleichung eingesetzt
+und nach \(\lambda\) aufgelöst.
+
+3. Berechnung des Abstandes
+
+\[
+d(P;E)=|PF|
+=|\vec{OF}-\vec{OP}|.
+\]
+
+---
+
+## Abstand Punkt – Ebene (Abstandsformel)
+
+Ist eine Ebene in Koordinatenform gegeben durch
+
+\[
+E:\ ax+by+cz+d=0,
+\]
+
+so ergibt sich der Abstand eines Punktes
+\(P(p_1|p_2|p_3)\) direkt durch
+
+\[
+d(P;E)
+=
+\frac{|ap_1+bp_2+cp_3+d|}
+{\sqrt{a^2+b^2+c^2}}.
+\]
+
+Diese Formel entspricht der Anwendung der Hesseschen Normalform.
+
+---
+
+### Beispiel: Höhe einer Pyramide
+
+Die Grundfläche einer Pyramide liege in der Ebene
+
+\[
+E:\ x_1+x_2+3x_3-1=0.
+\]
+
+Die Spitze sei
+
+\[
+S(1|1|7).
+\]
+
+Die Höhe der Pyramide entspricht dem Abstand des Punktes \(S\)
+von der Ebene \(E\):
+
+\[
+h=d(S;E).
+\]
+
+Ein Normalenvektor der Ebene ist
+
+\[
+\vec{n}=
+\begin{pmatrix}
+1\\
+1\\
+3
+\end{pmatrix}.
+\]
+
+Damit ergibt sich
+
+\[
+h=
+\frac{|1+1+21-1|}
+{\sqrt{1^2+1^2+3^2}}
+=
+\frac{22}{\sqrt{11}}.
+\]
