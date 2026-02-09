@@ -946,6 +946,78 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#beispiel-punkte-einer-geraden-mit-gegebenem-abstand-zu-einer-ebene" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel: Punkte einer Geraden mit gegebenem Abstand zu einer Ebene
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Beispiel: Punkte einer Geraden mit gegebenem Abstand zu einer Ebene">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#losung_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lösung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anwendung-der-abstandsformel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anwendung der Abstandsformel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vereinfachung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vereinfachung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fallunterscheidung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fallunterscheidung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bestimmung-der-punkte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bestimmung der Punkte
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1273,6 +1345,153 @@ E:\
 d=\frac{77}{21}=\frac{11}{3}~\mathrm{LE}.
 \]</div>
 <hr />
+<h2 id="beispiel-punkte-einer-geraden-mit-gegebenem-abstand-zu-einer-ebene">Beispiel: Punkte einer Geraden mit gegebenem Abstand zu einer Ebene<a class="headerlink" href="#beispiel-punkte-einer-geraden-mit-gegebenem-abstand-zu-einer-ebene" title="Permanent link">&para;</a></h2>
+<p>Gegeben ist die Gerade</p>
+<div class="arithmatex">\[
+g:\ \vec{x}
+=
+\begin{pmatrix}
+0\\
+0\\
+2
+\end{pmatrix}
++
+r
+\begin{pmatrix}
+1\\
+2\\
+0
+\end{pmatrix}
+\]</div>
+<p>sowie die Ebene</p>
+<div class="arithmatex">\[
+E:\ x+2y+3z=9.
+\]</div>
+<p>Gesucht sind alle Punkte der Geraden, die von der Ebene den Abstand</p>
+<div class="arithmatex">\[
+d=\frac{1}{2}\sqrt{14}
+\]</div>
+<p>besitzen.</p>
+<hr />
+<h3 id="losung_2">Lösung<a class="headerlink" href="#losung_2" title="Permanent link">&para;</a></h3>
+<p>Für die Abstandsformel in vektorieller Form wird ein Punkt der Ebene benötigt.<br />
+Es wird beispielsweise gewählt:</p>
+<div class="arithmatex">\[
+A(9|0|0).
+\]</div>
+<p>Ein allgemeiner Punkt der Geraden besitzt die Form</p>
+<div class="arithmatex">\[
+P(r|2r|2).
+\]</div>
+<p>Der Normalenvektor der Ebene lautet</p>
+<div class="arithmatex">\[
+\vec{n}=
+\begin{pmatrix}
+1\\
+2\\
+3
+\end{pmatrix}.
+\]</div>
+<hr />
+<h3 id="anwendung-der-abstandsformel">Anwendung der Abstandsformel<a class="headerlink" href="#anwendung-der-abstandsformel" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\frac{
+\left|
+\left(
+\begin{pmatrix}
+r\\
+2r\\
+2
+\end{pmatrix}
+-
+\begin{pmatrix}
+9\\
+0\\
+0
+\end{pmatrix}
+\right)
+\circ
+\begin{pmatrix}
+1\\
+2\\
+3
+\end{pmatrix}
+\right|
+}
+{\sqrt{1^2+2^2+3^2}}
+=
+\frac{1}{2}\sqrt{14}.
+\]</div>
+<hr />
+<h3 id="vereinfachung">Vereinfachung<a class="headerlink" href="#vereinfachung" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\frac{
+\left|
+\begin{pmatrix}
+r-9\\
+2r\\
+2
+\end{pmatrix}
+\circ
+\begin{pmatrix}
+1\\
+2\\
+3
+\end{pmatrix}
+\right|
+}
+{\sqrt{14}}
+=
+\frac{1}{2}\sqrt{14}.
+\]</div>
+<p>Skalarprodukt:</p>
+<div class="arithmatex">\[
+|(r-9)\cdot1+2r\cdot2+2\cdot3|=7.
+\]</div>
+<div class="arithmatex">\[
+|r-9+4r+6|=7.
+\]</div>
+<div class="arithmatex">\[
+|5r-3|=7.
+\]</div>
+<hr />
+<h3 id="fallunterscheidung">Fallunterscheidung<a class="headerlink" href="#fallunterscheidung" title="Permanent link">&para;</a></h3>
+<p>Da <span class="arithmatex">\(|7|=|-7|\)</span>, ergeben sich zwei Fälle:</p>
+<div class="arithmatex">\[
+5r-3=7
+\quad\Rightarrow\quad
+5r=10
+\quad\Rightarrow\quad
+r_1=2,
+\]</div>
+<div class="arithmatex">\[
+5r-3=-7
+\quad\Rightarrow\quad
+5r=-4
+\quad\Rightarrow\quad
+r_2=-\frac{4}{5}.
+\]</div>
+<hr />
+<h3 id="bestimmung-der-punkte">Bestimmung der Punkte<a class="headerlink" href="#bestimmung-der-punkte" title="Permanent link">&para;</a></h3>
+<p>Einsetzen in die Geradengleichung liefert:</p>
+<div class="arithmatex">\[
+P_1(2|4|2),
+\]</div>
+<div class="arithmatex">\[
+P_2\left(-\frac{4}{5}\,\middle|\,-\frac{8}{5}\,\middle|\,2\right).
+\]</div>
+<hr />
+<div class="box-green">
+<strong>Ergebnis:</strong><br>
+Die Punkte der Geraden mit dem Abstand
+\(\frac{1}{2}\sqrt{14}\) von der Ebene sind
+
+\[
+P_1(2|4|2)
+\quad \text{und} \quad
+P_2\left(-\frac{4}{5}\,\middle|\,-\frac{8}{5}\,\middle|\,2\right).
+\]
+</div>
 
 
 
