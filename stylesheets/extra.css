@@ -1,5 +1,5 @@
 /* Haupttitel im linken Menü */
-.md-nav__item--section > .md-nav__link {
-    color: #c62828;
+.md-nav__title {
+    color: #1b5e20;
     font-weight: 700;
 }
