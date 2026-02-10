@@ -1,0 +1,25 @@
+/* Haupttitel im linken Menü */
+.md-nav__title {
+    color: #1b5e20;
+    font-weight: 700;
+}
+
+
+.md-nav__title {
+    font-weight: 700;
+}
+
+/* Vektorrechnung */
+.md-nav__title:has(+ .md-nav__list a[href*="vektor"]) {
+    color: #1565c0;
+}
+
+/* Punkte, Geraden und Ebenen */
+.md-nav__title:has(+ .md-nav__list a[href*="geraden"]) {
+    color: #2e7d32;
+}
+
+/* Kreise */
+.md-nav__title:has(+ .md-nav__list a[href*="kreis"]) {
+    color: #c62828;
+}
