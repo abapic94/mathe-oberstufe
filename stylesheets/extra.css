@@ -1,5 +1,14 @@
-/* Haupttitel im linken Menü */
-.md-nav__title {
-    color: #1b5e20;
+/* ================================
+   Haupttitel im linken Menü färben
+   ================================ */
+
+/* Nur Hauptbereiche (Section Titles) */
+.md-nav--primary .md-nav__item--section > .md-nav__link {
+    color: #c62828 !important;
     font-weight: 700;
+}
+
+/* Hover-Effekt */
+.md-nav--primary .md-nav__item--section > .md-nav__link:hover {
+    color: #8e0000 !important;
 }
