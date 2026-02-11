@@ -16,3 +16,20 @@
 .md-nav--primary .md-nav__item--section > .md-nav__link:hover {
     color: #1565c0 !important;
 }
+
+
+.box-green {
+  border-left: 6px solid #2e7d32;
+  background: #e8f5e9;
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin: 14px 0;
+}
+
+.box-blue {
+  border-left: 6px solid #1565c0;
+  background: #e3f2fd;
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin: 14px 0;
+}
