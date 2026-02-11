@@ -1075,6 +1075,78 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#lage-von-kreis-und-gerade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lage von Kreis und Gerade
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lage von Kreis und Gerade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-untersuchung-auf-gemeinsame-punkte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        a) Untersuchung auf gemeinsame Punkte
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#einsetzen-in-die-kreisgleichung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Einsetzen in die Kreisgleichung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ausmultiplizieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ausmultiplizieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#losung-der-quadratischen-gleichung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lösung der quadratischen Gleichung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bestimmung-der-schnittpunkte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bestimmung der Schnittpunkte
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1336,6 +1408,139 @@ x_{1,2}
 <strong>Ergebnis:</strong><br>
 Die Gerade besitzt keinen Schnittpunkt mit dem Kreis.
 Die Gerade ist eine <strong>Passante</strong>.
+</div>
+
+<h2 id="lage-von-kreis-und-gerade">Lage von Kreis und Gerade<a class="headerlink" href="#lage-von-kreis-und-gerade" title="Permanent link">&para;</a></h2>
+<p>Gegeben sind ein Kreis <span class="arithmatex">\(k\)</span> mit Mittelpunkt</p>
+<div class="arithmatex">\[
+M(-2|1)
+\]</div>
+<p>und dem Radius <span class="arithmatex">\(r=5\)</span> sowie eine Gerade <span class="arithmatex">\(g\)</span> durch die Punkte</p>
+<div class="arithmatex">\[
+P(3|11) \quad \text{und} \quad Q(0|-10).
+\]</div>
+<hr />
+<h3 id="a-untersuchung-auf-gemeinsame-punkte">a) Untersuchung auf gemeinsame Punkte<a class="headerlink" href="#a-untersuchung-auf-gemeinsame-punkte" title="Permanent link">&para;</a></h3>
+<p>Zunächst wird die Kreisgleichung aufgestellt:</p>
+<div class="arithmatex">\[
+k:\ (x+2)^2+(y-1)^2=25.
+\]</div>
+<p>Die Gerade wird in Parameterform angegeben.<br />
+Ein Richtungsvektor ergibt sich aus</p>
+<div class="arithmatex">\[
+\vec{v}=\overrightarrow{PQ}
+=
+\begin{pmatrix}
+0\\
+-10
+\end{pmatrix}
+-
+\begin{pmatrix}
+3\\
+11
+\end{pmatrix}
+=
+\begin{pmatrix}
+-3\\
+-21
+\end{pmatrix}.
+\]</div>
+<p>Damit lautet die Geradengleichung</p>
+<div class="arithmatex">\[
+g:\ \vec{x}
+=
+\begin{pmatrix}
+3\\
+11
+\end{pmatrix}
++
+a
+\begin{pmatrix}
+-3\\
+-21
+\end{pmatrix},
+\quad a\in\mathbb{R}.
+\]</div>
+<p>Ein allgemeiner Punkt der Geraden besitzt somit die Koordinaten</p>
+<div class="arithmatex">\[
+x=3-3a,
+\qquad
+y=11-21a.
+\]</div>
+<hr />
+<h3 id="einsetzen-in-die-kreisgleichung">Einsetzen in die Kreisgleichung<a class="headerlink" href="#einsetzen-in-die-kreisgleichung" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+(3-3a+2)^2+(11-21a-1)^2=25.
+\]</div>
+<div class="arithmatex">\[
+(5-3a)^2+(10-21a)^2=25.
+\]</div>
+<hr />
+<h3 id="ausmultiplizieren">Ausmultiplizieren<a class="headerlink" href="#ausmultiplizieren" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+25-30a+9a^2+100-420a+441a^2=25.
+\]</div>
+<div class="arithmatex">\[
+450a^2-450a+100=0.
+\]</div>
+<p>Division durch <span class="arithmatex">\(450\)</span>:</p>
+<div class="arithmatex">\[
+a^2-a+\frac{2}{9}=0.
+\]</div>
+<hr />
+<h3 id="losung-der-quadratischen-gleichung">Lösung der quadratischen Gleichung<a class="headerlink" href="#losung-der-quadratischen-gleichung" title="Permanent link">&para;</a></h3>
+<p>Die Gleichung besitzt die Lösungen</p>
+<div class="arithmatex">\[
+a_1=\frac{1}{3},
+\qquad
+a_2=\frac{2}{3}.
+\]</div>
+<hr />
+<h3 id="bestimmung-der-schnittpunkte">Bestimmung der Schnittpunkte<a class="headerlink" href="#bestimmung-der-schnittpunkte" title="Permanent link">&para;</a></h3>
+<p>Einsetzen in die Geradengleichung:</p>
+<p>Für <span class="arithmatex">\(a_1=\frac{1}{3}\)</span>:</p>
+<div class="arithmatex">\[
+S_1=
+\begin{pmatrix}
+3\\
+11
+\end{pmatrix}
++
+\frac{1}{3}
+\begin{pmatrix}
+-3\\
+-21
+\end{pmatrix}
+=
+\begin{pmatrix}
+2\\
+4
+\end{pmatrix}.
+\]</div>
+<p>Für <span class="arithmatex">\(a_2=\frac{2}{3}\)</span>:</p>
+<div class="arithmatex">\[
+S_2=
+\begin{pmatrix}
+3\\
+11
+\end{pmatrix}
++
+\frac{2}{3}
+\begin{pmatrix}
+-3\\
+-21
+\end{pmatrix}
+=
+\begin{pmatrix}
+1\\
+-3
+\end{pmatrix}.
+\]</div>
+<hr />
+<div class="box-green">
+<strong>Ergebnis:</strong><br>
+Die Gerade \(g\) und der Kreis \(k\) besitzen zwei gemeinsame Punkte.
+Die Gerade ist eine <strong>Sekante</strong>.
 </div>
 
 
