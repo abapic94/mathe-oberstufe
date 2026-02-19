@@ -1080,6 +1080,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Verhalten in kritischen Stellen
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1096,6 +1114,103 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#beispiel-1-unendliches-verhalten-an-einer-kritischen-stelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel 1: Unendliches Verhalten an einer kritischen Stelle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Beispiel 1: Unendliches Verhalten an einer kritischen Stelle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabelle-testeinsetzung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabelle (Testeinsetzung)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schlussfolgerung-aus-der-tabelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schlussfolgerung aus der Tabelle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beispiel-2-endliches-verhalten-an-einer-kritischen-stelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel 2: Endliches Verhalten an einer kritischen Stelle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Beispiel 2: Endliches Verhalten an einer kritischen Stelle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabelle-testeinsetzung_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabelle (Testeinsetzung)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schlussfolgerung-aus-der-tabelle_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schlussfolgerung aus der Tabelle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1141,11 +1256,10 @@ Der <strong>linksseitige Grenzwert</strong> (Annäherung von links) wird geschri
 \lim_{x\to a^-} f(x).
 \]
 
-Dabei werden nur Werte \(x<a\) eingesetzt, die sich immer weiter an \(a\) annähern.
+Dabei werden nur Werte \(x< a\) eingesetzt, die sich immer weiter an \(a\) annähern.
 </div>
 
----
-
+<hr />
 <div class="box-blue">
 <strong>Definition:</strong><br>
 Der <strong>rechtsseitige Grenzwert</strong> (Annäherung von rechts) wird geschrieben als
@@ -1157,8 +1271,7 @@ Der <strong>rechtsseitige Grenzwert</strong> (Annäherung von rechts) wird gesch
 Dabei werden nur Werte \(x>a\) eingesetzt, die sich immer weiter an \(a\) annähern.
 </div>
 
----
-
+<hr />
 <div class="box-blue">
 <strong>Merksatz:</strong><br>
 Zur Bestimmung der Grenzwerte in kritischen Stellen kann eine
@@ -1167,42 +1280,57 @@ Es werden Werte knapp kleiner als \(a\) und knapp größer als \(a\) eingesetzt,
 und anschließend wird das Verhalten der Funktionswerte beobachtet.
 </div>
 
----
-
-## Beispiel 1: Unendliches Verhalten an einer kritischen Stelle
-
-Gegeben sei
-
-\[
+<hr />
+<h2 id="beispiel-1-unendliches-verhalten-an-einer-kritischen-stelle">Beispiel 1: Unendliches Verhalten an einer kritischen Stelle<a class="headerlink" href="#beispiel-1-unendliches-verhalten-an-einer-kritischen-stelle" title="Permanent link">&para;</a></h2>
+<p>Gegeben sei</p>
+<div class="arithmatex">\[
 f(x)=\frac{1}{x-2}.
-\]
-
-Die Stelle \(x=2\) ist kritisch, da der Nenner dort null wird.
-
----
-
-### Tabelle (Testeinsetzung)
-
-| \(x\) | … | 1,9 | 1,99 | 1,999 | 2,001 | 2,01 | 2,1 | … |
-|------|----|------|------|-------|-------|------|------|----|
-| \(f(x)\) | … | -10 | -100 | -1000 | 1000 | 100 | 10 | … |
-
----
-
-### Schlussfolgerung aus der Tabelle
-
-- linksseitig (\(x\to 2^-\)): \(f(x)\) wird beliebig klein
-
-\[
+\]</div>
+<p>Die Stelle <span class="arithmatex">\(x=2\)</span> ist kritisch, da der Nenner dort null wird.</p>
+<hr />
+<h3 id="tabelle-testeinsetzung">Tabelle (Testeinsetzung)<a class="headerlink" href="#tabelle-testeinsetzung" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(x\)</span></th>
+<th>…</th>
+<th>1,9</th>
+<th>1,99</th>
+<th>1,999</th>
+<th>2,001</th>
+<th>2,01</th>
+<th>2,1</th>
+<th>…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(f(x)\)</span></td>
+<td>…</td>
+<td>-10</td>
+<td>-100</td>
+<td>-1000</td>
+<td>1000</td>
+<td>100</td>
+<td>10</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="schlussfolgerung-aus-der-tabelle">Schlussfolgerung aus der Tabelle<a class="headerlink" href="#schlussfolgerung-aus-der-tabelle" title="Permanent link">&para;</a></h3>
+<ul>
+<li>linksseitig (<span class="arithmatex">\(x\to 2^-\)</span>): <span class="arithmatex">\(f(x)\)</span> wird beliebig klein</li>
+</ul>
+<div class="arithmatex">\[
 \lim_{x\to 2^-} f(x)=-\infty
-\]
-
-- rechtsseitig (\(x\to 2^+\)): \(f(x)\) wird beliebig groß
-
-\[
+\]</div>
+<ul>
+<li>rechtsseitig (<span class="arithmatex">\(x\to 2^+\)</span>): <span class="arithmatex">\(f(x)\)</span> wird beliebig groß</li>
+</ul>
+<div class="arithmatex">\[
 \lim_{x\to 2^+} f(x)=+\infty
-\]
-
+\]</div>
 <div class="box-green">
 <strong>Ergebnis:</strong><br>
 \[
@@ -1212,42 +1340,57 @@ Die Stelle \(x=2\) ist kritisch, da der Nenner dort null wird.
 \]
 </div>
 
----
-
-## Beispiel 2: Endliches Verhalten an einer kritischen Stelle
-
-Gegeben sei
-
-\[
+<hr />
+<h2 id="beispiel-2-endliches-verhalten-an-einer-kritischen-stelle">Beispiel 2: Endliches Verhalten an einer kritischen Stelle<a class="headerlink" href="#beispiel-2-endliches-verhalten-an-einer-kritischen-stelle" title="Permanent link">&para;</a></h2>
+<p>Gegeben sei</p>
+<div class="arithmatex">\[
 g(x)=\frac{x^2-4}{x-2}.
-\]
-
-Auch hier ist \(x=2\) kritisch, da der Nenner dort null wird.
-
----
-
-### Tabelle (Testeinsetzung)
-
-| \(x\) | … | 1,9 | 1,99 | 1,999 | 2,001 | 2,01 | 2,1 | … |
-|------|----|------|------|-------|-------|------|------|----|
-| \(g(x)\) | … | 3,9 | 3,99 | 3,999 | 4,001 | 4,01 | 4,1 | … |
-
----
-
-### Schlussfolgerung aus der Tabelle
-
-- linksseitig (\(x\to 2^-\)): \(g(x)\) nähert sich \(4\)
-
-\[
+\]</div>
+<p>Auch hier ist <span class="arithmatex">\(x=2\)</span> kritisch, da der Nenner dort null wird.</p>
+<hr />
+<h3 id="tabelle-testeinsetzung_1">Tabelle (Testeinsetzung)<a class="headerlink" href="#tabelle-testeinsetzung_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(x\)</span></th>
+<th>…</th>
+<th>1,9</th>
+<th>1,99</th>
+<th>1,999</th>
+<th>2,001</th>
+<th>2,01</th>
+<th>2,1</th>
+<th>…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(g(x)\)</span></td>
+<td>…</td>
+<td>3,9</td>
+<td>3,99</td>
+<td>3,999</td>
+<td>4,001</td>
+<td>4,01</td>
+<td>4,1</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="schlussfolgerung-aus-der-tabelle_1">Schlussfolgerung aus der Tabelle<a class="headerlink" href="#schlussfolgerung-aus-der-tabelle_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>linksseitig (<span class="arithmatex">\(x\to 2^-\)</span>): <span class="arithmatex">\(g(x)\)</span> nähert sich <span class="arithmatex">\(4\)</span></li>
+</ul>
+<div class="arithmatex">\[
 \lim_{x\to 2^-} g(x)=4
-\]
-
-- rechtsseitig (\(x\to 2^+\)): \(g(x)\) nähert sich \(4\)
-
-\[
+\]</div>
+<ul>
+<li>rechtsseitig (<span class="arithmatex">\(x\to 2^+\)</span>): <span class="arithmatex">\(g(x)\)</span> nähert sich <span class="arithmatex">\(4\)</span></li>
+</ul>
+<div class="arithmatex">\[
 \lim_{x\to 2^+} g(x)=4
-\]
-
+\]</div>
 <div class="box-green">
 <strong>Ergebnis:</strong><br>
 \[
@@ -1257,8 +1400,7 @@ Auch hier ist \(x=2\) kritisch, da der Nenner dort null wird.
 \]
 </div>
 
----
-
+<hr />
 <div class="box-blue">
 <strong>Merksatz:</strong><br>
 Die Testeinsetzung liefert:
