@@ -1209,27 +1209,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#beispiel-3-unterschiedliche-links-und-rechtsseitige-grenzwerte-nicht-konstant" class="md-nav__link">
+  <a href="#beispiel-3-unterschiedliche-links-und-rechtsseitige-grenzwerte-stuckweise-definiert" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Beispiel 3: Unterschiedliche links- und rechtsseitige Grenzwerte (nicht konstant)
+        Beispiel 3: Unterschiedliche links- und rechtsseitige Grenzwerte (stückweise definiert)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Beispiel 3: Unterschiedliche links- und rechtsseitige Grenzwerte (nicht konstant)">
+    <nav class="md-nav" aria-label="Beispiel 3: Unterschiedliche links- und rechtsseitige Grenzwerte (stückweise definiert)">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#fallunterscheidung-nur-zur-orientierung" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Fallunterscheidung (nur zur Orientierung)
-      
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#tabelle-testeinsetzung_2" class="md-nav__link">
@@ -1477,22 +1466,17 @@ g(x)=\frac{x^2-4}{x-2}.
 
 <hr />
 <hr />
-<h2 id="beispiel-3-unterschiedliche-links-und-rechtsseitige-grenzwerte-nicht-konstant">Beispiel 3: Unterschiedliche links- und rechtsseitige Grenzwerte (nicht konstant)<a class="headerlink" href="#beispiel-3-unterschiedliche-links-und-rechtsseitige-grenzwerte-nicht-konstant" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="beispiel-3-unterschiedliche-links-und-rechtsseitige-grenzwerte-stuckweise-definiert">Beispiel 3: Unterschiedliche links- und rechtsseitige Grenzwerte (stückweise definiert)<a class="headerlink" href="#beispiel-3-unterschiedliche-links-und-rechtsseitige-grenzwerte-stuckweise-definiert" title="Permanent link">&para;</a></h2>
 <p>Gegeben sei die Funktion</p>
 <div class="arithmatex">\[
-h(x)=\frac{|x-1|}{x-1}.
+h(x)=
+\begin{cases}
+x^2+1 &amp; \text{für } x&lt;1 \\
+2x+3 &amp; \text{für } x\ge 1
+\end{cases}
 \]</div>
-<p>Die Stelle <span class="arithmatex">\(x=1\)</span> ist kritisch, da der Nenner dort null wird.</p>
-<hr />
-<h3 id="fallunterscheidung-nur-zur-orientierung">Fallunterscheidung (nur zur Orientierung)<a class="headerlink" href="#fallunterscheidung-nur-zur-orientierung" title="Permanent link">&para;</a></h3>
-<p>Für <span class="arithmatex">\(x&lt;1\)</span> gilt:
-[
-|x-1|=-(x-1)
-]</p>
-<p>Für <span class="arithmatex">\(x&gt;1\)</span> gilt:
-[
-|x-1|=x-1
-]</p>
+<p>Die Stelle <span class="arithmatex">\(x=1\)</span> ist kritisch.</p>
 <hr />
 <h3 id="tabelle-testeinsetzung_2">Tabelle (Testeinsetzung)<a class="headerlink" href="#tabelle-testeinsetzung_2" title="Permanent link">&para;</a></h3>
 <table>
@@ -1513,12 +1497,12 @@ h(x)=\frac{|x-1|}{x-1}.
 <tr>
 <td><span class="arithmatex">\(h(x)\)</span></td>
 <td>…</td>
-<td>-1</td>
-<td>-1</td>
-<td>-1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
+<td>1,81</td>
+<td>1,9801</td>
+<td>1,998001</td>
+<td>5,002</td>
+<td>5,02</td>
+<td>5,2</td>
 <td>…</td>
 </tr>
 </tbody>
@@ -1529,26 +1513,25 @@ h(x)=\frac{|x-1|}{x-1}.
 <li>linksseitig (<span class="arithmatex">\(x\to 1^-\)</span>):</li>
 </ul>
 <div class="arithmatex">\[
-\lim_{x\to 1^-} h(x)=-1
+\lim_{x\to 1^-} h(x)=2
 \]</div>
 <ul>
 <li>rechtsseitig (<span class="arithmatex">\(x\to 1^+\)</span>):</li>
 </ul>
 <div class="arithmatex">\[
-\lim_{x\to 1^+} h(x)=1
+\lim_{x\to 1^+} h(x)=5
 \]</div>
 <hr />
 <div class="box-green">
 <strong>Ergebnis:</strong><br>
 
 \[
-\lim_{x\to 1^-} h(x)=-1,
+\lim_{x\to 1^-} h(x)=2,
 \qquad
-\lim_{x\to 1^+} h(x)=1.
+\lim_{x\to 1^+} h(x)=5.
 \]
 
-Da die einseitigen Grenzwerte verschieden sind,
-existiert
+Da die beiden Grenzwerte verschieden sind, existiert
 
 \[
 \lim_{x\to 1} h(x)
