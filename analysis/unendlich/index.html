@@ -1114,15 +1114,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#berechnung-mit-testeinsetzung-tabelle" class="md-nav__link">
+  <a href="#2-berechnung-mit-testeinsetzung-tabelle" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Berechnung mit Testeinsetzung (Tabelle)
+        2. Berechnung mit Testeinsetzung (Tabelle)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Berechnung mit Testeinsetzung (Tabelle)">
+    <nav class="md-nav" aria-label="2. Berechnung mit Testeinsetzung (Tabelle)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1149,6 +1149,39 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weitere-beispiele-zum-verhalten-im-unendlichen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weitere Beispiele zum Verhalten im Unendlichen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beispiel-uneigentlicher-grenzwert-pminfty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel: Uneigentlicher Grenzwert (\(\pm\infty\))
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beispiel-unterschiedliche-grenzwerte-fur-infty-und-infty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel: Unterschiedliche Grenzwerte für \(+\infty\) und \(-\infty\)
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1230,7 +1263,7 @@ Man schreibt:
 <li>Vergleich von Funktionen  </li>
 </ul>
 <hr />
-<h2 id="berechnung-mit-testeinsetzung-tabelle">Berechnung mit Testeinsetzung (Tabelle)<a class="headerlink" href="#berechnung-mit-testeinsetzung-tabelle" title="Permanent link">&para;</a></h2>
+<h2 id="2-berechnung-mit-testeinsetzung-tabelle">2. Berechnung mit Testeinsetzung (Tabelle)<a class="headerlink" href="#2-berechnung-mit-testeinsetzung-tabelle" title="Permanent link">&para;</a></h2>
 <p>Gegeben sei</p>
 <div class="arithmatex">\[
 f(x)=\frac{3x^2+1}{2x^2-5}.
@@ -1281,12 +1314,111 @@ für große positive Werte von <span class="arithmatex">\(x\)</span> dem Wert <s
 
 <div class="box-blue">
 <strong>Hinweis:</strong><br>
-Besitzt die Funktion \(f\) einen Grenzwert \(g\) so ist die Gerade \(y=g\) eine <strong>waagerechte Asymptote</strong>.
+Besitzt die Funktion \(f\) einen Grenzwert \(g\) so ist die Gerade \(y=g\) eine <strong>waagerechte Asymptote</strong> (eine Gerade, die sich der Graph einer Funktion immer weiter annähert, wenn man sich in die positive bzw. negative x-Richtung entfernt.).
 </div>
 
 <figure style="text-align: center;">
-  <img src="../assets/images/bsp1.png" width="400">
+  <img src="../assets/images/bsp1.png" width="600">
 </figure>
+
+<h2 id="weitere-beispiele-zum-verhalten-im-unendlichen">Weitere Beispiele zum Verhalten im Unendlichen<a class="headerlink" href="#weitere-beispiele-zum-verhalten-im-unendlichen" title="Permanent link">&para;</a></h2>
+<p>Im Folgenden werden zwei typische Beispiele betrachtet:</p>
+<ol>
+<li>eine Funktion mit <strong>unendlichen Grenzwerten</strong>,  </li>
+<li>eine Funktion, bei der die Grenzwerte für <span class="arithmatex">\(x\to+\infty\)</span> und <span class="arithmatex">\(x\to-\infty\)</span> <strong>verschieden</strong> sind.</li>
+</ol>
+<hr />
+<h2 id="beispiel-uneigentlicher-grenzwert-pminfty">Beispiel: Uneigentlicher Grenzwert (<span class="arithmatex">\(\pm\infty\)</span>)<a class="headerlink" href="#beispiel-uneigentlicher-grenzwert-pminfty" title="Permanent link">&para;</a></h2>
+<p>Gegeben sei</p>
+<div class="arithmatex">\[
+f(x)=x^2-3x+1.
+\]</div>
+<p>Zur Untersuchung werden große Werte eingesetzt.</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(x\)</span></th>
+<th>…</th>
+<th>-1000</th>
+<th>-100</th>
+<th>-10</th>
+<th>10</th>
+<th>100</th>
+<th>1000</th>
+<th>…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(f(x)\)</span></td>
+<td>…</td>
+<td><span class="arithmatex">\(1003001\)</span></td>
+<td><span class="arithmatex">\(10301\)</span></td>
+<td><span class="arithmatex">\(131\)</span></td>
+<td><span class="arithmatex">\(71\)</span></td>
+<td><span class="arithmatex">\(9701\)</span></td>
+<td><span class="arithmatex">\(997001\)</span></td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+<p>Da <span class="arithmatex">\(x^2\)</span> für <span class="arithmatex">\(x\to\pm\infty\)</span> dominiert, gilt:</p>
+<div class="arithmatex">\[
+\lim_{x\to+\infty} f(x)=+\infty,
+\qquad
+\lim_{x\to-\infty} f(x)=+\infty.
+\]</div>
+<div class="box-green">
+<strong>Ergebnis:</strong><br>
+Die Funktion besitzt uneigentliche Grenzwerte und wächst für
+\(x\to\pm\infty\) ohne obere Schranke.
+</div>
+
+<hr />
+<h2 id="beispiel-unterschiedliche-grenzwerte-fur-infty-und-infty">Beispiel: Unterschiedliche Grenzwerte für <span class="arithmatex">\(+\infty\)</span> und <span class="arithmatex">\(-\infty\)</span><a class="headerlink" href="#beispiel-unterschiedliche-grenzwerte-fur-infty-und-infty" title="Permanent link">&para;</a></h2>
+<p>Gegeben sei</p>
+<div class="arithmatex">\[
+g(x)=x^3-2x.
+\]</div>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(x\)</span></th>
+<th>…</th>
+<th>-1000</th>
+<th>-100</th>
+<th>-10</th>
+<th>10</th>
+<th>100</th>
+<th>1000</th>
+<th>…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(g(x)\)</span></td>
+<td>…</td>
+<td><span class="arithmatex">\(-999998000\)</span></td>
+<td><span class="arithmatex">\(-999800\)</span></td>
+<td><span class="arithmatex">\(-980\)</span></td>
+<td><span class="arithmatex">\(980\)</span></td>
+<td><span class="arithmatex">\(999800\)</span></td>
+<td><span class="arithmatex">\(999998000\)</span></td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+<p>Da der führende Term <span class="arithmatex">\(x^3\)</span> das Verhalten bestimmt, gilt:</p>
+<div class="arithmatex">\[
+\lim_{x\to+\infty} g(x)=+\infty,
+\qquad
+\lim_{x\to-\infty} g(x)=-\infty.
+\]</div>
+<div class="box-green">
+<strong>Ergebnis:</strong><br>
+Die Funktion besitzt für \(x\to+\infty\) und \(x\to-\infty\)
+unterschiedliche uneigentliche Grenzwerte.
+</div>
 
 
 
