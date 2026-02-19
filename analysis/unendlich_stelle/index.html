@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#infinitesimalrechnung-verhalten-in-kritischen-stellen" class="md-skip">
+        <a href="#infinitesimalrechnung-verhalten-in-kritischen-stellen-nur-testeinsetzung" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -1080,24 +1080,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Verhalten in kritischen Stellen
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1114,120 +1096,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-polstelle" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Polstelle
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Polstelle">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#beispiel" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Beispiel
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-hebbare-definitionslucke" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Hebbare Definitionslücke
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Hebbare Definitionslücke">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#beispiel_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Beispiel
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-sprungstelle" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Sprungstelle
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Sprungstelle">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#beispiel_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Beispiel
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ubersicht-kritischer-stellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Übersicht kritischer Stellen
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1258,161 +1126,147 @@
 
 
 
-<h1 id="infinitesimalrechnung-verhalten-in-kritischen-stellen">Infinitesimalrechnung – Verhalten in kritischen Stellen<a class="headerlink" href="#infinitesimalrechnung-verhalten-in-kritischen-stellen" title="Permanent link">&para;</a></h1>
+<h1 id="infinitesimalrechnung-verhalten-in-kritischen-stellen-nur-testeinsetzung">Infinitesimalrechnung – Verhalten in kritischen Stellen (nur Testeinsetzung)<a class="headerlink" href="#infinitesimalrechnung-verhalten-in-kritischen-stellen-nur-testeinsetzung" title="Permanent link">&para;</a></h1>
 <p>Das Verhalten in kritischen Stellen beschreibt, wie sich eine Funktion
-in der Nähe bestimmter x-Werte verhält, an denen sie besondere Eigenschaften zeigt.</p>
-<p>Eine <strong>kritische Stelle</strong> ist ein Wert <span class="arithmatex">\(x=a\)</span>, an dem die Funktion
-nicht definiert ist oder an dem besondere Grenzwerte auftreten.</p>
-<p>Dabei betrachtet man Grenzwerte der Form</p>
-<div class="arithmatex">\[
-\lim_{x \to a} f(x).
-\]</div>
+in der Nähe eines bestimmten Wertes <span class="arithmatex">\(x=a\)</span> verhält.</p>
+<p>Dabei werden insbesondere der <strong>linksseitige Grenzwert</strong>
+(Annäherung von links) und der <strong>rechtsseitige Grenzwert</strong>
+(Annäherung von rechts) betrachtet.</p>
 <hr />
 <div class="box-blue">
 <strong>Definition:</strong><br>
-Der <strong>linksseitige Grenzwert</strong> (Grenzwert für Annäherung von links)
-ist definiert durch
+Der <strong>linksseitige Grenzwert</strong> (Annäherung von links) wird geschrieben als
 
 \[
-\lim_{x\to a^-} f(x),
+\lim_{x\to a^-} f(x).
 \]
 
-wobei sich \(x\) nur über Werte kleiner als \(a\) nähert.
+Dabei werden nur Werte \(x<a\) eingesetzt, die sich immer weiter an \(a\) annähern.
 </div>
 
-<hr />
+---
+
 <div class="box-blue">
 <strong>Definition:</strong><br>
-Der <strong>rechtsseitige Grenzwert</strong> (Grenzwert für Annäherung von rechts)
-ist definiert durch
+Der <strong>rechtsseitige Grenzwert</strong> (Annäherung von rechts) wird geschrieben als
 
 \[
-\lim_{x\to a^+} f(x),
+\lim_{x\to a^+} f(x).
 \]
 
-wobei sich \(x\) nur über Werte größer als \(a\) nähert.
+Dabei werden nur Werte \(x>a\) eingesetzt, die sich immer weiter an \(a\) annähern.
 </div>
 
-<hr />
+---
+
 <div class="box-blue">
 <strong>Merksatz:</strong><br>
-Existieren beide einseitigen Grenzwerte und sind gleich, so existiert
-der Grenzwert
-
-\[
-\lim_{x\to a} f(x).
-\]
+Zur Bestimmung der Grenzwerte in kritischen Stellen kann eine
+<strong>Testeinsetzung</strong> verwendet werden:  
+Es werden Werte knapp kleiner als \(a\) und knapp größer als \(a\) eingesetzt,
+und anschließend wird das Verhalten der Funktionswerte beobachtet.
 </div>
 
-<hr />
-<div class="box-blue">
-<strong>Merksatz:</strong><br>
-Gilt
+---
+
+## Beispiel 1: Unendliches Verhalten an einer kritischen Stelle
+
+Gegeben sei
 
 \[
-\lim_{x\to a} f(x)=\pm\infty,
-\]
-
-so besitzt die Funktion bei \(x=a\) eine
-<strong>senkrechte Asymptote</strong>
-(eine Gerade der Form \(x=a\), der sich der Graph unbegrenzt annähert).
-</div>
-
-<hr />
-<h2 id="1-polstelle">1. Polstelle<a class="headerlink" href="#1-polstelle" title="Permanent link">&para;</a></h2>
-<p>Eine <strong>Polstelle</strong> (Stelle mit unendlichem Funktionswert) liegt vor,
-wenn der Grenzwert gegen <span class="arithmatex">\(+\infty\)</span> oder <span class="arithmatex">\(-\infty\)</span> geht.</p>
-<h3 id="beispiel">Beispiel<a class="headerlink" href="#beispiel" title="Permanent link">&para;</a></h3>
-<div class="arithmatex">\[
 f(x)=\frac{1}{x-2}.
-\]</div>
-<p>Hier ist <span class="arithmatex">\(x=2\)</span> nicht definiert.</p>
-<div class="arithmatex">\[
+\]
+
+Die Stelle \(x=2\) ist kritisch, da der Nenner dort null wird.
+
+---
+
+### Tabelle (Testeinsetzung)
+
+| \(x\) | … | 1,9 | 1,99 | 1,999 | 2,001 | 2,01 | 2,1 | … |
+|------|----|------|------|-------|-------|------|------|----|
+| \(f(x)\) | … | -10 | -100 | -1000 | 1000 | 100 | 10 | … |
+
+---
+
+### Schlussfolgerung aus der Tabelle
+
+- linksseitig (\(x\to 2^-\)): \(f(x)\) wird beliebig klein
+
+\[
+\lim_{x\to 2^-} f(x)=-\infty
+\]
+
+- rechtsseitig (\(x\to 2^+\)): \(f(x)\) wird beliebig groß
+
+\[
+\lim_{x\to 2^+} f(x)=+\infty
+\]
+
+<div class="box-green">
+<strong>Ergebnis:</strong><br>
+\[
 \lim_{x\to 2^-} f(x)=-\infty,
 \qquad
 \lim_{x\to 2^+} f(x)=+\infty.
-\]</div>
-<div class="box-green">
-<strong>Ergebnis:</strong><br>
-Es liegt eine <strong>Polstelle</strong> bei \(x=2\) vor.
-Die Gerade \(x=2\) ist eine senkrechte Asymptote.
+\]
 </div>
 
-<hr />
-<h2 id="2-hebbare-definitionslucke">2. Hebbare Definitionslücke<a class="headerlink" href="#2-hebbare-definitionslucke" title="Permanent link">&para;</a></h2>
-<p>Eine <strong>hebbare Lücke</strong> (entfernbarer Definitionsfehler)
-liegt vor, wenn der Grenzwert existiert, die Funktion
-aber an dieser Stelle nicht definiert ist.</p>
-<h3 id="beispiel_1">Beispiel<a class="headerlink" href="#beispiel_1" title="Permanent link">&para;</a></h3>
-<div class="arithmatex">\[
-f(x)=\frac{x^2-4}{x-2}.
-\]</div>
-<p>Vereinfachung:</p>
-<div class="arithmatex">\[
-f(x)=x+2 \quad \text{für } x\neq 2.
-\]</div>
-<p>Grenzwert:</p>
-<div class="arithmatex">\[
-\lim_{x\to 2} f(x)=4.
-\]</div>
+---
+
+## Beispiel 2: Endliches Verhalten an einer kritischen Stelle
+
+Gegeben sei
+
+\[
+g(x)=\frac{x^2-4}{x-2}.
+\]
+
+Auch hier ist \(x=2\) kritisch, da der Nenner dort null wird.
+
+---
+
+### Tabelle (Testeinsetzung)
+
+| \(x\) | … | 1,9 | 1,99 | 1,999 | 2,001 | 2,01 | 2,1 | … |
+|------|----|------|------|-------|-------|------|------|----|
+| \(g(x)\) | … | 3,9 | 3,99 | 3,999 | 4,001 | 4,01 | 4,1 | … |
+
+---
+
+### Schlussfolgerung aus der Tabelle
+
+- linksseitig (\(x\to 2^-\)): \(g(x)\) nähert sich \(4\)
+
+\[
+\lim_{x\to 2^-} g(x)=4
+\]
+
+- rechtsseitig (\(x\to 2^+\)): \(g(x)\) nähert sich \(4\)
+
+\[
+\lim_{x\to 2^+} g(x)=4
+\]
+
 <div class="box-green">
 <strong>Ergebnis:</strong><br>
-Die Funktion besitzt bei \(x=2\) eine <strong>hebbare Lücke</strong>.
-Der Funktionswert könnte durch geeignete Definition ergänzt werden.
-</div>
-
-<hr />
-<h2 id="3-sprungstelle">3. Sprungstelle<a class="headerlink" href="#3-sprungstelle" title="Permanent link">&para;</a></h2>
-<p>Eine <strong>Sprungstelle</strong> (Unstetigkeitsstelle mit unterschiedlichem Grenzwert)
-liegt vor, wenn die einseitigen Grenzwerte existieren,
-aber verschieden sind.</p>
-<h3 id="beispiel_2">Beispiel<a class="headerlink" href="#beispiel_2" title="Permanent link">&para;</a></h3>
-<div class="arithmatex">\[
-f(x)=
-\begin{cases}
-1 &amp; \text{für } x&lt;0 \\
-3 &amp; \text{für } x\ge 0
-\end{cases}
-\]</div>
-<div class="arithmatex">\[
-\lim_{x\to 0^-} f(x)=1,
+\[
+\lim_{x\to 2^-} g(x)=4,
 \qquad
-\lim_{x\to 0^+} f(x)=3.
-\]</div>
-<div class="box-green">
-<strong>Ergebnis:</strong><br>
-Da die Grenzwerte verschieden sind,
-liegt eine <strong>Sprungstelle</strong> bei \(x=0\) vor.
+\lim_{x\to 2^+} g(x)=4.
+\]
 </div>
 
-<hr />
-<h2 id="ubersicht-kritischer-stellen">Übersicht kritischer Stellen<a class="headerlink" href="#ubersicht-kritischer-stellen" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Situation</th>
-<th>Verhalten</th>
-<th>Bedeutung</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Nenner = 0, Zähler ≠ 0</td>
-<td><span class="arithmatex">\( \pm\infty \)</span></td>
-<td>Polstelle</td>
-</tr>
-<tr>
-<td>Nenner = 0, Zähler = 0</td>
-<td>endlich</td>
-<td>hebbare Lücke</td>
-</tr>
-<tr>
-<td>links ≠ rechts</td>
-<td>kein Grenzwert</td>
-<td>Sprungstelle</td>
-</tr>
-</tbody>
-</table>
+---
+
+<div class="box-blue">
+<strong>Merksatz:</strong><br>
+Die Testeinsetzung liefert:
+<ul>
+<li>Annäherung von links \(\Rightarrow \lim_{x\to a^-} f(x)\)</li>
+<li>Annäherung von rechts \(\Rightarrow \lim_{x\to a^+} f(x)\)</li>
+</ul>
+</div>
 
 
 
