@@ -1183,6 +1183,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Beispiel: Unterschiedliche Grenzwerte für \(+\infty\) und \(-\infty\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabelle_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabelle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1322,11 +1339,6 @@ Besitzt die Funktion \(f\) einen Grenzwert \(g\) so ist die Gerade \(y=g\) eine 
 </figure>
 
 <h2 id="weitere-beispiele-zum-verhalten-im-unendlichen">Weitere Beispiele zum Verhalten im Unendlichen<a class="headerlink" href="#weitere-beispiele-zum-verhalten-im-unendlichen" title="Permanent link">&para;</a></h2>
-<p>Im Folgenden werden zwei typische Beispiele betrachtet:</p>
-<ol>
-<li>eine Funktion mit <strong>unendlichen Grenzwerten</strong>,  </li>
-<li>eine Funktion, bei der die Grenzwerte für <span class="arithmatex">\(x\to+\infty\)</span> und <span class="arithmatex">\(x\to-\infty\)</span> <strong>verschieden</strong> sind.</li>
-</ol>
 <hr />
 <h2 id="beispiel-uneigentlicher-grenzwert-pminfty">Beispiel: Uneigentlicher Grenzwert (<span class="arithmatex">\(\pm\infty\)</span>)<a class="headerlink" href="#beispiel-uneigentlicher-grenzwert-pminfty" title="Permanent link">&para;</a></h2>
 <p>Gegeben sei</p>
@@ -1362,24 +1374,23 @@ f(x)=x^2-3x+1.
 </tr>
 </tbody>
 </table>
-<p>Da <span class="arithmatex">\(x^2\)</span> für <span class="arithmatex">\(x\to\pm\infty\)</span> dominiert, gilt:</p>
-<div class="arithmatex">\[
+<div class="box-green">
+<strong>Ergebnis:</strong><br>
+\[
 \lim_{x\to+\infty} f(x)=+\infty,
 \qquad
 \lim_{x\to-\infty} f(x)=+\infty.
-\]</div>
-<div class="box-green">
-<strong>Ergebnis:</strong><br>
-Die Funktion besitzt uneigentliche Grenzwerte und wächst für
-\(x\to\pm\infty\) ohne obere Schranke.
+\]
 </div>
 
 <hr />
 <h2 id="beispiel-unterschiedliche-grenzwerte-fur-infty-und-infty">Beispiel: Unterschiedliche Grenzwerte für <span class="arithmatex">\(+\infty\)</span> und <span class="arithmatex">\(-\infty\)</span><a class="headerlink" href="#beispiel-unterschiedliche-grenzwerte-fur-infty-und-infty" title="Permanent link">&para;</a></h2>
-<p>Gegeben sei</p>
+<p>Gegeben sei die Funktion</p>
 <div class="arithmatex">\[
-g(x)=x^3-2x.
+f(x)=\frac{2x}{\sqrt{x^2+1}}.
 \]</div>
+<hr />
+<h3 id="tabelle_1">Tabelle<a class="headerlink" href="#tabelle_1" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1396,28 +1407,29 @@ g(x)=x^3-2x.
 </thead>
 <tbody>
 <tr>
-<td><span class="arithmatex">\(g(x)\)</span></td>
+<td><span class="arithmatex">\(f(x)\)</span></td>
 <td>…</td>
-<td><span class="arithmatex">\(-999998000\)</span></td>
-<td><span class="arithmatex">\(-999800\)</span></td>
-<td><span class="arithmatex">\(-980\)</span></td>
-<td><span class="arithmatex">\(980\)</span></td>
-<td><span class="arithmatex">\(999800\)</span></td>
-<td><span class="arithmatex">\(999998000\)</span></td>
+<td><span class="arithmatex">\(-2{,}00\)</span></td>
+<td><span class="arithmatex">\(-2{,}00\)</span></td>
+<td><span class="arithmatex">\(-1{,}99\)</span></td>
+<td><span class="arithmatex">\(1{,}99\)</span></td>
+<td><span class="arithmatex">\(2{,}00\)</span></td>
+<td><span class="arithmatex">\(2{,}00\)</span></td>
 <td>…</td>
 </tr>
 </tbody>
 </table>
-<p>Da der führende Term <span class="arithmatex">\(x^3\)</span> das Verhalten bestimmt, gilt:</p>
-<div class="arithmatex">\[
-\lim_{x\to+\infty} g(x)=+\infty,
-\qquad
-\lim_{x\to-\infty} g(x)=-\infty.
-\]</div>
 <div class="box-green">
 <strong>Ergebnis:</strong><br>
-Die Funktion besitzt für \(x\to+\infty\) und \(x\to-\infty\)
-unterschiedliche uneigentliche Grenzwerte.
+
+\[
+\lim_{x\to+\infty} f(x)=2,
+\qquad
+\lim_{x\to-\infty} f(x)=-2.
+\]
+
+Die Funktion besitzt zwei verschiedene waagrechte Asymptoten:
+\(y=2\) rechts und \(y=-2\) links.
 </div>
 
 
