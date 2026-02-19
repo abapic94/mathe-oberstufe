@@ -1208,6 +1208,56 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#beispiel-3-unterschiedliche-links-und-rechtsseitige-grenzwerte-nicht-konstant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel 3: Unterschiedliche links- und rechtsseitige Grenzwerte (nicht konstant)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Beispiel 3: Unterschiedliche links- und rechtsseitige Grenzwerte (nicht konstant)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fallunterscheidung-nur-zur-orientierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fallunterscheidung (nur zur Orientierung)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabelle-testeinsetzung_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabelle (Testeinsetzung)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schlussfolgerung-aus-der-tabelle_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schlussfolgerung aus der Tabelle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1279,6 +1329,8 @@ der Grenzwert
 \[
 \lim_{x\to a} f(x).
 \]
+
+Andernfalls existiert dieser nicht.
 </div>
 
 <hr />
@@ -1361,6 +1413,7 @@ f(x)=\frac{1}{x-2}.
 \qquad
 \lim_{x\to 2^+} f(x)=+\infty.
 \]
+Die Funktion hat in $x=2$ eine senkrechte Asymptote.
 </div>
 
 <hr />
@@ -1417,20 +1470,91 @@ g(x)=\frac{x^2-4}{x-2}.
 <div class="box-green">
 <strong>Ergebnis:</strong><br>
 \[
-\lim_{x\to 2^-} g(x)=4,
-\qquad
-\lim_{x\to 2^+} g(x)=4.
+\lim_{x\to 2^-} g(x)=
+\lim_{x\to 2^+} g(x)=4\Longrigtharrow \lim_{x\to 2}=4.
 \]
 </div>
 
 <hr />
-<div class="box-blue">
-<strong>Merksatz:</strong><br>
-Die Testeinsetzung liefert:
+<hr />
+<h2 id="beispiel-3-unterschiedliche-links-und-rechtsseitige-grenzwerte-nicht-konstant">Beispiel 3: Unterschiedliche links- und rechtsseitige Grenzwerte (nicht konstant)<a class="headerlink" href="#beispiel-3-unterschiedliche-links-und-rechtsseitige-grenzwerte-nicht-konstant" title="Permanent link">&para;</a></h2>
+<p>Gegeben sei die Funktion</p>
+<div class="arithmatex">\[
+h(x)=\frac{|x-1|}{x-1}.
+\]</div>
+<p>Die Stelle <span class="arithmatex">\(x=1\)</span> ist kritisch, da der Nenner dort null wird.</p>
+<hr />
+<h3 id="fallunterscheidung-nur-zur-orientierung">Fallunterscheidung (nur zur Orientierung)<a class="headerlink" href="#fallunterscheidung-nur-zur-orientierung" title="Permanent link">&para;</a></h3>
+<p>Für <span class="arithmatex">\(x&lt;1\)</span> gilt:
+[
+|x-1|=-(x-1)
+]</p>
+<p>Für <span class="arithmatex">\(x&gt;1\)</span> gilt:
+[
+|x-1|=x-1
+]</p>
+<hr />
+<h3 id="tabelle-testeinsetzung_2">Tabelle (Testeinsetzung)<a class="headerlink" href="#tabelle-testeinsetzung_2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(x\)</span></th>
+<th>…</th>
+<th>0,9</th>
+<th>0,99</th>
+<th>0,999</th>
+<th>1,001</th>
+<th>1,01</th>
+<th>1,1</th>
+<th>…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(h(x)\)</span></td>
+<td>…</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="schlussfolgerung-aus-der-tabelle_2">Schlussfolgerung aus der Tabelle<a class="headerlink" href="#schlussfolgerung-aus-der-tabelle_2" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Annäherung von links \(\Rightarrow \lim_{x\to a^-} f(x)\)</li>
-<li>Annäherung von rechts \(\Rightarrow \lim_{x\to a^+} f(x)\)</li>
+<li>linksseitig (<span class="arithmatex">\(x\to 1^-\)</span>):</li>
 </ul>
+<div class="arithmatex">\[
+\lim_{x\to 1^-} h(x)=-1
+\]</div>
+<ul>
+<li>rechtsseitig (<span class="arithmatex">\(x\to 1^+\)</span>):</li>
+</ul>
+<div class="arithmatex">\[
+\lim_{x\to 1^+} h(x)=1
+\]</div>
+<hr />
+<div class="box-green">
+<strong>Ergebnis:</strong><br>
+
+\[
+\lim_{x\to 1^-} h(x)=-1,
+\qquad
+\lim_{x\to 1^+} h(x)=1.
+\]
+
+Da die einseitigen Grenzwerte verschieden sind,
+existiert
+
+\[
+\lim_{x\to 1} h(x)
+\]
+
+nicht.
 </div>
 
 
