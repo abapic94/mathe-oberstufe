@@ -65,6 +65,14 @@
 % Farben definieren
 \definecolor{myblue}{RGB}{227,242,253}
 \definecolor{mygreen}{RGB}{232,245,233}
+\definecolor{lightorange}{RGB}{255, 213, 128}
+\newcommand{\limeslinks}[2]{%
+  \lim_{\substack{#1 \to #2 \\ #1 < #2}}%
+}
+
+\newcommand{\limesrechts}[2]{%
+  \lim_{\substack{#1 \to #2 \\ #1 > #2}}%
+}
 
 \begin{document}
 
@@ -72,16 +80,6 @@
 
 Das Verhalten im Unendlichen beschreibt, wie sich die Funktionswerte
 für sehr große positive oder sehr große negative Werte von \(x\) verhalten.
-
-Dabei betrachtet man die Grenzwerte
-
-\[
-\lim_{x \to +\infty} f(x)
-\quad \text{und} \quad
-\lim_{x \to -\infty} f(x).
-\]
-
-Der Grenzwert wird auch \textit{Limes} genannt.
 
 \begin{tcolorbox}[colback=myblue]
 \textbf{Merksatz:}\\
@@ -94,11 +92,12 @@ so sagt man, dass \(f\) den \textbf{Grenzwert} \(g\) besitzt, und schreibt:
 \quad \text{bzw.} \quad
 \lim_{x \to -\infty} f(x) = g.
 \]
+Der Grenzwert wird auch \textit{Limes} genannt.
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=myblue]
 \textbf{Merksatz:}\\
-Eine Funktion besitzt einen \textbf{uneigentlichen Grenzwert},
+Eine Funktion besitzt einen \textbf{uneigentlichen Grenzwert} (Grenzwert existiert nicht),
 wenn für beliebig große bzw. kleine Werte von \(x\) der Funktionswert
 beliebig groß oder beliebig klein wird.
 
@@ -134,7 +133,7 @@ f(x)=\frac{3x^2+1}{2x^2-5}.
 \begin{tabular}{c|cccccccccc}
 \(x\) & \dots & -10000&-1000 & -100 & -10 & 10 & 100 & 1000 &10000&\ldots \\
 \hline
-\(f(x)\) & \dots &1,50& 1{,}50 & 1{,}50 & 1{,}54 & 1{,}54 & 1{,}50 & 1{,}50 & 1,50&\ldots
+\(f(x)\) & \dots &1,5000& 1,5000& 1{,}5004 & 1{,}5436 & 1{,}5436 & 1{,}5004 & 1{,}5000 & 1{,}5000 &\ldots
 \end{tabular}
 \end{center}
 
@@ -146,7 +145,7 @@ Ist eine eindeutige Tendenz noch nicht erkennbar,
 werden größere Beträge eingesetzt.
 
 \begin{tcolorbox}[colback=mygreen]
-\textbf{Ergebnis:}
+\textbf{Ergebnis:} Es ist zu Vermuten:
 \[
 \lim_{x\to\pm\infty} f(x)=1,5.
 \]
@@ -160,8 +159,25 @@ Besitzt die Funktion \(f\) einen Grenzwert \(g\), so ist die Gerade
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{assets/images/bsp1.png}
+\includegraphics[width=0.6\textwidth]{assets/images/bsp1.png}
 \end{figure}
+
+\begin{tcolorbox}[colback=lightorange]
+\textbf{Hinweis zur Testeinsetzung:}\\
+Die Methode der Testeinsetzung (Tabellenmethode) ist keine
+mathematisch exakte und präzise Methode zur Bestimmung eines Grenzwertes.
+Sie liefert lediglich eine numerische Annäherung und ermöglicht
+eine begründete Vermutung über das Grenzverhalten einer Funktion.
+
+Da nur endlich viele Funktionswerte betrachtet werden,
+kann aus der Tabelle kein strenger Beweis für die Existenz
+oder den Wert eines Grenzwertes abgeleitet werden.
+\vspace{0.5cm}
+
+\textbf{
+Die durch Testeinsetzung gewonnenen Aussagen sind daher
+als \textbf{Vermutungen} zu formulieren.}
+\end{tcolorbox}
 
 \newpage
 
@@ -180,7 +196,7 @@ f(x)=x^2-3x+1.
 \end{center}
 
 \begin{tcolorbox}[colback=mygreen]
-\textbf{Ergebnis:}
+\textbf{Ergebnis:} Es ist zu vermuten:
 \[
 \lim_{x\to+\infty} f(x)=+\infty,
 \qquad
@@ -190,7 +206,7 @@ f(x)=x^2-3x+1.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.4\textwidth]{assets/images/bsp2.png}
+\includegraphics[width=0.35\textwidth]{assets/images/bsp2.png}
 \end{figure}
 
 \subsection*{Beispiel: Unterschiedliche Grenzwerte}
@@ -205,12 +221,12 @@ f(x)=\frac{2x}{\sqrt{x^2+1}}.
 \begin{tabular}{c|cccccccc}
 \(x\) & \dots & -1000 & -100 & -10 & 10 & 100 & 1000 & $\ldots$ \\
 \hline
-\(f(x)\) & \dots & -2{,}00 & -2{,}00 & -1{,}99 & 1{,}99 & 2{,}00 & 2{,}00 & $\ldots$
+\(f(x)\) & \dots & -1,99999 & -1,99995 & -1{,}99503 & 1{,}99503 & 1,99995 & 1,99999 & $\ldots$
 \end{tabular}
 \end{center}
 
 \begin{tcolorbox}[colback=mygreen]
-\textbf{Ergebnis:}
+\textbf{Ergebnis:} Es ist zu vermuten:
 \[
 \lim_{x\to+\infty} f(x)=2,
 \qquad
@@ -231,52 +247,60 @@ Die Funktion besitzt zwei verschiedene waagerechte Asymptoten:
 \section*{Infinitesimalrechnung – Verhalten in kritischen Stellen}
 
 Das Verhalten in kritischen Stellen beschreibt, wie sich eine Funktion
-in der Nähe eines bestimmten Wertes \(x=a\) verhält.
+in der Nähe eines bestimmten Wertes \(x=x_0\) verhält.
 
 Dabei werden insbesondere der \textbf{linksseitige Grenzwert}
 (Annäherung von links) und der \textbf{rechtsseitige Grenzwert}
 (Annäherung von rechts) betrachtet.
+
+\vspace{1cm}
 
 \begin{tcolorbox}[colback=myblue]
 \textbf{Definition:}\\
 Der \textbf{linksseitige Grenzwert} (Annäherung von links) wird geschrieben als
 
 \[
-\lim_{x\to a^-} f(x).
+\limeslinks{x}{x_0}f(x)
 \]
 
-Dabei werden nur Werte \(x<a\) eingesetzt, die sich immer weiter an \(a\) annähern.
+Dabei werden nur Werte \(x<x_0\) eingesetzt, die sich immer weiter an \(x_0\) annähern.
 \end{tcolorbox}
+\vspace{1cm}
 
 \begin{tcolorbox}[colback=myblue]
 \textbf{Definition:}\\
 Der \textbf{rechtsseitige Grenzwert} (Annäherung von rechts) wird geschrieben als
 
 \[
-\lim_{x\to a^+} f(x).
+\limesrechts{x}{x_0}f(x)
 \]
 
-Dabei werden nur Werte \(x>a\) eingesetzt, die sich immer weiter an \(a\) annähern.
+Dabei werden nur Werte \(x>x_0\) eingesetzt, die sich immer weiter an \(x_0\) annähern.
 \end{tcolorbox}
+\vspace{1cm}
 
 \begin{tcolorbox}[colback=myblue]
 \textbf{Merksatz:}\\
 Existieren beide einseitigen Grenzwerte und sind gleich, so existiert
 
 \[
-\lim_{x\to a} f(x).
+\lim_{x\to x_0} f(x).
 \]
 
 Andernfalls existiert dieser nicht.
 \end{tcolorbox}
+\vspace{1cm}
 
 \begin{tcolorbox}[colback=myblue]
 \textbf{Merksatz:}\\
 Zur Bestimmung der Grenzwerte in kritischen Stellen kann eine
-\textbf{Testeinsetzung} verwendet werden:
-Es werden Werte knapp kleiner als \(a\) und knapp größer als \(a\) eingesetzt,
+\textbf{Testeinsetzung} verwendet werden.
+Es werden Werte knapp kleiner als \(x_0\) und knapp größer als \(x_0\) eingesetzt,
 und anschließend wird das Verhalten der Funktionswerte beobachtet.
 \end{tcolorbox}
+
+
+\newpage
 
 \section*{Beispiel 1: Unendliches Verhalten}
 
@@ -287,29 +311,39 @@ f(x)=\frac{1}{x-2}.
 \]
 
 \subsection*{Tabelle (Testeinsetzung)}
-
 \begin{center}
-\begin{tabular}{c|cccccccc}
-\(x\) & $\ldots$ & 1{,}9 & 1{,}99 & 1{,}999 & 2{,}001 & 2{,}01 & 2{,}1 & $\ldots$ \\
+\begin{tabular}{c|ccccccccc}
+\(x\) 
+& 1{,}9 
+& 1{,}99 
+& 1{,}999 
+& \(\cdots\) 
+& 2 
+& \(\cdots\) 
+& 2{,}001 
+& 2{,}01 
+& 2{,}1 \\
 \hline
-\(f(x)\) & $\ldots$ & -10 & -100 & -1000 & 1000 & 100 & 10 & $\ldots$
+\(f(x)\) 
+& -10 
+& -100 
+& -1000 
+& \(\cdots\) 
+& \text{n.\,d.} 
+& \(\cdots\) 
+& 1000 
+& 100 
+& 10
 \end{tabular}
 \end{center}
 
-\[
-\lim_{x\to 2^-} f(x)=-\infty
-\]
-
-\[
-\lim_{x\to 2^+} f(x)=+\infty
-\]
 
 \begin{tcolorbox}[colback=mygreen]
-\textbf{Ergebnis:}
+\textbf{Ergebnis:} Es ist zu vermuten:
 \[
-\lim_{x\to 2^-} f(x)=-\infty,
+\limeslinks{x}{2} f(x)=-\infty,
 \qquad
-\lim_{x\to 2^+} f(x)=+\infty.
+\limesrechts{x}{2} f(x)=+\infty.
 \]
 
 Die Funktion besitzt bei \(x=2\) eine senkrechte Asymptote.
@@ -319,12 +353,18 @@ Die Funktion besitzt bei \(x=2\) eine senkrechte Asymptote.
 \textbf{Merksatz:}
 Gilt
 \[
-\lim_{x\to a} f(x)=\pm\infty,
+\lim_{x\to x_0} f(x)=\pm\infty,
 \]
-so besitzt die Funktion bei \(x=a\) eine
-\textbf{senkrechte Asymptote} (Gerade der Form \(x=a\)).
+so besitzt die Funktion bei \(x=x_0\) eine
+\textbf{senkrechte Asymptote}.
 \end{tcolorbox}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{assets/images/bsp4.png}
+\end{figure}
+
+\newpage
 \section*{Beispiel 2: Endliches Verhalten}
 
 Gegeben sei
@@ -334,42 +374,48 @@ g(x)=\frac{x^2-4}{x-2}.
 \]
 
 \subsection*{Tabelle (Testeinsetzung)}
-
 \begin{center}
-\begin{tabular}{c|cccccccc}
-\(x\) & $\ldots$ & 1{,}9 & 1{,}99 & 1{,}999 & 2{,}001 & 2{,}01 & 2{,}1 & $\ldots$ \\
+\begin{tabular}{c|ccccccccc}
+\(x\) 
+& 1{,}9 
+& 1{,}99 
+& 1{,}999 
+& \(\cdots\) 
+& 2 
+& \(\cdots\) 
+& 2{,}001 
+& 2{,}01 
+& 2{,}1 \\
 \hline
-\(g(x)\) & $\ldots$ & 3{,}9 & 3{,}99 & 3{,}999 & 4{,}001 & 4{,}01 & 4{,}1 & $\ldots$
+\(g(x)\) 
+& 3{,}9 
+& 3{,}99 
+& 3{,}999 
+& \(\cdots\) 
+& \text{n.\,d.} 
+& \(\cdots\) 
+& 4{,}001 
+& 4{,}01 
+& 4{,}1
 \end{tabular}
 \end{center}
 
-\[
-\lim_{x\to 2^-} g(x)=4
-\]
-
-\[
-\lim_{x\to 2^+} g(x)=4
-\]
-
 \begin{tcolorbox}[colback=mygreen]
-\textbf{Ergebnis:}
+\textbf{Ergebnis:} Es ist zu vermuten:
 \[
-\lim_{x\to 2} g(x)=4.
+\limeslinks{x}{2}g(x)=\limesrechts{x}{2}g(x)=4\Longrightarrow \lim_{x\to 2} g(x)=4.
 \]
 \end{tcolorbox}
 
-\begin{tcolorbox}[colback=myblue]
-\textbf{Merksatz:}
-Gilt
-\[
-\lim_{x\to a^-} f(x)=\lim_{x\to a^+} f(x)=L
-\quad \text{und} \quad
-a\notin D \ \text{oder} \ f(a)\neq L,
-\]
-so liegt eine \textbf{hebbare Lücke} vor.
-\end{tcolorbox}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{assets/images/bsp5.png}
+\end{figure}
 
-\section*{Beispiel 3: Unterschiedliche Grenzwerte (Sprungstelle)}
+
+\newpage
+
+\section*{Beispiel 3: Unterschiedliche Grenzwerte}
 
 Gegeben sei
 
@@ -384,27 +430,38 @@ x^2+1 & \text{für } x<1 \\
 \subsection*{Tabelle (Testeinsetzung)}
 
 \begin{center}
-\begin{tabular}{c|cccccc}
-\(x\) & 0{,}9 & 0{,}99 & 0{,}999 & 1{,}001 & 1{,}01 & 1{,}1 \\
+\begin{tabular}{c|ccccccccc}
+\(x\) 
+& 0{,}9 
+& 0{,}99 
+& 0{,}999 
+& \(\cdots\) 
+& ! 
+& \(\cdots\)
+& 1{,}001 
+& 1{,}01 
+& 1{,}1  \\
 \hline
-\(h(x)\) & 1{,}81 & 1{,}9801 & 1{,}998001 & 5{,}002 & 5{,}02 & 5{,}2
+\(h(x)\)  
+& 1{,}81 
+& 1{,}9801 
+& 1{,}998001 
+& \(\cdots\)
+& \text{n.\,d.} 
+& \(\cdots\)
+& 5{,}002 
+& 5{,}02 
+& 5{,}2 
 \end{tabular}
 \end{center}
 
-\[
-\lim_{x\to 1^-} h(x)=2
-\]
-
-\[
-\lim_{x\to 1^+} h(x)=5
-\]
 
 \begin{tcolorbox}[colback=mygreen]
-\textbf{Ergebnis:}
+\textbf{Ergebnis:} Es ist zu vermuten:
 \[
-\lim_{x\to 1^-} h(x)=2,
+\limeslinks{x}{1} h(x)=2,
 \qquad
-\lim_{x\to 1^+} h(x)=5.
+\limesrechts{x}{1} h(x)=5.
 \]
 
 Da die Grenzwerte verschieden sind, existiert
@@ -414,7 +471,52 @@ Da die Grenzwerte verschieden sind, existiert
 nicht.
 \end{tcolorbox}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{assets/images/bsp6.png}
+\end{figure}
+\newpage
+\section*{Alternative Schreibweisen für die Testeinsetzung}
 
+\vspace{1cm}
 
+\subsection*{Als zwei vertikale Tabellen:}
+\vspace{1cm}
+
+\begin{center}
+
+% links von 1
+\begin{tabular}{c|c}
+$x$ & $h(x)$ \\ \hline
+0{,}9   & 1{,}81 \\
+0{,}99  & 1{,}9801 \\
+0{,}999 & 1{,}998001\\
+$\vdots$ & $\vdots$
+\end{tabular}
+\qquad
+% rechts von 1
+\begin{tabular}{c|c}
+$x$ & $h(x)$ \\ \hline
+1{,}1   & 5{,}2\\
+1{,}01  & 5{,}02 \\
+1{,}001 & 5{,}002 \\
+$\vdots$ & $\vdots$
+\end{tabular}
+
+\end{center}
+
+\vspace{1cm}
+
+\subsection*{Als Funktionswerte:}
+
+\vspace{1cm}
+
+\begin{align*}
+h(0{,}9)   &= 1{,}81      &h(1{,}1)   &= 5{,}2 \\
+h(0{,}99)  &= 1{,}9801    & h(1{,}01)  &= 5{,}02 \\
+h(0{,}999) &= 1{,}998001  &  h(1{,}001) &= 5{,}002\\
+&\vdots &  &  \vdots
+\end{align*}
+\vspace{1cm}
 \end{document}
 
