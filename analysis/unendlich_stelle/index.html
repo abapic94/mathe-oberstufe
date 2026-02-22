@@ -1080,6 +1080,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Verhalten in kritischen Stellen
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1096,6 +1114,97 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#beispiel-1-unendliches-verhalten-polstelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel 1: Unendliches Verhalten (Polstelle)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beispiel-2-endliches-verhalten-hebbare-lucke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel 2: Endliches Verhalten (hebbare Lücke)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beispiel-3-unterschiedliche-grenzwerte-sprungstelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel 3: Unterschiedliche Grenzwerte (Sprungstelle)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternative-schreibweisen-fur-die-testeinsetzung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternative Schreibweisen für die Testeinsetzung
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alternative Schreibweisen für die Testeinsetzung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#als-zwei-vertikale-tabellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Als zwei vertikale Tabellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#als-funktionswerte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Als Funktionswerte
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1140,11 +1249,10 @@ wie sich eine Funktion in der Nähe eines bestimmten Wertes <span class="arithma
 \lim_{x\to x_0^-} f(x)
 \]
 
-Es werden nur Werte \(x<x_0\) betrachtet.
+Es werden nur Werte \(x< x_0\) betrachtet.
 </div>
 
----
-
+<hr />
 <div class="box-blue">
 <strong>Definition (rechtsseitiger Grenzwert):</strong><br>
 
@@ -1155,8 +1263,7 @@ Es werden nur Werte \(x<x_0\) betrachtet.
 Es werden nur Werte \(x>x_0\) betrachtet.
 </div>
 
----
-
+<hr />
 <div class="box-blue">
 <strong>Merksatz:</strong><br>
 Existieren beide einseitigen Grenzwerte und stimmen überein,  
@@ -1169,8 +1276,7 @@ so existiert der Grenzwert
 Andernfalls existiert dieser nicht.
 </div>
 
----
-
+<hr />
 <div class="box-lightorange">
 <strong>Hinweis zur Testeinsetzung:</strong><br>
 Die Tabellenmethode ist keine mathematisch exakte Beweismethode.  
@@ -1180,18 +1286,41 @@ Die gewonnenen Aussagen sind daher als
 <strong>begründete Vermutungen</strong> zu formulieren.
 </div>
 
----
-
-## Beispiel 1: Unendliches Verhalten (Polstelle)
-
-\[
+<hr />
+<h2 id="beispiel-1-unendliches-verhalten-polstelle">Beispiel 1: Unendliches Verhalten (Polstelle)<a class="headerlink" href="#beispiel-1-unendliches-verhalten-polstelle" title="Permanent link">&para;</a></h2>
+<div class="arithmatex">\[
 f(x)=\frac{1}{x-2}
-\]
-
-| \(x\) | 1,9 | 1,99 | 1,999 | \(\cdots\) | 2 | \(\cdots\) | 2,001 | 2,01 | 2,1 |
-|-------|-----|------|-------|-----------|---|-----------|-------|------|-----|
-| \(f(x)\) | -10 | -100 | -1000 | \(\cdots\) | n.d. | \(\cdots\) | 1000 | 100 | 10 |
-
+\]</div>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(x\)</span></th>
+<th>1,9</th>
+<th>1,99</th>
+<th>1,999</th>
+<th><span class="arithmatex">\(\cdots\)</span></th>
+<th>2</th>
+<th><span class="arithmatex">\(\cdots\)</span></th>
+<th>2,001</th>
+<th>2,01</th>
+<th>2,1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(f(x)\)</span></td>
+<td>-10</td>
+<td>-100</td>
+<td>-1000</td>
+<td><span class="arithmatex">\(\cdots\)</span></td>
+<td>n.d.</td>
+<td><span class="arithmatex">\(\cdots\)</span></td>
+<td>1000</td>
+<td>100</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
 <div class="box-green">
 <strong>Ergebnis:</strong><br>
 Es ist zu vermuten:
@@ -1205,18 +1334,41 @@ Es ist zu vermuten:
 Die Funktion besitzt bei \(x=2\) eine senkrechte Asymptote.
 </div>
 
----
-
-## Beispiel 2: Endliches Verhalten (hebbare Lücke)
-
-\[
+<hr />
+<h2 id="beispiel-2-endliches-verhalten-hebbare-lucke">Beispiel 2: Endliches Verhalten (hebbare Lücke)<a class="headerlink" href="#beispiel-2-endliches-verhalten-hebbare-lucke" title="Permanent link">&para;</a></h2>
+<div class="arithmatex">\[
 g(x)=\frac{x^2-4}{x-2}
-\]
-
-| \(x\) | 1,9 | 1,99 | 1,999 | \(\cdots\) | 2 | \(\cdots\) | 2,001 | 2,01 | 2,1 |
-|-------|-----|------|-------|-----------|---|-----------|-------|------|-----|
-| \(g(x)\) | 3,9 | 3,99 | 3,999 | \(\cdots\) | n.d. | \(\cdots\) | 4,001 | 4,01 | 4,1 |
-
+\]</div>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(x\)</span></th>
+<th>1,9</th>
+<th>1,99</th>
+<th>1,999</th>
+<th><span class="arithmatex">\(\cdots\)</span></th>
+<th>2</th>
+<th><span class="arithmatex">\(\cdots\)</span></th>
+<th>2,001</th>
+<th>2,01</th>
+<th>2,1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(g(x)\)</span></td>
+<td>3,9</td>
+<td>3,99</td>
+<td>3,999</td>
+<td><span class="arithmatex">\(\cdots\)</span></td>
+<td>n.d.</td>
+<td><span class="arithmatex">\(\cdots\)</span></td>
+<td>4,001</td>
+<td>4,01</td>
+<td>4,1</td>
+</tr>
+</tbody>
+</table>
 <div class="box-green">
 <strong>Ergebnis:</strong><br>
 Es ist zu vermuten:
@@ -1226,22 +1378,45 @@ Es ist zu vermuten:
 \]
 </div>
 
----
-
-## Beispiel 3: Unterschiedliche Grenzwerte (Sprungstelle)
-
-\[
+<hr />
+<h2 id="beispiel-3-unterschiedliche-grenzwerte-sprungstelle">Beispiel 3: Unterschiedliche Grenzwerte (Sprungstelle)<a class="headerlink" href="#beispiel-3-unterschiedliche-grenzwerte-sprungstelle" title="Permanent link">&para;</a></h2>
+<div class="arithmatex">\[
 h(x)=
 \begin{cases}
-x^2+1 & \text{für } x<1 \\
-2x+3 & \text{für } x\ge 1
+x^2+1 &amp; \text{für } x&lt;1 \\
+2x+3 &amp; \text{für } x\ge 1
 \end{cases}
-\]
-
-| \(x\) | 0,9 | 0,99 | 0,999 | \(\cdots\) | 1 | \(\cdots\) | 1,001 | 1,01 | 1,1 |
-|-------|-----|------|-------|-----------|---|-----------|-------|------|-----|
-| \(h(x)\) | 1,81 | 1,9801 | 1,998001 | \(\cdots\) | n.d. | \(\cdots\) | 5,002 | 5,02 | 5,2 |
-
+\]</div>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(x\)</span></th>
+<th>0,9</th>
+<th>0,99</th>
+<th>0,999</th>
+<th><span class="arithmatex">\(\cdots\)</span></th>
+<th>1</th>
+<th><span class="arithmatex">\(\cdots\)</span></th>
+<th>1,001</th>
+<th>1,01</th>
+<th>1,1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(h(x)\)</span></td>
+<td>1,81</td>
+<td>1,9801</td>
+<td>1,998001</td>
+<td><span class="arithmatex">\(\cdots\)</span></td>
+<td>n.d.</td>
+<td><span class="arithmatex">\(\cdots\)</span></td>
+<td>5,002</td>
+<td>5,02</td>
+<td>5,2</td>
+</tr>
+</tbody>
+</table>
 <div class="box-green">
 <strong>Ergebnis:</strong><br>
 Es ist zu vermuten:
@@ -1261,36 +1436,70 @@ Da die Grenzwerte verschieden sind, existiert
 nicht.
 </div>
 
----
-
-## Alternative Schreibweisen für die Testeinsetzung
-
-### Als zwei vertikale Tabellen
-
-| \(x\) (links von 1) | \(h(x)\) |
-|---|---|
-| 0,9 | 1,81 |
-| 0,99 | 1,9801 |
-| 0,999 | 1,998001 |
-| \(\vdots\) | \(\vdots\) |
-
-| \(x\) (rechts von 1) | \(h(x)\) |
-|---|---|
-| 1,1 | 5,2 |
-| 1,01 | 5,02 |
-| 1,001 | 5,002 |
-| \(\vdots\) | \(\vdots\) |
-
-### Als Funktionswerte
-
-\[
+<hr />
+<h2 id="alternative-schreibweisen-fur-die-testeinsetzung">Alternative Schreibweisen für die Testeinsetzung<a class="headerlink" href="#alternative-schreibweisen-fur-die-testeinsetzung" title="Permanent link">&para;</a></h2>
+<h3 id="als-zwei-vertikale-tabellen">Als zwei vertikale Tabellen<a class="headerlink" href="#als-zwei-vertikale-tabellen" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(x\)</span> (links von 1)</th>
+<th><span class="arithmatex">\(h(x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0,9</td>
+<td>1,81</td>
+</tr>
+<tr>
+<td>0,99</td>
+<td>1,9801</td>
+</tr>
+<tr>
+<td>0,999</td>
+<td>1,998001</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\vdots\)</span></td>
+<td><span class="arithmatex">\(\vdots\)</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(x\)</span> (rechts von 1)</th>
+<th><span class="arithmatex">\(h(x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1,1</td>
+<td>5,2</td>
+</tr>
+<tr>
+<td>1,01</td>
+<td>5,02</td>
+</tr>
+<tr>
+<td>1,001</td>
+<td>5,002</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\vdots\)</span></td>
+<td><span class="arithmatex">\(\vdots\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="als-funktionswerte">Als Funktionswerte<a class="headerlink" href="#als-funktionswerte" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
 \begin{aligned}
-h(0{,}9) &= 1{,}81 & \qquad h(1{,}1) &= 5{,}2 \\
-h(0{,}99) &= 1{,}9801 & \qquad h(1{,}01) &= 5{,}02 \\
-h(0{,}999) &= 1{,}998001 & \qquad h(1{,}001) &= 5{,}002 \\
-&\vdots & &\vdots
+h(0{,}9) &amp;= 1{,}81 &amp; \qquad h(1{,}1) &amp;= 5{,}2 \\
+h(0{,}99) &amp;= 1{,}9801 &amp; \qquad h(1{,}01) &amp;= 5{,}02 \\
+h(0{,}999) &amp;= 1{,}998001 &amp; \qquad h(1{,}001) &amp;= 5{,}002 \\
+&amp;\vdots &amp; &amp;\vdots
 \end{aligned}
-\]
+\]</div>
 
 
 
