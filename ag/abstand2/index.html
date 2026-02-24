@@ -1361,6 +1361,156 @@ d(Q;g)
 \]</div>
 <p>Da der Abstand Null beträgt, liegt der Punkt Q auf der Geraden <span class="arithmatex">\(g\)</span>.</p>
 <h3 id="beispiel-lotfupunktverfahren">Beispiel (Lotfußpunktverfahren)<a class="headerlink" href="#beispiel-lotfupunktverfahren" title="Permanent link">&para;</a></h3>
+<p>Gegeben ist die Gerade</p>
+<div class="arithmatex">\[
+g:\ \vec{x} =
+\begin{pmatrix}
+3 \\
+2
+\end{pmatrix}
++
+\lambda
+\begin{pmatrix}
+-1 \\
+2
+\end{pmatrix},
+\qquad \lambda \in \mathbb{R}
+\]</div>
+<p>und der Punkt</p>
+<div class="arithmatex">\[
+P(-5 \mid 3).
+\]</div>
+<p>Gesucht ist der Abstand des Punktes <span class="arithmatex">\(P\)</span> von der Geraden <span class="arithmatex">\(g\)</span>.</p>
+<hr />
+<p><strong>Idee des Verfahrens</strong></p>
+<p>Der Abstand eines Punktes von einer Geraden ist die Länge der <strong>Lotstrecke</strong> vom Punkt auf die Gerade.</p>
+<p>Vorgehen:</p>
+<ol>
+<li>Lotgerade durch <span class="arithmatex">\(P\)</span> bestimmen  </li>
+<li>Lotfußpunkt <span class="arithmatex">\(L\)</span> berechnen  </li>
+<li>Abstand als Länge des Vektors <span class="arithmatex">\( \overrightarrow{PL} \)</span> berechnen  </li>
+</ol>
+<hr />
+<p><strong>1. Lotgerade bestimmen</strong></p>
+<p>Der Richtungsvektor der Geraden lautet</p>
+<div class="arithmatex">\[
+\vec{v} =
+\begin{pmatrix}
+-1 \\
+2
+\end{pmatrix}.
+\]</div>
+<p>Ein Normalenvektor ergibt sich durch Vertauschen der Komponenten und Vorzeichenwechsel <strong>bei einer</strong> Komponente des Richthungsvektors: </p>
+<div class="arithmatex">\[
+\vec{n} =
+\begin{pmatrix}
+-2 \\
+-1
+\end{pmatrix},
+\quad
+\text{denn } \vec{v} \circ \vec{n} = 0.
+\]</div>
+<p>Die Lotgerade <span class="arithmatex">\(l\)</span> durch <span class="arithmatex">\(P\)</span> lautet:</p>
+<div class="arithmatex">\[
+l:\ \vec{x} =
+\begin{pmatrix}
+-5 \\
+3
+\end{pmatrix}
++
+\mu
+\begin{pmatrix}
+-2 \\
+-1
+\end{pmatrix},
+\qquad \mu \in \mathbb{R}.
+\]</div>
+<hr />
+<p><strong>2. Lotfußpunkt berechnen</strong></p>
+<p>Schnittpunkt von <span class="arithmatex">\(g\)</span> und <span class="arithmatex">\(l\)</span>:</p>
+<div class="arithmatex">\[
+\begin{pmatrix}
+3-\lambda \\
+2+2\lambda
+\end{pmatrix}
+=
+\begin{pmatrix}
+-5-2\mu \\
+3-\mu
+\end{pmatrix}.
+\]</div>
+<p>Koordinatenvergleich:</p>
+<div class="arithmatex">\[
+3-\lambda = -5-2\mu
+\]</div>
+<div class="arithmatex">\[
+2+2\lambda = 3-\mu
+\]</div>
+<p>Umformen:</p>
+<div class="arithmatex">\[
+\lambda - 2\mu = 8
+\]</div>
+<div class="arithmatex">\[
+2\lambda + \mu = 1
+\]</div>
+<p>Lösen des Gleichungssystems ergibt:</p>
+<div class="arithmatex">\[
+\lambda = 2, \qquad \mu = -3.
+\]</div>
+<p>Einsetzen in die Geradengleichung:</p>
+<div class="arithmatex">\[
+\vec{OL} =
+\begin{pmatrix}
+3-2 \\
+2+4
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 \\
+6
+\end{pmatrix}.
+\]</div>
+<p>Der Lotfußpunkt ist also</p>
+<div class="arithmatex">\[
+L(1 \mid 6).
+\]</div>
+<hr />
+<p><strong>3. Abstand berechnen</strong></p>
+<div class="arithmatex">\[
+\overrightarrow{PL}
+=
+\begin{pmatrix}
+1 \\
+6
+\end{pmatrix}
+-
+\begin{pmatrix}
+-5 \\
+3
+\end{pmatrix}
+=
+\begin{pmatrix}
+6 \\
+3
+\end{pmatrix}.
+\]</div>
+<p>Betrag:</p>
+<div class="arithmatex">\[
+|\overrightarrow{PL}|
+=
+\sqrt{6^2 + 3^2}
+=
+\sqrt{45}.
+\]</div>
+<hr />
+<p><strong>Ergebnis</strong></p>
+<div class="box-green">
+<strong>Der Abstand des Punktes von der Geraden beträgt</strong>
+
+\[
+d = \sqrt{45}~\mathrm{LE}.
+\]
+</div>
 
 
 
