@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.25)  24 FEB 2026 18:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.25)  4 MAR 2026 07:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./VerhaltenImUnendlichen.tex
-(VerhaltenImUnendlichen.tex
+**./Stetigkeit.tex
+(Stetigkeit.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-19>
 (C:\Users\amarb\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -421,6 +421,9 @@ ng of objects, relative to a reference object or in absolute terms
 )
 \c@shadeueb=\count325
 
+(C:\Users\amarb\AppData\Local\Programs\MiKTeX\tex/latex/was\icomma.sty
+Package: icomma 2002/03/10 v2.0 (WaS)
+)
 (C:\Users\amarb\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\kpfonts.sty
 Package: kpfonts  2024/10/27 v3.36
 \c@mv@rm=\count326
@@ -1408,11 +1411,11 @@ LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line
 (C:\Users\amarb\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ot1jkpss.fd
 File: ot1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for OT1/jkpss.
 )
-(VerhaltenImUnendlichen.aux
+(Stetigkeit.aux
 Package babel Info: 'german' activates 'german' shorthands.
 (babel)             Reported on input line 5.
 )
-\openout1 = `VerhaltenImUnendlichen.aux'.
+\openout1 = `Stetigkeit.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 77.
 LaTeX Font Info:    Trying to load font information for OML+jkp on input line 7
@@ -1534,49 +1537,35 @@ lations-basic-dictionary')
 Package translations Info: loading dictionary `translations-basic-dictionary' f
 or `german'. on input line 77.
 LaTeX Font Info:    Trying to load font information for OT1+jkp on input line 8
-2.
+3.
 
 (C:\Users\amarb\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ot1jkp.fd
 File: ot1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkp.
 )
 LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 
-82.
+83.
 
 (C:\Users\amarb\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsya.fd
 File: ujkpsya.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    Trying to load font information for U+jkpsyb on input line 
-82.
+83.
 
 (C:\Users\amarb\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsyb.fd
 File: ujkpsyb.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    Trying to load font information for U+jkpmia on input line 
-82.
+83.
 
 (C:\Users\amarb\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpmia.fd
 File: ujkpmia.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 
-82.
+83.
 
 (C:\Users\amarb\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Font shape `OT1/jkpss/m/it' in size <12> not available
-(Font)              Font shape `OT1/jkpss/m/sl' tried instead on input line 95.
-
-LaTeX Font Info:    Trying to load font information for TS1+jkpss on input line
- 116.
-
-(C:\Users\amarb\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ts1jkpss.fd
-File: ts1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for TS1/jkpss.
-)
-Overfull \hbox (31.13158pt too wide) in paragraph at lines 133--138
- [] 
- []
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1615,12 +1604,6 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
 ]
-<assets/images/bsp1.png, id=14, 306.66196pt x 220.7966pt>
-File: assets/images/bsp1.png Graphic file (type png)
-<use assets/images/bsp1.png>
-Package pdftex.def Info: assets/images/bsp1.png  used on input line 162.
-(pdftex.def)             Requested size: 273.14923pt x 196.67006pt.
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1629,18 +1612,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[2 <./assets/images/bsp1.png>]
-<assets/images/bsp2.png, id=20, 306.66196pt x 220.7966pt>
-File: assets/images/bsp2.png Graphic file (type png)
-<use assets/images/bsp2.png>
-Package pdftex.def Info: assets/images/bsp2.png  used on input line 209.
-(pdftex.def)             Requested size: 159.33821pt x 114.72392pt.
-<assets/images/bsp3.png, id=21, 306.66196pt x 220.7966pt>
-File: assets/images/bsp3.png Graphic file (type png)
-<use assets/images/bsp3.png>
-Package pdftex.def Info: assets/images/bsp3.png  used on input line 242.
-(pdftex.def)             Requested size: 227.62206pt x 163.8889pt.
-
+[2]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1649,100 +1621,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[3 <./assets/images/bsp2.png> <./assets/images/bsp3.png>]
-Overfull \hbox (10.22878pt too wide) in paragraph at lines 247--247
-[]\OT1/jkpss/b/n/17.28 Infinitesimalrechnung { Ver-hal-ten in kri-ti-schen Stel
--len 
- []
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[4]
-<assets/images/bsp4.png, id=30, 306.66196pt x 220.7966pt>
-File: assets/images/bsp4.png Graphic file (type png)
-<use assets/images/bsp4.png>
-Package pdftex.def Info: assets/images/bsp4.png  used on input line 364.
-(pdftex.def)             Requested size: 455.24411pt x 327.77782pt.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[5 <./assets/images/bsp4.png>]
-<assets/images/bsp5.png, id=35, 306.66196pt x 220.7966pt>
-File: assets/images/bsp5.png Graphic file (type png)
-<use assets/images/bsp5.png>
-Package pdftex.def Info: assets/images/bsp5.png  used on input line 412.
-(pdftex.def)             Requested size: 455.24411pt x 327.77782pt.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[6 <./assets/images/bsp5.png>]
-<assets/images/bsp6.png, id=40, 263.11893pt x 190.4104pt>
-File: assets/images/bsp6.png Graphic file (type png)
-<use assets/images/bsp6.png>
-Package pdftex.def Info: assets/images/bsp6.png  used on input line 476.
-(pdftex.def)             Requested size: 455.24411pt x 329.47517pt.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[7 <./assets/images/bsp6.png>]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[8] (VerhaltenImUnendlichen.aux)
+[3] (Stetigkeit.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 29549 strings out of 468149
- 619085 string characters out of 5431082
- 1049455 words of memory out of 5000000
- 57598 multiletter control sequences out of 15000+600000
- 663941 words of font info for 122 fonts, out of 8000000 for 9000
+ 29434 strings out of 468149
+ 616742 string characters out of 5431082
+ 1049599 words of memory out of 5000000
+ 57487 multiletter control sequences out of 15000+600000
+ 650664 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 118i,11n,122p,679b,573s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,11n,122p,667b,569s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/amarb/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpe
 x.pfb><C:/Users/amarb/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/
 jkpmi.pfb><C:/Users/amarb/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfo
 nts/jkpmn8a.pfb><C:/Users/amarb/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/kpfonts/jkpssbn8a.pfb><C:/Users/amarb/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/kpfonts/jkpssmn8a.pfb><C:/Users/amarb/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/kpfonts/jkpssmn8a.pfb><C:/Users/amarb/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on VerhaltenImUnendlichen.pdf (8 pages, 572725 bytes).
+onts/type1/public/kpfonts/jkpsy.pfb><C:/Users/amarb/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/kpfonts/jkpsyb.pfb><C:/Users/amarb/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/kpfonts/jkpsyc.pfb>
+Output written on Stetigkeit.pdf (3 pages, 67574 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
+ 56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
