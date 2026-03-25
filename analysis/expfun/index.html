@@ -561,17 +561,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zusammenhang-zur-standardform" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Zusammenhang zur Standardform
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#merksatz" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1697,10 +1686,10 @@ f(t) = 200 \cdot 0{,}88^t
 <div class="arithmatex">\[
 2 = b^t
 \]</div>
-<p>Daraus folgt:
-[
+<p>Daraus folgt:</p>
+<div class="arithmatex">\[
 t = \frac{\ln 2}{\ln b} \quad \text{oder} \quad t = \log_b 2
-]</p>
+\]</div>
 <hr />
 <h2 id="halbwertszeit">Halbwertszeit<a class="headerlink" href="#halbwertszeit" title="Permanent link">&para;</a></h2>
 <p>Die Halbwertszeit <span class="arithmatex">\( t \)</span> erfüllt:</p>
@@ -1714,24 +1703,27 @@ t = \frac{\ln(1/2)}{\ln b} \quad \text{oder} \quad t = \log_b \frac{1}{2}
 <p><strong>Hinweis:</strong><br />
 Ist der Abnahmefaktor unbekannt, gilt:</p>
 <div class="arithmatex">\[
-b = \left(\frac{1}{2}\right)^{1/t}
+b = \sqrt[t]{\frac{1}{2}}
 \]</div>
 <hr />
 <h2 id="beispiel-halbwertszeit">Beispiel: Halbwertszeit<a class="headerlink" href="#beispiel-halbwertszeit" title="Permanent link">&para;</a></h2>
-<p>Gegeben:
-- Halbwertszeit: 10 Tage<br />
-- Anfangsbestand: 3 g  </p>
+<p>Gegeben:</p>
+<ul>
+<li>Halbwertszeit: 10 Tage  </li>
+<li>Anfangsbestand: 3 g  </li>
+</ul>
 <h3 id="abnahmefaktor">Abnahmefaktor<a class="headerlink" href="#abnahmefaktor" title="Permanent link">&para;</a></h3>
 <div class="arithmatex">\[
 b^{10} = 0{,}5 \Rightarrow b = (0{,}5)^{1/10} \approx 0{,}933
 \]</div>
 <h3 id="funktionsgleichung">Funktionsgleichung<a class="headerlink" href="#funktionsgleichung" title="Permanent link">&para;</a></h3>
 <div class="arithmatex">\[
-f(t) = 3 \cdot 0{,}933^t
+f(t) = 3 \cdot 0{,}933^t,
 \]</div>
+<p><span class="arithmatex">\(t\)</span> in Tagen, <span class="arithmatex">\(f(t)\)</span> in <span class="arithmatex">\(g\)</span></p>
 <h3 id="nach-5-tagen">Nach 5 Tagen<a class="headerlink" href="#nach-5-tagen" title="Permanent link">&para;</a></h3>
 <div class="arithmatex">\[
-f(5) \approx 3 \cdot 0{,}933^5 \approx 2{,}12
+f(5) \approx 3 \cdot 0{,}933^5 \approx 2{,}12 g
 \]</div>
 <h3 id="wann-sind-noch-20-vorhanden">Wann sind noch 20 % vorhanden?<a class="headerlink" href="#wann-sind-noch-20-vorhanden" title="Permanent link">&para;</a></h3>
 <div class="arithmatex">\[
@@ -1766,11 +1758,12 @@ f(t) = a \cdot b^{\frac{t}{\Delta t}}
 <hr />
 <h2 id="interpretation">Interpretation<a class="headerlink" href="#interpretation" title="Permanent link">&para;</a></h2>
 <p>Die Funktion</p>
-<p>[
+<div class="arithmatex">\[
 f(t) = a \cdot b^{\frac{t}{\Delta t}}
-]
-bedeutet:</p>
-<p>👉 Nach <strong>jedem Zeitintervall <span class="arithmatex">\( \Delta t \)</span></strong> wird der Wert mit <span class="arithmatex">\( b \)</span> multipliziert.</p>
+\]</div>
+<p>bedeutet:</p>
+<p>👉 Nach <strong>jedem Zeitintervall <span class="arithmatex">\( \Delta t \)</span></strong> wird der Wert mit <span class="arithmatex">\( b \)</span> multipliziert. </p>
+<p><strong>WICHTIG:</strong> <span class="arithmatex">\(t\)</span> und <span class="arithmatex">\(\Delta t\)</span> sind in der gleichen Einheit gegeben. </p>
 <hr />
 <h2 id="beispiele">Beispiele<a class="headerlink" href="#beispiele" title="Permanent link">&para;</a></h2>
 <h3 id="beispiel-1-wachstum-alle-2-tage">Beispiel 1: Wachstum alle 2 Tage<a class="headerlink" href="#beispiel-1-wachstum-alle-2-tage" title="Permanent link">&para;</a></h3>
@@ -1781,15 +1774,15 @@ bedeutet:</p>
 <li>Intervall: <span class="arithmatex">\( \Delta t = 2 \)</span> Tage  </li>
 </ul>
 <div class="arithmatex">\[
-f(t) = 100 \cdot 1{,}2^{\frac{t}{2}}
+f(t) = 100 \cdot 1{,}2^{\frac{t}{2}},\ \ t\text{  in Tagen}
 \]</div>
-<p>👉 Nach 2 Tagen:
-[
-f(2) = 100 \cdot 1{,}2 = 120
-]</p>
+<p>👉 Nach 2 Tagen:</p>
+<div class="arithmatex">\[
+f(2) = 100 \cdot 1{,}2^{\frac22} = 120
+\]</div>
 <p>👉 Nach 4 Tagen:</p>
 <div class="arithmatex">\[
-f(4) = 100 \cdot 1{,}2^2 = 144
+f(4) = 100 \cdot 1{,}2^{\frac42} = 144
 \]</div>
 <hr />
 <h3 id="beispiel-2-abnahme-alle-30-minuten">Beispiel 2: Abnahme alle 30 Minuten<a class="headerlink" href="#beispiel-2-abnahme-alle-30-minuten" title="Permanent link">&para;</a></h3>
@@ -1800,30 +1793,15 @@ f(4) = 100 \cdot 1{,}2^2 = 144
 <li>Intervall: <span class="arithmatex">\( \Delta t = 30 \)</span> Minuten  </li>
 </ul>
 <div class="arithmatex">\[
-f(t) = 50 \cdot 0{,}9^{\frac{t}{30}}
+f(t) = 50 \cdot 0{,}9^{\frac{t}{30}},\ t\text{  in Minuten}
 \]</div>
 <p>👉 Nach 30 Minuten:</p>
 <div class="arithmatex">\[
-f(30) = 50 \cdot 0{,}9 = 45
+f(30) = 50 \cdot 0{,}9^{\frac{30}{30}} = 45~\mathrm{mg}
 \]</div>
-<p>👉 Nach 60 Minuten:</p>
+<p>👉 Nach 1 Stunde:</p>
 <div class="arithmatex">\[
-f(60) = 50 \cdot 0{,}9^2 = 40{,}5
-\]</div>
-<hr />
-<h2 id="zusammenhang-zur-standardform">Zusammenhang zur Standardform<a class="headerlink" href="#zusammenhang-zur-standardform" title="Permanent link">&para;</a></h2>
-<p>Die Form</p>
-<div class="arithmatex">\[
-f(t) = a \cdot b^{\frac{t}{\Delta t}}
-\]</div>
-<p>kann auch geschrieben werden als:</p>
-<div class="arithmatex">\[
-f(t) = a \cdot \left(b^{\frac{1}{\Delta t}}\right)^t
-\]</div>
-<p>👉 Das bedeutet:<br />
-Man kann immer auf die Form <span class="arithmatex">\( a \cdot c^t \)</span> zurückgehen, wobei  </p>
-<div class="arithmatex">\[
-c = b^{\frac{1}{\Delta t}}
+f(60) = 50 \cdot 0{,}9^{\frac{60}{30}} = 40{,}5~\mathrm{mg}
 \]</div>
 <hr />
 <h2 id="merksatz">Merksatz<a class="headerlink" href="#merksatz" title="Permanent link">&para;</a></h2>
@@ -1834,7 +1812,7 @@ c = b^{\frac{1}{\Delta t}}
 </ul>
 <hr />
 <h2 id="typische-fehler">Typische Fehler<a class="headerlink" href="#typische-fehler" title="Permanent link">&para;</a></h2>
-<p>❌ <span class="arithmatex">\( 1{,}2^t \)</span> statt <span class="arithmatex">\( 1{,}2^{t/2} \)</span> bei „alle 2 Tage“<br />
+<p>❌ <span class="arithmatex">\( 1{,}2^{2t} \)</span> statt <span class="arithmatex">\( 1{,}2^{t/2} \)</span> bei „alle 2 Tage“<br />
 ❌ falsche Einheit bei <span class="arithmatex">\( t \)</span> (z. B. Minuten vs. Stunden)</p>
 <p>✔ Immer prüfen: <strong>Passt die Zeiteinheit zum Intervall?</strong></p>
 
