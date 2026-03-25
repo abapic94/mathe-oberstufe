@@ -1681,7 +1681,7 @@ Zu Beginn der Messung sind <strong>100 mg</strong> vorhanden.</p>
 <hr />
 <h2 id="losung-zu-aufgabe-2">Lösung zu Aufgabe 2<a class="headerlink" href="#losung-zu-aufgabe-2" title="Permanent link">&para;</a></h2>
 <h3 id="a-zerfallsfunktion-bestimmen">a) Zerfallsfunktion bestimmen<a class="headerlink" href="#a-zerfallsfunktion-bestimmen" title="Permanent link">&para;</a></h3>
-<p>Anfangswert: <span class="arithmatex">\(N_0 = 100\)</span></p>
+<p>Anfangswert: <span class="arithmatex">\(a = 100\)</span></p>
 <p>Nach jeweils <strong>2 Tagen</strong> bleibt der Faktor <span class="arithmatex">\(b=\frac23\)</span></p>
 <p>Also lautet die Funktion:</p>
 <div class="arithmatex">\[
@@ -1731,18 +1731,18 @@ f(t)=100\cdot\left(\frac{2}{3}\right)^{\frac{t}{2}},
 <div class="arithmatex">\[
 \left(\frac{2}{3}\right)^{\frac{t}{2}}=\frac{1}{2}
 \]</div>
-<p>Logarithmieren:
-[
+<p>Logarithmieren:</p>
+<div class="arithmatex">\[
 \frac{t}{2}=\log_{\frac23}\left(\frac{1}{2}\right)
-]</p>
-<p>Auflösen nach <span class="arithmatex">\( t \)</span>:
-[
+\]</div>
+<p>Auflösen nach <span class="arithmatex">\( t \)</span>:</p>
+<div class="arithmatex">\[
 t=2\cdot \log_{\frac23}\left(\frac{1}{2}\right)
-]</p>
-<p>Näherungswert:
-[
+\]</div>
+<p>Näherungswert:</p>
+<div class="arithmatex">\[
 t\approx \approx 3{,}42
-]</p>
+\]</div>
 <p>Die Halbwertszeit beträgt also etwa <strong>3,4 Tage</strong>.</p>
 <hr />
 <h3 id="d-momentane-zerfallsgeschwindigkeit-bei-50-mg">d) Momentane Zerfallsgeschwindigkeit bei 50 mg<a class="headerlink" href="#d-momentane-zerfallsgeschwindigkeit-bei-50-mg" title="Permanent link">&para;</a></h3>
@@ -1751,9 +1751,41 @@ t\approx \approx 3{,}42
 f(t)=100\cdot\left(\frac{2}{3}\right)^{\frac{t}{2}}
 \]</div>
 <p>Gesucht ist <span class="arithmatex">\(f'(3,42)\)</span>.</p>
-<p>[
-f'(3,42)=\lim_{t\to 3,42}\frac{f(t)-f(3,42)}{t-3,42}=\lim_{t\to 3,42}\underbrace{\frac{100\cdot\left(\frac{2}{3}\right)^{\frac{t}{2}}-100\cdot\left(\frac{2}{3}\right)^{\frac{3,42}{2}}}{t-3,42}}_{=g(x)}</p>
+<p>[</p>
+<p>f'(3,42)=\lim_{t\to 3,42}\frac{f(t)-f(3,42)}{t-3,42}=\lim_{t\to 3,42}\frac{100\cdot\left(\frac{2}{3}\right)^{\frac{t}{2}}-100\cdot\left(\frac{2}{3}\right)^{\frac{3,42}{2}}}{t-3,42}</p>
 <p>]</p>
+<p>Es genügt einen einseitigen Grenzwert zu berechnen:</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(t&gt;3,42\)</span></th>
+<th style="text-align: right;">Differenzquotient</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3,421</td>
+<td style="text-align: right;">-10,1336</td>
+</tr>
+<tr>
+<td>3,4201</td>
+<td style="text-align: right;">-10,1345</td>
+</tr>
+<tr>
+<td>3,42001</td>
+<td style="text-align: right;">-10,1346</td>
+</tr>
+<tr>
+<td>3,420001</td>
+<td style="text-align: right;">-10,1346</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\vdots\)</span></td>
+<td style="text-align: right;"><span class="arithmatex">\(\vdots\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Vermutung: <span class="arithmatex">\(f'(3,42)\approx -10,14\)</span></p>
 <p><strong>Deutung:</strong><br />
 In dem Moment, in dem noch <strong>50 mg</strong> vorhanden sind, nimmt die Substanzmenge mit etwa <strong>10,14 mg pro Tag</strong> ab.</p>
 <hr />
@@ -1766,18 +1798,15 @@ In dem Moment, in dem noch <strong>50 mg</strong> vorhanden sind, nimmt die Subs
 </ul>
 <h3 id="aufgabe-2">Aufgabe 2<a class="headerlink" href="#aufgabe-2" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Zerfallsfunktion:
-[
-\boxed{N(t)=100\cdot\left(\frac{2}{3}\right)^{\frac{t}{2}}}
-]</li>
-<li>Halbwertszeit:
-[
-\boxed{3{,}42\text{ Tage}}
-]</li>
-<li>Momentane Zerfallsgeschwindigkeit bei 50 mg:
-[
-\boxed{-10{,}14\ \text{mg/Tag}}
-]</li>
+<li>
+<p>Zerfallsfunktion: <span class="arithmatex">\(f(t)=100\cdot\left(\frac{2}{3}\right)^{\frac{t}{2}}},\)</span> t in Tagen, f(t) in mg</p>
+</li>
+<li>
+<p>Halbwertszeit: ca. <span class="arithmatex">\(3{,}42\text{ Tage}\)</span></p>
+</li>
+<li>
+<p>Momentane Zerfallsgeschwindigkeit bei 50 mg: <span class="arithmatex">\(-10{,}14\ \text{mg/Tag}\)</span></p>
+</li>
 </ul>
 
 
