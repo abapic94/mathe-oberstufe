@@ -1681,35 +1681,21 @@ Zu Beginn der Messung sind <strong>100 mg</strong> vorhanden.</p>
 <hr />
 <h2 id="losung-zu-aufgabe-2">Lösung zu Aufgabe 2<a class="headerlink" href="#losung-zu-aufgabe-2" title="Permanent link">&para;</a></h2>
 <h3 id="a-zerfallsfunktion-bestimmen">a) Zerfallsfunktion bestimmen<a class="headerlink" href="#a-zerfallsfunktion-bestimmen" title="Permanent link">&para;</a></h3>
-<p>Anfangswert:
-[
-N_0 = 100
-]</p>
-<p>Nach jeweils <strong>2 Tagen</strong> bleibt der Faktor
-[
-\frac{2}{3}
-]</p>
-<p>Also lautet die Funktion:
-[
-N(t)=100\cdot\left(\frac{2}{3}\right)^{t/2}
-]</p>
-<p><strong>Antwort:</strong>
-[
-\boxed{N(t)=100\cdot\left(\frac{2}{3}\right)^{t/2}}
-]</p>
+<p>Anfangswert: <span class="arithmatex">\(N_0 = 100\)</span></p>
+<p>Nach jeweils <strong>2 Tagen</strong> bleibt der Faktor <span class="arithmatex">\(b=\frac23\)</span></p>
+<p>Also lautet die Funktion:</p>
+<div class="arithmatex">\[
+f(t)=100\cdot\left(\frac{2}{3}\right)^{t/2},
+\]</div>
+<p><span class="arithmatex">\(t\)</span> in Tagen, <span class="arithmatex">\(f(t)\)</span> in mg</p>
 <hr />
 <h3 id="b-graph-fur-die-ersten-20-tage">b) Graph für die ersten 20 Tage<a class="headerlink" href="#b-graph-fur-die-ersten-20-tage" title="Permanent link">&para;</a></h3>
-<p>Zu zeichnen ist der Graph der Funktion
-[
-N(t)=100\cdot\left(\frac{2}{3}\right)^{t/2}
-\quad \text{für } 0\le t\le 20
-]</p>
 <p>Hilfreiche Werte:</p>
 <table>
 <thead>
 <tr>
 <th><span class="arithmatex">\(t\)</span> in Tagen</th>
-<th style="text-align: right;"><span class="arithmatex">\(N(t)\)</span> in mg</th>
+<th style="text-align: right;"><span class="arithmatex">\(f(t)\)</span> in mg</th>
 </tr>
 </thead>
 <tbody>
@@ -1718,40 +1704,20 @@ N(t)=100\cdot\left(\frac{2}{3}\right)^{t/2}
 <td style="text-align: right;">100</td>
 </tr>
 <tr>
-<td>2</td>
-<td style="text-align: right;">66,67</td>
-</tr>
-<tr>
 <td>4</td>
 <td style="text-align: right;">44,44</td>
-</tr>
-<tr>
-<td>6</td>
-<td style="text-align: right;">29,63</td>
 </tr>
 <tr>
 <td>8</td>
 <td style="text-align: right;">19,75</td>
 </tr>
 <tr>
-<td>10</td>
-<td style="text-align: right;">13,17</td>
-</tr>
-<tr>
 <td>12</td>
 <td style="text-align: right;">8,78</td>
 </tr>
 <tr>
-<td>14</td>
-<td style="text-align: right;">5,85</td>
-</tr>
-<tr>
 <td>16</td>
 <td style="text-align: right;">3,90</td>
-</tr>
-<tr>
-<td>18</td>
-<td style="text-align: right;">2,60</td>
 </tr>
 <tr>
 <td>20</td>
@@ -1762,81 +1728,32 @@ N(t)=100\cdot\left(\frac{2}{3}\right)^{t/2}
 <p>Der Graph ist eine <strong>fallende Exponentialkurve</strong>.</p>
 <hr />
 <h3 id="c-halbwertszeit-berechnen">c) Halbwertszeit berechnen<a class="headerlink" href="#c-halbwertszeit-berechnen" title="Permanent link">&para;</a></h3>
-<p>Gesucht ist <span class="arithmatex">\( t \)</span> mit
-[
-N(t)=50
-]</p>
-<p>Also:
-[
-100\cdot\left(\frac{2}{3}\right)^{t/2}=50
-]</p>
-<p>Durch 100 teilen:
-[
+<div class="arithmatex">\[
 \left(\frac{2}{3}\right)^{t/2}=\frac{1}{2}
-]</p>
+\]</div>
 <p>Logarithmieren:
 [
-\frac{t}{2}\ln\left(\frac{2}{3}\right)=\ln\left(\frac{1}{2}\right)
+\frac{t}{2}=\log_{\frac23}\left(\frac{1}{2}\right)
 ]</p>
 <p>Auflösen nach <span class="arithmatex">\( t \)</span>:
 [
-t=2\cdot \frac{\ln(1/2)}{\ln(2/3)}
+t=2\cdot \log_{\frac23}\left(\frac{1}{2}\right)
 ]</p>
 <p>Näherungswert:
 [
-t\approx 2\cdot \frac{-0{,}6931}{-0{,}4055}\approx 3{,}42
-]</p>
-<p><strong>Antwort:</strong>
-[
-\boxed{t\approx 3{,}42\text{ Tage}}
+t\approx \approx 3{,}42
 ]</p>
 <p>Die Halbwertszeit beträgt also etwa <strong>3,4 Tage</strong>.</p>
 <hr />
 <h3 id="d-momentane-zerfallsgeschwindigkeit-bei-50-mg">d) Momentane Zerfallsgeschwindigkeit bei 50 mg<a class="headerlink" href="#d-momentane-zerfallsgeschwindigkeit-bei-50-mg" title="Permanent link">&para;</a></h3>
-<p>Die Funktion lautet:
-[
-N(t)=100\cdot\left(\frac{2}{3}\right)^{t/2}
-]</p>
-<p>Zur Bestimmung der momentanen Zerfallsgeschwindigkeit benötigen wir die Ableitung.</p>
-<p>Schreibe die Funktion zunächst in der Form
-[
-N(t)=100\cdot e^{\frac{t}{2}\ln(2/3)}
-]</p>
-<p>Dann ist
-[
-N'(t)=100\cdot e^{\frac{t}{2}\ln(2/3)}\cdot \frac{1}{2}\ln\left(\frac{2}{3}\right)
-]</p>
-<p>Da
-[
-100\cdot e^{\frac{t}{2}\ln(2/3)}=N(t)
-]
-folgt
-[
-N'(t)=N(t)\cdot \frac{1}{2}\ln\left(\frac{2}{3}\right)
-]</p>
-<p>Gesucht ist der Zeitpunkt, an dem
-[
-N(t)=50
-]
-ist. Also:
-[
-N'(t)=50\cdot \frac{1}{2}\ln\left(\frac{2}{3}\right)
-]</p>
+<p>Die Funktion lautet:</p>
 <div class="arithmatex">\[
-N'(t)=25\ln\left(\frac{2}{3}\right)
+f(t)=100\cdot\left(\frac{2}{3}\right)^{\frac{t}{2}}
 \]</div>
-<p>Mit
-[
-\ln\left(\frac{2}{3}\right)\approx -0{,}4055
-]
-ergibt sich
-[
-N'(t)\approx 25\cdot (-0{,}4055)\approx -10{,}14
-]</p>
-<p><strong>Antwort:</strong>
-[
-\boxed{N'(t)\approx -10{,}14\ \text{mg/Tag}}
-]</p>
+<p>Gesucht ist <span class="arithmatex">\(f'(3,42)\)</span>.</p>
+<div class="arithmatex">\[
+f'(3,42)=\lim_{t\to 3,42}\frac{f(t)-f(3,42)}{t-3,42}=\lim_{t\to 3,42}\frac{100\cdot\left(\frac{2}{3}\right)^{\frac{t}{2}}-100\cdot\left(\frac{2}{3}\right)^{\frac{3,42}{2}}}{t-3,42}
+\]</div>
 <p><strong>Deutung:</strong><br />
 In dem Moment, in dem noch <strong>50 mg</strong> vorhanden sind, nimmt die Substanzmenge mit etwa <strong>10,14 mg pro Tag</strong> ab.</p>
 <hr />
